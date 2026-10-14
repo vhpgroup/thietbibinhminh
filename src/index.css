@@ -1,1 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap');
 @import 'tailwindcss';
+
+:root {
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  font-synthesis: none;
+  color: #14213d;
+  background: #f5f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.03fr 0.97fr;
+}
+
+.hero-grid > div:last-child::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 1;
+  width: 28%;
+  background: linear-gradient(90deg, #0a2342 0%, rgba(10, 35, 66, 0) 100%);
+  pointer-events: none;
+}
+
+.section-kicker {
+  color: #ff6b35;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.section-title {
+  margin-top: 3px;
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  font-weight: 900;
+  letter-spacing: -0.035em;
+}
+
+.sale-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.sale-shell::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  right: -50px;
+  width: 220px;
+  height: 220px;
+  border: 35px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.promo-card img {
+  transition: transform 600ms ease;
+}
+
+.promo-card:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 1023px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-grid > div:last-child::before {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-grid > div:first-child {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-grid > div:last-child {
+    min-height: 260px;
+  }
+}
