@@ -161,6 +161,53 @@ const quickCategories = [
   { name: "Xem tất cả", icon: "menu" as IconName },
 ];
 
+const categoryProducts = [
+  {
+    name: "Thiết bị văn phòng",
+    icon: "printer" as IconName,
+    products: [
+      { name: "Máy scan Ricoh Fi-5530C2", spec: "ADF • 50 trang/phút", price: "19.690.000₫", old: "22.900.000₫", image: "https://images.unsplash.com/photo-1721830834983-f111ad63dbf4?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy scan Canon LiDE 110", spec: "Flatbed • Khổ A4", price: "1.520.000₫", old: "1.890.000₫", image: "https://images.unsplash.com/photo-1706895040634-62055892cbbb?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy in Canon LBP 243DW II", spec: "Laser • In đảo mặt", price: "4.890.000₫", old: "5.990.000₫", image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy in Brother HL-L3230CDN", spec: "Laser màu • LAN", price: "9.590.000₫", old: "11.200.000₫", image: "https://images.unsplash.com/photo-1650094980833-7373de26feb6?auto=format&fit=crop&w=600&q=80" },
+      { name: "Photocopy Fujifilm Apeos C3060", spec: "Màu • A3 • 30 ppm", price: "Liên hệ", old: "", image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Laptop & máy tính",
+    icon: "laptop" as IconName,
+    products: [
+      { name: "Lenovo ThinkPad E14 Gen 7", spec: "Core Ultra • RAM 16GB", price: "22.490.000₫", old: "25.990.000₫", image: "https://images.unsplash.com/photo-1638821734607-02db76d614a6?auto=format&fit=crop&w=600&q=80" },
+      { name: "ASUS ROG Zephyrus G14", spec: "Ryzen AI • RTX 4060", price: "39.990.000₫", old: "45.990.000₫", image: "https://images.unsplash.com/photo-1572509018340-1fc13b5df491?auto=format&fit=crop&w=600&q=80" },
+      { name: "ASUS Vivobook S14 OLED", spec: "Core Ultra • OLED 3K", price: "24.790.000₫", old: "27.990.000₫", image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=600&q=80" },
+      { name: "MSI Prestige 16 AI+", spec: "Intel Lunar Lake • 32GB", price: "35.490.000₫", old: "39.990.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "HP Pro Tower 280 G9", spec: "Core i5 • SSD 512GB", price: "13.890.000₫", old: "15.490.000₫", image: "https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Thiết bị mạng",
+    icon: "network" as IconName,
+    products: [
+      { name: "Router APTEK L300", spec: "Wi-Fi 6 • Gigabit", price: "1.390.000₫", old: "1.690.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "TP-Link Archer NX200", spec: "5G • Wi-Fi 6 AX1800", price: "5.490.000₫", old: "6.290.000₫", image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=600&q=80" },
+      { name: "ASUS RT-AX53U", spec: "Wi-Fi 6 • AiMesh", price: "1.790.000₫", old: "2.190.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "USB Wi-Fi Tenda U2", spec: "150Mbps • Anten 6dBi", price: "179.000₫", old: "229.000₫", image: "https://images.unsplash.com/photo-1777861845855-edb4b29158af?auto=format&fit=crop&w=600&q=80" },
+      { name: "Totolink A650USM", spec: "Dual Band • USB 2.0", price: "269.000₫", old: "329.000₫", image: "https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Camera & hình ảnh",
+    icon: "camera" as IconName,
+    products: [
+      { name: "Camera Sony Creator 4K", spec: "4K • Chống rung", price: "17.990.000₫", old: "20.490.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy ảnh Canon Mirrorless", spec: "APS-C • Dual Pixel AF", price: "15.490.000₫", old: "17.990.000₫", image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=600&q=80" },
+      { name: "Camera hội nghị Tenveo PTZ", spec: "Full HD • Zoom quang", price: "8.290.000₫", old: "9.790.000₫", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=600&q=80" },
+      { name: "Action Cam GoPro 4K", spec: "4K60 • Chống nước", price: "9.990.000₫", old: "11.490.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
+      { name: "Gimbal DJI Creator", spec: "Chống rung 3 trục", price: "3.890.000₫", old: "4.490.000₫", image: "https://images.unsplash.com/photo-1768818928341-3b31b8965c6d?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+];
+
 export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMega, setActiveMega] = useState<number | null>(null);
@@ -168,6 +215,7 @@ export default function App() {
   const [paused, setPaused] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [liked, setLiked] = useState<number[]>([]);
+  const [activeProductCategory, setActiveProductCategory] = useState(0);
 
   useEffect(() => {
     if (paused) return;
@@ -315,6 +363,57 @@ export default function App() {
               <div className="relative"><h3 className="max-w-[250px] text-xl font-black">{banner.title}</h3><p className="mt-2 text-xs text-slate-200">{banner.text}</p><span className="mt-5 inline-block text-xs font-extrabold text-[#ffb000]">Tìm hiểu thêm →</span></div>
             </a>
           ))}
+        </section>
+
+        <section className="mx-auto max-w-[1320px] px-4 py-6 lg:px-6">
+          <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#ff6b35]">Mua sắm theo nhu cầu</span>
+              <h2 className="mt-1 text-2xl font-black tracking-[-0.03em]">Sản phẩm theo danh mục</h2>
+            </div>
+            <a href="#" className="flex items-center gap-1 text-xs font-extrabold text-[#ff6b35]">Xem tất cả sản phẩm <Icon name="chevron" size={15} /></a>
+          </div>
+
+          <div className="mb-4 flex gap-2 overflow-x-auto pb-1">
+            {categoryProducts.map((category, index) => (
+              <button
+                key={category.name}
+                onClick={() => setActiveProductCategory(index)}
+                className={`flex shrink-0 items-center gap-2 rounded-full border px-4 py-2.5 text-xs font-extrabold transition ${
+                  activeProductCategory === index
+                    ? "border-[#0a2342] bg-[#0a2342] text-white shadow-md"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-[#ff6b35] hover:text-[#ff6b35]"
+                }`}
+              >
+                <Icon name={category.icon} size={17} />{category.name}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
+            {categoryProducts[activeProductCategory].products.map((product, index) => (
+              <article key={product.name} className="category-product group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(10,35,66,0.05)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(10,35,66,0.1)]">
+                <div className="relative mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40">
+                  <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
+                  <span className="absolute left-2 top-2 rounded-md bg-white/95 px-2 py-1 text-[9px] font-extrabold text-[#ff6b35] shadow-sm">CHÍNH HÃNG</span>
+                  <button
+                    onClick={() => setLiked((items) => items.includes(index + 100 + activeProductCategory * 10) ? items.filter((item) => item !== index + 100 + activeProductCategory * 10) : [...items, index + 100 + activeProductCategory * 10])}
+                    className="absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-white/95 text-slate-400 shadow-sm hover:text-red-500"
+                    aria-label="Thêm vào yêu thích"
+                  >
+                    <Icon name="heart" size={14} />
+                  </button>
+                </div>
+                <p className="mb-1 text-[10px] font-semibold text-slate-400">{product.spec}</p>
+                <h3 className="min-h-10 text-xs font-bold leading-5 sm:text-[13px]">{product.name}</h3>
+                <div className="mt-2 flex flex-wrap items-baseline gap-x-2">
+                  <p className="text-base font-black text-[#ff4d1c]">{product.price}</p>
+                  {product.old && <p className="text-[10px] text-slate-400 line-through">{product.old}</p>}
+                </div>
+                <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg border border-[#0a2342] py-2.5 text-[11px] font-extrabold text-[#0a2342] transition hover:bg-[#0a2342] hover:text-white">Thêm vào giỏ</button>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className="mt-5 border-y border-slate-200 bg-white">
