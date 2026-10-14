@@ -1,1 +1,10 @@
-{}
+{
+  "description": "Create stunning landing pages tailored for brands, enhancing online presence and engagement with customizable designs and user-friendly features.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
