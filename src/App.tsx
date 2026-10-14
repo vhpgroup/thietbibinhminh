@@ -215,7 +215,6 @@ export default function App() {
   const [paused, setPaused] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [liked, setLiked] = useState<number[]>([]);
-  const [activeProductCategory, setActiveProductCategory] = useState(0);
 
   useEffect(() => {
     if (paused) return;
@@ -365,56 +364,56 @@ export default function App() {
           ))}
         </section>
 
-        <section className="mx-auto max-w-[1320px] px-4 py-6 lg:px-6">
-          <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#ff6b35]">Mua sắm theo nhu cầu</span>
-              <h2 className="mt-1 text-2xl font-black tracking-[-0.03em]">Sản phẩm theo danh mục</h2>
-            </div>
-            <a href="#" className="flex items-center gap-1 text-xs font-extrabold text-[#ff6b35]">Xem tất cả sản phẩm <Icon name="chevron" size={15} /></a>
-          </div>
-
-          <div className="mb-4 flex gap-2 overflow-x-auto pb-1">
-            {categoryProducts.map((category, index) => (
-              <button
-                key={category.name}
-                onClick={() => setActiveProductCategory(index)}
-                className={`flex shrink-0 items-center gap-2 rounded-full border px-4 py-2.5 text-xs font-extrabold transition ${
-                  activeProductCategory === index
-                    ? "border-[#0a2342] bg-[#0a2342] text-white shadow-md"
-                    : "border-slate-200 bg-white text-slate-600 hover:border-[#ff6b35] hover:text-[#ff6b35]"
-                }`}
-              >
-                <Icon name={category.icon} size={17} />{category.name}
-              </button>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
-            {categoryProducts[activeProductCategory].products.map((product, index) => (
-              <article key={product.name} className="category-product group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(10,35,66,0.05)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(10,35,66,0.1)]">
-                <div className="relative mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40">
-                  <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
-                  <span className="absolute left-2 top-2 rounded-md bg-white/95 px-2 py-1 text-[9px] font-extrabold text-[#ff6b35] shadow-sm">CHÍNH HÃNG</span>
-                  <button
-                    onClick={() => setLiked((items) => items.includes(index + 100 + activeProductCategory * 10) ? items.filter((item) => item !== index + 100 + activeProductCategory * 10) : [...items, index + 100 + activeProductCategory * 10])}
-                    className="absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-white/95 text-slate-400 shadow-sm hover:text-red-500"
-                    aria-label="Thêm vào yêu thích"
-                  >
-                    <Icon name="heart" size={14} />
-                  </button>
+        <div className="py-4">
+          {categoryProducts.map((category, categoryIndex) => (
+            <section key={category.name} className={categoryIndex % 2 === 1 ? "bg-white/60" : ""}>
+              <div className="mx-auto max-w-[1320px] px-4 py-7 lg:px-6">
+                <div className="mb-5 flex items-end justify-between gap-3">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#ff6b35]">
+                      {categoryIndex === 0 ? "Mua sắm theo nhu cầu" : "Gợi ý dành cho bạn"}
+                    </span>
+                    <h2 className="mt-1 flex items-center gap-2 text-xl font-black tracking-[-0.03em] sm:text-2xl">
+                      <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#0a2342] text-white"><Icon name={category.icon} size={18} /></span>
+                      {category.name}
+                    </h2>
+                  </div>
+                  <a href="#" className="flex shrink-0 items-center gap-1 text-xs font-extrabold text-[#ff6b35]">
+                    Xem tất cả <span className="hidden sm:inline">{category.name.toLowerCase()}</span> <Icon name="chevron" size={15} />
+                  </a>
                 </div>
-                <p className="mb-1 text-[10px] font-semibold text-slate-400">{product.spec}</p>
-                <h3 className="min-h-10 text-xs font-bold leading-5 sm:text-[13px]">{product.name}</h3>
-                <div className="mt-2 flex flex-wrap items-baseline gap-x-2">
-                  <p className="text-base font-black text-[#ff4d1c]">{product.price}</p>
-                  {product.old && <p className="text-[10px] text-slate-400 line-through">{product.old}</p>}
+
+                <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
+                  {category.products.map((product, productIndex) => {
+                    const favoriteId = productIndex + 100 + categoryIndex * 10;
+                    return (
+                      <article key={product.name} className="category-product group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(10,35,66,0.05)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(10,35,66,0.1)]">
+                        <div className="relative mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40">
+                          <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
+                          <span className="absolute left-2 top-2 rounded-md bg-white/95 px-2 py-1 text-[9px] font-extrabold text-[#ff6b35] shadow-sm">CHÍNH HÃNG</span>
+                          <button
+                            onClick={() => setLiked((items) => items.includes(favoriteId) ? items.filter((item) => item !== favoriteId) : [...items, favoriteId])}
+                            className={`absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-white/95 shadow-sm transition ${liked.includes(favoriteId) ? "text-red-500" : "text-slate-400 hover:text-red-500"}`}
+                            aria-label="Thêm vào yêu thích"
+                          >
+                            <Icon name="heart" size={14} />
+                          </button>
+                        </div>
+                        <p className="mb-1 text-[10px] font-semibold text-slate-400">{product.spec}</p>
+                        <h3 className="min-h-10 text-xs font-bold leading-5 sm:text-[13px]">{product.name}</h3>
+                        <div className="mt-2 flex flex-wrap items-baseline gap-x-2">
+                          <p className="text-base font-black text-[#ff4d1c]">{product.price}</p>
+                          {product.old && <p className="text-[10px] text-slate-400 line-through">{product.old}</p>}
+                        </div>
+                        <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg border border-[#0a2342] py-2.5 text-[11px] font-extrabold text-[#0a2342] transition hover:bg-[#0a2342] hover:text-white">Thêm vào giỏ</button>
+                      </article>
+                    );
+                  })}
                 </div>
-                <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg border border-[#0a2342] py-2.5 text-[11px] font-extrabold text-[#0a2342] transition hover:bg-[#0a2342] hover:text-white">Thêm vào giỏ</button>
-              </article>
-            ))}
-          </div>
-        </section>
+              </div>
+            </section>
+          ))}
+        </div>
 
         <section className="mt-5 border-y border-slate-200 bg-white">
           <div className="mx-auto grid max-w-[1320px] grid-cols-2 gap-y-6 px-4 py-7 lg:grid-cols-4 lg:px-6">
