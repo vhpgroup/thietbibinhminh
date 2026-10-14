@@ -1,28 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type IconName =
-  | "menu"
-  | "search"
-  | "map"
-  | "user"
-  | "cart"
-  | "heart"
-  | "chevron"
-  | "truck"
-  | "shield"
-  | "refresh"
-  | "headset"
-  | "tv"
-  | "snow"
-  | "washer"
-  | "kitchen"
-  | "phone"
-  | "laptop"
-  | "close";
+  | "menu" | "search" | "map" | "user" | "cart" | "heart" | "chevron"
+  | "truck" | "shield" | "refresh" | "headset" | "laptop" | "printer"
+  | "network" | "camera" | "meeting" | "software" | "iot" | "power" | "close";
 
-function Icon({ name, size = 22 }: { name: IconName; size?: number }) {
+function Icon({ name, size = 21 }: { name: IconName; size?: number }) {
   const paths: Record<IconName, React.ReactNode> = {
-    menu: <><path d="M4 7h16M4 12h16M4 17h16" /></>,
+    menu: <path d="M4 7h16M4 12h16M4 17h16" />,
     search: <><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></>,
     map: <><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></>,
     user: <><circle cx="12" cy="8" r="4" /><path d="M4.5 21a7.5 7.5 0 0 1 15 0" /></>,
@@ -32,290 +17,325 @@ function Icon({ name, size = 22 }: { name: IconName; size?: number }) {
     truck: <><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z" /><circle cx="7" cy="18" r="2" /><circle cx="18" cy="18" r="2" /></>,
     shield: <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />,
     refresh: <><path d="M20 7v5h-5M4 17v-5h5" /><path d="M6.1 9a7 7 0 0 1 11.5-2.6L20 9M4 15l2.4 2.6A7 7 0 0 0 18 15" /></>,
-    headset: <><path d="M4 15v-3a8 8 0 0 1 16 0v3" /><path d="M6 14H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2zM18 14h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2zM18 20c0 1-2 2-4 2" /></>,
-    tv: <><rect x="3" y="5" width="18" height="13" rx="2" /><path d="M8 22h8M12 18v4" /></>,
-    snow: <><path d="M12 2v20M4 7l16 10M20 7 4 17" /><path d="m9 4 3 3 3-3M9 20l3-3 3 3" /></>,
-    washer: <><rect x="4" y="2" width="16" height="20" rx="2" /><circle cx="12" cy="14" r="5" /><path d="M7 6h.01M11 6h5" /></>,
-    kitchen: <><path d="M5 3v18M9 3v6c0 2-4 2-4 0M16 3v18M16 3c5 3 5 8 0 10" /></>,
-    phone: <><rect x="6" y="2" width="12" height="20" rx="2" /><path d="M10 18h4" /></>,
+    headset: <><path d="M4 15v-3a8 8 0 0 1 16 0v3" /><path d="M6 14H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2zM18 14h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2z" /></>,
     laptop: <><rect x="4" y="4" width="16" height="12" rx="1" /><path d="M2 20h20M8 16l-1 4M16 16l1 4" /></>,
+    printer: <><path d="M7 8V3h10v5M7 17H4V9h16v8h-3" /><rect x="7" y="14" width="10" height="7" /><path d="M17 11h.01" /></>,
+    network: <><circle cx="12" cy="6" r="2" /><circle cx="5" cy="18" r="2" /><circle cx="19" cy="18" r="2" /><path d="m11 8-5 8M13 8l5 8M7 18h10" /></>,
+    camera: <><path d="M4 7h3l2-2h6l2 2h3v12H4z" /><circle cx="12" cy="13" r="4" /></>,
+    meeting: <><circle cx="8" cy="8" r="3" /><circle cx="17" cy="9" r="2" /><path d="M2 20a6 6 0 0 1 12 0M14 16a5 5 0 0 1 8 4" /></>,
+    software: <><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M7 6.5h.01M10 6.5h.01" /></>,
+    iot: <><path d="M8.5 16a5 5 0 1 1 7 0M6 13a8 8 0 1 1 12 0" /><circle cx="12" cy="19" r="2" /></>,
+    power: <><path d="M12 2v10M7 5.5a8 8 0 1 0 10 0" /></>,
     close: <path d="m6 6 12 12M18 6 6 18" />,
   };
-
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      {paths[name]}
-    </svg>
-  );
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
 }
 
-const categories: { label: string; icon: IconName; color: string }[] = [
-  { label: "Tivi", icon: "tv", color: "bg-blue-50 text-blue-700" },
-  { label: "Điều hòa", icon: "snow", color: "bg-cyan-50 text-cyan-700" },
-  { label: "Tủ lạnh", icon: "kitchen", color: "bg-amber-50 text-amber-700" },
-  { label: "Máy giặt", icon: "washer", color: "bg-violet-50 text-violet-700" },
-  { label: "Gia dụng", icon: "kitchen", color: "bg-rose-50 text-rose-700" },
-  { label: "Điện thoại", icon: "phone", color: "bg-emerald-50 text-emerald-700" },
-  { label: "Laptop", icon: "laptop", color: "bg-indigo-50 text-indigo-700" },
-  { label: "Xem tất cả", icon: "menu", color: "bg-slate-100 text-slate-700" },
+type Category = {
+  name: string;
+  icon: IconName;
+  columns: { title: string; items: string[] }[];
+};
+
+const categories: Category[] = [
+  {
+    name: "Thiết bị văn phòng", icon: "printer",
+    columns: [
+      { title: "Máy scan", items: ["Scan tài liệu ADF", "Scan phẳng Flatbed", "Scan khổ lớn A2/A1/A0", "Scan sách & số hóa", "Scan di động", "Scan chuyên dụng"] },
+      { title: "Máy in", items: ["Máy in laser", "Máy in phun", "Máy in kim", "Máy in màu", "Máy in đa chức năng"] },
+      { title: "Photocopy & vật tư", items: ["Máy photocopy", "Mực in chính hãng", "Mực in tương thích", "Phụ kiện máy in"] },
+      { title: "Hãng nổi bật", items: ["Canon", "Epson", "HP", "Brother", "Ricoh / Fujitsu", "Fujifilm"] },
+    ],
+  },
+  {
+    name: "Máy tính", icon: "laptop",
+    columns: [
+      { title: "Laptop", items: ["Laptop Gaming - Đồ họa", "Laptop văn phòng", "Ultrabook mỏng nhẹ", "Laptop AI"] },
+      { title: "Máy tính để bàn", items: ["PC đồng bộ", "All-in-One", "Mini PC", "Workstation"] },
+      { title: "Máy chủ", items: ["Máy chủ", "Linh kiện máy chủ", "Máy tính công nghiệp"] },
+      { title: "Hãng nổi bật", items: ["ASUS", "Lenovo", "Dell", "Acer", "MSI", "HP"] },
+    ],
+  },
+  {
+    name: "Thiết bị mạng", icon: "network",
+    columns: [
+      { title: "Mạng không dây", items: ["Router / Wi-Fi / 4G", "Mesh Wi-Fi", "Access Point", "Card mạng"] },
+      { title: "Hạ tầng mạng", items: ["Switch", "Firewall", "Tủ rack", "Cáp & công cụ"] },
+      { title: "Giải pháp", items: ["Module quang", "Nguồn PoE", "Cân bằng tải", "Mạng doanh nghiệp"] },
+      { title: "Hãng", items: ["TP-Link", "ASUS", "APTEK", "Tenda", "Totolink", "Commscope"] },
+    ],
+  },
+  {
+    name: "Camera & giám sát", icon: "camera",
+    columns: [
+      { title: "Camera", items: ["Camera quan sát", "Camera IP", "Camera Wi-Fi", "Camera hội nghị PTZ"] },
+      { title: "Lưu trữ", items: ["Ổ cứng camera", "Đầu ghi hình", "Thẻ nhớ", "Lưu trữ đám mây"] },
+      { title: "Phụ kiện", items: ["Nguồn camera", "Chân đế", "Cáp tín hiệu", "Phụ kiện camera"] },
+      { title: "Hãng", items: ["Imou", "EZVIZ", "Tenveo", "Western Digital", "Seagate"] },
+    ],
+  },
+  {
+    name: "Hội nghị & giáo dục", icon: "meeting",
+    columns: [
+      { title: "Thiết bị hội nghị", items: ["Camera hội nghị", "Loa & micro", "Bộ hội nghị trực tuyến", "Màn hình tương tác"] },
+      { title: "Thiết bị giáo dục", items: ["Máy chiếu vật thể", "Bảng tương tác", "Phòng học thông minh", "Thiết bị trình chiếu"] },
+      { title: "Giải pháp", items: ["Phòng họp nhỏ", "Phòng họp doanh nghiệp", "Lớp học hybrid", "Studio đào tạo"] },
+      { title: "Dịch vụ", items: ["Tư vấn giải pháp", "Thiết kế hệ thống", "Lắp đặt tận nơi", "Bảo trì định kỳ"] },
+    ],
+  },
+  {
+    name: "Phần mềm bản quyền", icon: "software",
+    columns: [
+      { title: "Microsoft", items: ["Windows", "Office", "Microsoft 365", "Windows Server / SQL"] },
+      { title: "Bảo mật", items: ["Kaspersky", "ESET", "Sophos", "Trend Micro", "Bitdefender"] },
+      { title: "Sáng tạo", items: ["Adobe", "Autodesk", "Thiết kế đồ họa", "CAD"] },
+      { title: "Tiện ích", items: ["Phần mềm AI", "Quản trị doanh nghiệp", "Sao lưu dữ liệu", "Bản quyền theo gói"] },
+    ],
+  },
+  {
+    name: "Thiết bị hình ảnh", icon: "camera",
+    columns: [
+      { title: "Máy ảnh", items: ["Máy ảnh Mirrorless", "Máy ảnh DSLR", "Máy ảnh compact", "Máy ảnh chuyên nghiệp"] },
+      { title: "Video", items: ["Máy quay", "Action Cam", "Camera 360", "Thiết bị livestream"] },
+      { title: "Phụ kiện", items: ["Ống kính", "Gimbal", "Studio & ánh sáng", "Thẻ nhớ / lưu trữ"] },
+      { title: "Hãng", items: ["Canon", "Sony", "Fujifilm", "Nikon", "DJI", "GoPro"] },
+    ],
+  },
+  {
+    name: "IoT & công nghiệp", icon: "iot",
+    columns: [
+      { title: "IoT", items: ["Mô-đun IoT", "Thiết bị IoT", "Gateway IoT", "Cảm biến thông minh"] },
+      { title: "Công nghiệp", items: ["Máy tính công nghiệp", "Màn hình công nghiệp", "Thiết bị nhúng", "Điều khiển tự động"] },
+      { title: "Năng lượng", items: ["IoT năng lượng mặt trời", "Giám sát điện năng", "Bộ chuyển đổi", "Giải pháp xanh"] },
+      { title: "Dịch vụ", items: ["Tư vấn dự án", "Tích hợp hệ thống", "Triển khai IoT", "Hỗ trợ kỹ thuật"] },
+    ],
+  },
+  {
+    name: "Âm thanh & nguồn điện", icon: "power",
+    columns: [
+      { title: "Âm thanh", items: ["Âm thanh IP", "Truyền thanh IP 4G", "Phát thanh / truyền hình", "Loa chuyên dụng"] },
+      { title: "Nguồn điện", items: ["UPS / nguồn điện", "Chống sét", "Ổ cắm thông minh", "Bộ lưu điện doanh nghiệp"] },
+      { title: "Linh kiện", items: ["Linh kiện RF", "Bộ khuếch đại", "Cáp âm thanh", "Phụ kiện nguồn"] },
+      { title: "Hãng", items: ["TOA", "Saigonet", "APC", "Eaton", "Santak"] },
+    ],
+  },
+];
+
+const slides = [
+  {
+    eyebrow: "TECH WEEK 2025", title: "Hiệu suất bứt phá.", accent: "Sẵn sàng tương lai.",
+    description: "Laptop AI và workstation chính hãng, ưu đãi đến 30% cho cá nhân và doanh nghiệp.",
+    image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=1400&q=85",
+    theme: "bg-[#0a2342]", label: "Laptop AI từ 18.990.000₫",
+  },
+  {
+    eyebrow: "VĂN PHÒNG THÔNG MINH", title: "Số hóa tinh gọn.", accent: "Vận hành tối ưu.",
+    description: "Máy scan, máy in và giải pháp tài liệu dành cho mọi quy mô doanh nghiệp.",
+    image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1400&q=85",
+    theme: "bg-[#123a63]", label: "Máy in giảm đến 25%",
+  },
+  {
+    eyebrow: "CREATOR SEASON", title: "Ghi trọn khoảnh khắc.", accent: "Kể chuyện khác biệt.",
+    description: "Máy ảnh, ống kính và thiết bị livestream cho nhà sáng tạo chuyên nghiệp.",
+    image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=1400&q=85",
+    theme: "bg-[#201f2b]", label: "Combo creator từ 12.490.000₫",
+  },
 ];
 
 const products = [
-  {
-    name: "Smart TV 4K Vision AI 55 inch",
-    image: "https://images.unsplash.com/photo-1581791836186-7609d9ecfd38?auto=format&fit=crop&w=720&q=82",
-    price: "10.990.000₫",
-    old: "15.990.000₫",
-    sale: "-31%",
-    gift: "Tặng gói truyền hình 12 tháng",
-  },
-  {
-    name: "Tủ lạnh Inverter Multi Door 525L",
-    image: "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?auto=format&fit=crop&w=720&q=82",
-    price: "18.490.000₫",
-    old: "23.990.000₫",
-    sale: "-23%",
-    gift: "Miễn phí lắp đặt tận nhà",
-  },
-  {
-    name: "Máy giặt cửa trước EcoWash 10kg",
-    image: "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=720&q=82",
-    price: "8.790.000₫",
-    old: "12.490.000₫",
-    sale: "-30%",
-    gift: "Tặng bộ chăm sóc vải cao cấp",
-  },
-  {
-    name: "Điều hòa Inverter CoolAir 1.5HP",
-    image: "https://images.unsplash.com/photo-1762341123870-d706f257a12e?auto=format&fit=crop&w=720&q=82",
-    price: "9.290.000₫",
-    old: "12.990.000₫",
-    sale: "-28%",
-    gift: "Tặng công lắp đặt tiêu chuẩn",
-  },
+  { name: "Máy scan Epson ES-C320W", image: "https://images.unsplash.com/photo-1721830834983-f111ad63dbf4?auto=format&fit=crop&w=650&q=80", price: "8.790.000₫", old: "10.990.000₫", sale: "-20%", tag: "Scan 2 mặt • Wi-Fi" },
+  { name: "Laptop Lenovo ThinkPad E14 Gen 7", image: "https://images.unsplash.com/photo-1638821734607-02db76d614a6?auto=format&fit=crop&w=650&q=80", price: "22.490.000₫", old: "25.990.000₫", sale: "-13%", tag: "Core Ultra • 16GB RAM" },
+  { name: "Máy in Canon LBP 243DW II", image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=650&q=80", price: "4.890.000₫", old: "5.990.000₫", sale: "-18%", tag: "In đảo mặt • Wi-Fi" },
+  { name: "ASUS ROG Zephyrus G14", image: "https://images.unsplash.com/photo-1572509018340-1fc13b5df491?auto=format&fit=crop&w=650&q=80", price: "39.990.000₫", old: "45.990.000₫", sale: "-13%", tag: "Ryzen AI • RTX 4060" },
+  { name: "Camera Sony Creator 4K", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=650&q=80", price: "17.990.000₫", old: "20.490.000₫", sale: "-12%", tag: "4K • Chống rung" },
 ];
 
-const features = [
-  { icon: "truck" as IconName, title: "Giao nhanh miễn phí", text: "Trong bán kính 30km" },
-  { icon: "shield" as IconName, title: "Hàng chính hãng", text: "Cam kết 100% nguồn gốc" },
-  { icon: "refresh" as IconName, title: "Đổi mới 30 ngày", text: "Nếu có lỗi từ nhà sản xuất" },
-  { icon: "headset" as IconName, title: "Hỗ trợ tận tâm", text: "Hotline 1800 6868 miễn phí" },
+const quickCategories = [
+  { name: "Máy scan", icon: "printer" as IconName },
+  { name: "Máy in", icon: "printer" as IconName },
+  { name: "Laptop gaming", icon: "laptop" as IconName },
+  { name: "Laptop văn phòng", icon: "laptop" as IconName },
+  { name: "Thiết bị mạng", icon: "network" as IconName },
+  { name: "Camera", icon: "camera" as IconName },
+  { name: "Phần mềm", icon: "software" as IconName },
+  { name: "Xem tất cả", icon: "menu" as IconName },
 ];
 
 export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeMega, setActiveMega] = useState<number | null>(null);
+  const [slide, setSlide] = useState(0);
+  const [paused, setPaused] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [liked, setLiked] = useState<number[]>([]);
 
-  const addToCart = () => setCartCount((count) => count + 1);
-  const toggleLiked = (index: number) =>
-    setLiked((items) => items.includes(index) ? items.filter((item) => item !== index) : [...items, index]);
+  useEffect(() => {
+    if (paused) return;
+    const timer = window.setInterval(() => setSlide((current) => (current + 1) % slides.length), 5000);
+    return () => window.clearInterval(timer);
+  }, [paused]);
+
+  const goToSlide = (next: number) => setSlide((next + slides.length) % slides.length);
 
   return (
-    <div className="min-h-screen bg-[#f5f7fb] text-[#14213d]">
-      <div className="bg-[#0a2342] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white sm:text-sm">
-        MỞ BÁN CUỐI TUẦN — Giảm thêm 10% qua VNPAY, miễn phí giao lắp toàn quốc
+    <div className="min-h-screen bg-[#f4f7fb] text-[#14213d]">
+      <div className="bg-[#0a2342] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white">
+        GIẢI PHÁP CÔNG NGHỆ CHÍNH HÃNG — Miễn phí giao hàng toàn quốc cho đơn từ 1 triệu
       </div>
 
-      <header className="sticky top-0 z-50 bg-white shadow-[0_3px_18px_rgba(10,35,66,0.08)]">
-        <div className="mx-auto flex max-w-[1280px] items-center gap-4 px-4 py-4 lg:px-8">
-          <button className="lg:hidden" onClick={() => setMobileOpen(true)} aria-label="Mở menu">
-            <Icon name="menu" size={26} />
-          </button>
-          <a href="#" className="flex shrink-0 items-center gap-2" aria-label="Nova Home">
+      <header className="relative z-50 bg-white shadow-[0_3px_18px_rgba(10,35,66,0.08)]">
+        <div className="mx-auto flex max-w-[1320px] items-center gap-4 px-4 py-3 lg:px-6">
+          <button className="lg:hidden" onClick={() => setMobileOpen(true)} aria-label="Mở menu"><Icon name="menu" size={26} /></button>
+          <a href="#" className="flex shrink-0 items-center gap-2" aria-label="Nova Tech">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#ff6b35] font-black text-white">N</span>
-            <span className="leading-none">
-              <b className="block text-xl font-black tracking-[-0.04em] text-[#0a2342] sm:text-2xl">NOVA</b>
-              <span className="text-[9px] font-bold tracking-[0.28em] text-[#ff6b35]">HOME</span>
-            </span>
+            <span className="leading-none"><b className="block text-xl font-black tracking-[-0.04em] text-[#0a2342]">NOVA</b><span className="text-[9px] font-bold tracking-[0.28em] text-[#ff6b35]">TECH</span></span>
           </a>
-
           <form className="relative hidden flex-1 md:block" onSubmit={(event) => event.preventDefault()}>
-            <input
-              className="h-12 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#ff6b35] focus:bg-white"
-              placeholder="Bạn cần tìm sản phẩm gì?"
-              aria-label="Tìm kiếm sản phẩm"
-            />
-            <button className="absolute right-1.5 top-1.5 grid h-9 w-10 place-items-center rounded-full bg-[#ff6b35] text-white" aria-label="Tìm kiếm">
-              <Icon name="search" size={19} />
-            </button>
+            <input className="h-11 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#ff6b35] focus:bg-white" placeholder="Tìm máy scan, laptop, camera, phần mềm..." aria-label="Tìm kiếm sản phẩm" />
+            <button className="absolute right-1.5 top-1.5 grid h-8 w-10 place-items-center rounded-full bg-[#ff6b35] text-white" aria-label="Tìm kiếm"><Icon name="search" size={18} /></button>
           </form>
-
           <div className="ml-auto flex items-center gap-2 lg:gap-4">
-            <button className="hidden items-center gap-2 text-left text-xs font-medium text-slate-500 xl:flex">
-              <Icon name="map" />
-              <span><small className="block">Xem giá tại</small><b className="text-sm text-[#14213d]">Hà Nội</b></span>
-            </button>
-            <button className="hidden items-center gap-2 text-left text-xs font-medium text-slate-500 sm:flex">
-              <Icon name="user" />
-              <span><small className="block">Xin chào!</small><b className="text-sm text-[#14213d]">Tài khoản</b></span>
-            </button>
-            <button className="relative grid h-11 w-11 place-items-center rounded-full bg-[#eef3f8]" aria-label={`Giỏ hàng có ${cartCount} sản phẩm`}>
-              <Icon name="cart" />
-              {cartCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-[#ff6b35] px-1 text-[10px] font-bold text-white">{cartCount}</span>}
-            </button>
+            <button className="hidden items-center gap-2 text-left text-xs text-slate-500 xl:flex"><Icon name="map" /><span><small className="block">Giao đến</small><b className="text-sm text-[#14213d]">Hà Nội</b></span></button>
+            <button className="hidden items-center gap-2 text-left text-xs text-slate-500 sm:flex"><Icon name="user" /><span><small className="block">Tài khoản</small><b className="text-sm text-[#14213d]">Đăng nhập</b></span></button>
+            <button className="relative grid h-10 w-10 place-items-center rounded-full bg-[#eef3f8]" aria-label={`Giỏ hàng có ${cartCount} sản phẩm`}><Icon name="cart" />{cartCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-[#ff6b35] px-1 text-[10px] font-bold text-white">{cartCount}</span>}</button>
           </div>
         </div>
-
-        <div className="mx-auto max-w-[1280px] px-4 pb-3 md:hidden">
-          <form className="relative" onSubmit={(event) => event.preventDefault()}>
-            <input className="h-11 w-full rounded-full bg-slate-100 px-5 pr-12 text-sm outline-none focus:ring-2 focus:ring-[#ff6b35]/40" placeholder="Tìm kiếm sản phẩm..." />
-            <button className="absolute right-3 top-2.5 text-[#ff6b35]" aria-label="Tìm kiếm"><Icon name="search" /></button>
-          </form>
+        <div className="mx-auto max-w-[1320px] px-4 pb-3 md:hidden">
+          <form className="relative" onSubmit={(event) => event.preventDefault()}><input className="h-10 w-full rounded-full bg-slate-100 px-5 pr-12 text-sm outline-none" placeholder="Tìm kiếm sản phẩm..." /><button className="absolute right-3 top-2 text-[#ff6b35]" aria-label="Tìm kiếm"><Icon name="search" /></button></form>
         </div>
-
-        <nav className="hidden border-t border-slate-100 lg:block">
-          <div className="mx-auto flex max-w-[1280px] items-center justify-between px-8">
-            {["Tivi", "Tủ lạnh", "Điều hòa", "Máy giặt", "Gia dụng", "Điện thoại", "Laptop", "Khuyến mãi"].map((item, index) => (
-              <a key={item} href={`#${item.toLowerCase()}`} className={`px-3 py-3.5 text-sm font-bold transition hover:text-[#ff6b35] ${index === 7 ? "text-[#ff6b35]" : ""}`}>{item}</a>
-            ))}
+        <nav className="border-t border-slate-100 bg-[#0d2852] text-white">
+          <div className="mx-auto hidden max-w-[1320px] items-center lg:flex lg:px-6">
+            <span className="flex w-[248px] items-center gap-2 bg-[#ff6b35] px-4 py-3 text-sm font-extrabold"><Icon name="menu" size={19} /> DANH MỤC SẢN PHẨM</span>
+            {["Trang chủ", "Sản phẩm", "Giải pháp", "Dự án", "Đối tác", "Tin tức", "Giới thiệu", "Liên hệ"].map((item) => <a key={item} href="#" className="flex-1 py-3 text-center text-xs font-bold uppercase transition hover:bg-white/10">{item}</a>)}
           </div>
         </nav>
       </header>
 
       {mobileOpen && (
         <div className="fixed inset-0 z-[60] bg-[#08182c]/50" onClick={() => setMobileOpen(false)}>
-          <aside className="h-full w-[82%] max-w-sm bg-white p-6" onClick={(event) => event.stopPropagation()}>
-            <div className="mb-8 flex items-center justify-between">
-              <b className="text-xl font-black text-[#0a2342]">NOVA <span className="text-[#ff6b35]">HOME</span></b>
-              <button onClick={() => setMobileOpen(false)} aria-label="Đóng menu"><Icon name="close" /></button>
-            </div>
-            {["Tivi", "Tủ lạnh", "Điều hòa", "Máy giặt", "Gia dụng", "Điện thoại", "Laptop", "Khuyến mãi"].map((item) => (
-              <a key={item} href="#" onClick={() => setMobileOpen(false)} className="flex items-center justify-between border-b border-slate-100 py-4 font-bold">
-                {item}<Icon name="chevron" size={17} />
-              </a>
-            ))}
+          <aside className="h-full w-[86%] max-w-sm overflow-y-auto bg-white p-5" onClick={(event) => event.stopPropagation()}>
+            <div className="mb-5 flex items-center justify-between"><b className="text-xl font-black">NOVA <span className="text-[#ff6b35]">TECH</span></b><button onClick={() => setMobileOpen(false)} aria-label="Đóng menu"><Icon name="close" /></button></div>
+            <p className="mb-2 text-xs font-extrabold uppercase tracking-wider text-slate-400">Danh mục sản phẩm</p>
+            {categories.map((category) => <a key={category.name} href="#" className="flex items-center gap-3 border-b border-slate-100 py-3 text-sm font-bold"><span className="text-[#ff6b35]"><Icon name={category.icon} /></span>{category.name}<span className="ml-auto"><Icon name="chevron" size={16} /></span></a>)}
           </aside>
         </div>
       )}
 
       <main>
-        <section className="mx-auto max-w-[1280px] px-4 py-5 lg:px-8 lg:py-7">
-          <div className="hero-grid overflow-hidden rounded-[28px] bg-[#0a2342] text-white">
-            <div className="relative z-10 flex flex-col justify-center px-7 py-10 sm:px-12 lg:px-16 lg:py-14">
-              <span className="mb-4 w-fit rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em]">Mega sale tháng 6</span>
-              <h1 className="max-w-xl text-4xl font-black leading-[1.03] tracking-[-0.05em] sm:text-5xl lg:text-6xl">
-                Nâng tầm tổ ấm.<br /><span className="text-[#ffb000]">Giá tốt bất ngờ.</span>
-              </h1>
-              <p className="mt-5 max-w-lg text-sm leading-6 text-blue-100 sm:text-base">
-                Hàng ngàn thiết bị điện máy chính hãng, công nghệ mới nhất cùng ưu đãi lên đến 50%.
-              </p>
-              <div className="mt-7 flex flex-wrap gap-3">
-                <a href="#san-pham" className="rounded-full bg-[#ff6b35] px-6 py-3.5 text-sm font-extrabold shadow-[0_8px_22px_rgba(255,107,53,0.3)] transition hover:-translate-y-0.5 hover:bg-[#ff7b4a]">Mua ngay</a>
-                <a href="#danh-muc" className="rounded-full border border-white/35 px-6 py-3.5 text-sm font-extrabold transition hover:bg-white hover:text-[#0a2342]">Khám phá sản phẩm</a>
-              </div>
-              <div className="mt-8 flex gap-8 text-xs text-blue-100">
-                <span><b className="block text-xl text-white">50+</b>Thương hiệu</span>
-                <span><b className="block text-xl text-white">10K+</b>Sản phẩm</span>
-                <span><b className="block text-xl text-white">4.9/5</b>Khách hàng</span>
-              </div>
-            </div>
-            <div className="relative min-h-[320px] overflow-hidden lg:min-h-[500px]">
-              <img className="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1581791836186-7609d9ecfd38?auto=format&fit=crop&w=1200&q=85" alt="Không gian phòng khách hiện đại với TV thông minh" />
-              <div className="absolute inset-0 bg-[#0a2342]/20 lg:hidden" />
-              <div className="absolute bottom-6 left-6 rounded-2xl bg-white p-4 text-[#14213d] shadow-2xl">
-                <div className="flex items-center gap-3">
-                  <span className="grid h-11 w-11 place-items-center rounded-full bg-orange-100 font-black text-[#ff6b35]">-35%</span>
-                  <span className="text-xs text-slate-500">Smart TV thế hệ mới<b className="block text-base text-[#0a2342]">Chỉ từ 6.990.000₫</b></span>
+        <section className="mx-auto max-w-[1320px] px-4 py-4 lg:px-6">
+          <div className="relative grid gap-3 lg:grid-cols-[248px_minmax(0,1fr)_220px]">
+            <div className="relative z-30 hidden rounded-xl bg-white py-1 shadow-[0_5px_24px_rgba(10,35,66,0.08)] lg:block" onMouseLeave={() => setActiveMega(null)}>
+              {categories.map((category, index) => (
+                <button key={category.name} onMouseEnter={() => setActiveMega(index)} className={`flex h-[42px] w-full items-center gap-3 border-l-2 px-3 text-left text-[13px] font-semibold transition ${activeMega === index ? "border-[#ff6b35] bg-orange-50 text-[#ff6b35]" : "border-transparent hover:bg-slate-50"}`}>
+                  <span className={activeMega === index ? "text-[#ff6b35]" : "text-slate-500"}><Icon name={category.icon} size={18} /></span>{category.name}<span className="ml-auto text-slate-400"><Icon name="chevron" size={14} /></span>
+                </button>
+              ))}
+              {activeMega !== null && (
+                <div className="mega-panel absolute left-[calc(100%+12px)] top-0 z-40 grid h-full min-h-[388px] w-[calc(1320px-248px-36px)] grid-cols-4 gap-7 overflow-hidden rounded-xl bg-white p-6 shadow-[0_14px_45px_rgba(10,35,66,0.18)]">
+                  {categories[activeMega].columns.map((column) => (
+                    <div key={column.title}><p className="mb-3 text-sm font-extrabold text-[#ff6b35]">{column.title}</p>{column.items.map((item) => <a key={item} href="#" className="mb-2.5 block text-[13px] text-slate-600 transition hover:translate-x-0.5 hover:text-[#0a2342]">{item}</a>)}</div>
+                  ))}
+                  <div className="absolute bottom-0 right-0 h-1 w-1/3 bg-[#ff6b35]" />
                 </div>
-              </div>
+              )}
+            </div>
+
+            <div className="relative h-[330px] overflow-hidden rounded-2xl lg:h-[388px]" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+              {slides.map((item, index) => (
+                <article key={item.eyebrow} className={`carousel-slide absolute inset-0 ${item.theme} ${index === slide ? "is-active" : ""}`}>
+                  <img className="absolute inset-0 h-full w-full object-cover opacity-50" src={item.image} alt="" />
+                  <div className="carousel-shade absolute inset-0" />
+                  <div className="relative z-10 flex h-full max-w-[590px] flex-col justify-center px-7 text-white sm:px-11">
+                    <span className="mb-3 text-[11px] font-extrabold tracking-[0.2em] text-[#ffb000]">{item.eyebrow}</span>
+                    <h1 className="text-3xl font-black leading-[1.08] tracking-[-0.04em] sm:text-4xl lg:text-[44px]">{item.title}<br /><span className="text-[#ffb000]">{item.accent}</span></h1>
+                    <p className="mt-4 max-w-md text-sm leading-6 text-slate-200">{item.description}</p>
+                    <a href="#san-pham" className="mt-5 w-fit rounded-full bg-[#ff6b35] px-5 py-3 text-xs font-extrabold transition hover:-translate-y-0.5">Khám phá ngay</a>
+                  </div>
+                  <span className="absolute bottom-5 right-5 z-10 rounded-xl bg-white/95 px-4 py-3 text-xs font-extrabold text-[#14213d] shadow-xl">{item.label}</span>
+                </article>
+              ))}
+              <button onClick={() => goToSlide(slide - 1)} className="absolute left-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 rotate-180 place-items-center rounded-full bg-white/85 text-[#0a2342] shadow-md" aria-label="Banner trước"><Icon name="chevron" size={17} /></button>
+              <button onClick={() => goToSlide(slide + 1)} className="absolute right-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#0a2342] shadow-md" aria-label="Banner tiếp theo"><Icon name="chevron" size={17} /></button>
+              <div className="absolute bottom-5 left-7 z-20 flex gap-2 sm:left-11">{slides.map((item, index) => <button key={item.eyebrow} onClick={() => goToSlide(index)} className={`h-1.5 rounded-full transition-all ${index === slide ? "w-8 bg-[#ff6b35]" : "w-3 bg-white/60"}`} aria-label={`Xem banner ${index + 1}`} />)}</div>
+            </div>
+
+            <div className="hidden grid-rows-2 gap-3 lg:grid">
+              <a href="#" className="group relative overflow-hidden rounded-2xl bg-[#e9f4ff] p-5">
+                <img className="absolute inset-0 h-full w-full object-cover opacity-25 transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=500&q=80" alt="" />
+                <div className="relative"><span className="text-[10px] font-extrabold uppercase tracking-widest text-[#ff6b35]">Văn phòng số</span><h2 className="mt-1 text-xl font-black leading-tight">Máy in<br />giảm đến 25%</h2><span className="mt-4 inline-block text-xs font-bold">Xem ưu đãi →</span></div>
+              </a>
+              <a href="#" className="group relative overflow-hidden rounded-2xl bg-[#171c28] p-5 text-white">
+                <img className="absolute inset-0 h-full w-full object-cover opacity-35 transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=500&q=80" alt="" />
+                <div className="relative"><span className="text-[10px] font-extrabold uppercase tracking-widest text-[#ffb000]">Creator studio</span><h2 className="mt-1 text-xl font-black leading-tight">Combo quay<br />video chuyên nghiệp</h2><span className="mt-4 inline-block text-xs font-bold">Khám phá →</span></div>
+              </a>
             </div>
           </div>
-        </section>
 
-        <section id="danh-muc" className="mx-auto max-w-[1280px] px-4 py-7 lg:px-8">
-          <div className="mb-5 flex items-end justify-between">
-            <div><span className="section-kicker">MUA SẮM DỄ DÀNG</span><h2 className="section-title">Danh mục nổi bật</h2></div>
-            <a href="#" className="hidden items-center gap-1 text-sm font-bold text-[#ff6b35] sm:flex">Xem tất cả <Icon name="chevron" size={16} /></a>
-          </div>
-          <div className="grid grid-cols-4 gap-3 sm:grid-cols-4 lg:grid-cols-8">
-            {categories.map((category) => (
-              <a key={category.label} href="#" className="group rounded-2xl bg-white px-2 py-5 text-center shadow-[0_4px_18px_rgba(10,35,66,0.05)] transition hover:-translate-y-1 hover:shadow-[0_10px_28px_rgba(10,35,66,0.1)]">
-                <span className={`mx-auto mb-3 grid h-12 w-12 place-items-center rounded-2xl transition group-hover:scale-105 ${category.color}`}><Icon name={category.icon} size={25} /></span>
-                <b className="text-xs sm:text-sm">{category.label}</b>
+          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
+            {quickCategories.map((category) => (
+              <a key={category.name} href="#" className="flex items-center gap-2 rounded-xl bg-white px-3 py-3 text-xs font-bold shadow-[0_3px_12px_rgba(10,35,66,0.05)] transition hover:-translate-y-0.5 hover:text-[#ff6b35]">
+                <span className="text-[#ff6b35]"><Icon name={category.icon} size={19} /></span>{category.name}
               </a>
             ))}
           </div>
         </section>
 
-        <section id="san-pham" className="mx-auto max-w-[1280px] px-4 py-8 lg:px-8">
-          <div className="sale-shell rounded-[28px] bg-[#ff6b35] p-4 sm:p-6 lg:p-8">
-            <div className="mb-6 flex flex-wrap items-center justify-between gap-4 text-white">
-              <div><span className="text-xs font-bold uppercase tracking-[0.18em] text-orange-100">Ưu đãi có hạn</span><h2 className="text-2xl font-black tracking-tight sm:text-3xl">Giá sốc hôm nay</h2></div>
-              <div className="flex items-center gap-2 text-center text-xs font-bold">
-                <span>Kết thúc sau</span>
-                {["08", "24", "46"].map((time, index) => <span key={time} className="rounded-lg bg-white px-2.5 py-2 text-[#0a2342]">{time}<small className="block text-[8px] text-slate-400">{["GIỜ", "PHÚT", "GIÂY"][index]}</small></span>)}
-              </div>
+        <section id="san-pham" className="mx-auto max-w-[1320px] px-4 py-5 lg:px-6">
+          <div className="rounded-[24px] bg-[#ff6b35] p-4 sm:p-6">
+            <div className="mb-5 flex flex-wrap items-end justify-between gap-3 text-white">
+              <div><span className="text-[10px] font-bold uppercase tracking-[0.18em] text-orange-100">Deal công nghệ mỗi ngày</span><h2 className="text-2xl font-black tracking-tight">Săn deal giá tốt</h2></div>
+              <div className="flex items-center gap-2 text-xs font-bold"><span>Kết thúc sau</span>{["08", "24", "46"].map((time) => <span key={time} className="rounded-lg bg-white px-2.5 py-2 text-[#0a2342]">{time}</span>)}</div>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
               {products.map((product, index) => (
-                <article key={product.name} className="group relative overflow-hidden rounded-2xl bg-white p-3.5 shadow-lg">
-                  <span className="absolute left-3 top-3 z-10 rounded-lg bg-[#ff6b35] px-2 py-1 text-xs font-black text-white">{product.sale}</span>
-                  <button onClick={() => toggleLiked(index)} className={`absolute right-3 top-3 z-10 grid h-9 w-9 place-items-center rounded-full bg-white shadow-md transition ${liked.includes(index) ? "text-red-500" : "text-slate-400 hover:text-red-500"}`} aria-label="Yêu thích">
-                    <Icon name="heart" size={18} />
-                  </button>
-                  <div className="mb-4 h-44 overflow-hidden rounded-xl bg-slate-100 sm:h-48">
-                    <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
-                  </div>
-                  <h3 className="min-h-12 text-sm font-bold leading-5">{product.name}</h3>
-                  <p className="mt-2 text-lg font-black text-[#ff4d1c]">{product.price}</p>
-                  <p className="text-xs text-slate-400 line-through">{product.old}</p>
-                  <p className="mt-3 border-t border-dashed border-slate-200 pt-3 text-[11px] font-semibold text-slate-600">{product.gift}</p>
-                  <button onClick={addToCart} className="mt-4 w-full rounded-xl bg-[#0a2342] py-3 text-xs font-extrabold text-white transition hover:bg-[#ff6b35]">Thêm vào giỏ</button>
+                <article key={product.name} className="group relative overflow-hidden rounded-2xl bg-white p-3 shadow-lg">
+                  <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-[#ff6b35] px-2 py-1 text-[10px] font-black text-white">{product.sale}</span>
+                  <button onClick={() => setLiked((items) => items.includes(index) ? items.filter((item) => item !== index) : [...items, index])} className={`absolute right-2.5 top-2.5 z-10 grid h-8 w-8 place-items-center rounded-full bg-white shadow ${liked.includes(index) ? "text-red-500" : "text-slate-400"}`} aria-label="Yêu thích"><Icon name="heart" size={16} /></button>
+                  <div className="mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40"><img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} /></div>
+                  <p className="mb-1 text-[10px] font-semibold text-slate-400">{product.tag}</p>
+                  <h3 className="min-h-10 text-xs font-bold leading-5 sm:text-[13px]">{product.name}</h3>
+                  <p className="mt-2 text-base font-black text-[#ff4d1c]">{product.price}</p>
+                  <p className="text-[10px] text-slate-400 line-through">{product.old}</p>
+                  <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg bg-[#0a2342] py-2.5 text-[11px] font-extrabold text-white transition hover:bg-[#ff6b35]">Thêm vào giỏ</button>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="mx-auto grid max-w-[1280px] gap-4 px-4 py-8 md:grid-cols-2 lg:px-8">
-          <a href="#" className="promo-card relative min-h-[245px] overflow-hidden rounded-[26px] bg-[#dff4ff] p-8">
-            <img className="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1628745277862-bc0b2d68c50c?auto=format&fit=crop&w=900&q=82" alt="Gian bếp hiện đại" />
-            <div className="absolute inset-0 bg-white/50" />
-            <div className="relative z-10 max-w-[250px]">
-              <span className="text-xs font-black uppercase tracking-widest text-[#ff6b35]">Bếp xinh, nhà chất</span>
-              <h3 className="mt-2 text-3xl font-black tracking-tight">Combo gia dụng<br />giảm đến 40%</h3>
-              <span className="mt-5 inline-flex items-center gap-1 text-sm font-black">Khám phá ngay <Icon name="chevron" size={16} /></span>
-            </div>
-          </a>
-          <a href="#" className="promo-card relative min-h-[245px] overflow-hidden rounded-[26px] bg-[#0a2342] p-8 text-white">
-            <img className="absolute inset-0 h-full w-full object-cover opacity-45" src="https://images.unsplash.com/photo-1724582586508-8f06117dc979?auto=format&fit=crop&w=900&q=82" alt="Phòng khách thông minh" />
-            <div className="relative z-10 max-w-[280px]">
-              <span className="text-xs font-black uppercase tracking-widest text-[#ffb000]">Sống thông minh hơn</span>
-              <h3 className="mt-2 text-3xl font-black tracking-tight">Hệ sinh thái<br />Smart Home</h3>
-              <span className="mt-5 inline-flex items-center gap-1 text-sm font-black">Xem giải pháp <Icon name="chevron" size={16} /></span>
-            </div>
-          </a>
+        <section className="mx-auto grid max-w-[1320px] gap-3 px-4 py-4 sm:grid-cols-3 lg:px-6">
+          {[
+            { title: "Giải pháp số hóa tài liệu", text: "Máy scan • Lưu trữ • Quản trị", image: "https://images.unsplash.com/photo-1706895040634-62055892cbbb?auto=format&fit=crop&w=700&q=80" },
+            { title: "Hạ tầng mạng doanh nghiệp", text: "Wi-Fi • Switch • Bảo mật", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=700&q=80" },
+            { title: "Studio sáng tạo nội dung", text: "Camera • Ánh sáng • Âm thanh", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=700&q=80" },
+          ].map((banner) => (
+            <a key={banner.title} href="#" className="group relative min-h-[170px] overflow-hidden rounded-2xl bg-[#0a2342] p-6 text-white">
+              <img className="absolute inset-0 h-full w-full object-cover opacity-40 transition duration-500 group-hover:scale-105" src={banner.image} alt="" />
+              <div className="absolute inset-0 bg-[#081c35]/30" />
+              <div className="relative"><h3 className="max-w-[250px] text-xl font-black">{banner.title}</h3><p className="mt-2 text-xs text-slate-200">{banner.text}</p><span className="mt-5 inline-block text-xs font-extrabold text-[#ffb000]">Tìm hiểu thêm →</span></div>
+            </a>
+          ))}
         </section>
 
-        <section className="mt-6 border-y border-slate-200 bg-white">
-          <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-y-7 px-4 py-8 lg:grid-cols-4 lg:px-8">
-            {features.map((feature) => (
-              <div key={feature.title} className="flex items-center gap-3 px-2 lg:border-r lg:border-slate-200 lg:last:border-0 lg:px-6">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-orange-50 text-[#ff6b35]"><Icon name={feature.icon} /></span>
-                <span><b className="block text-sm">{feature.title}</b><small className="text-[11px] text-slate-500">{feature.text}</small></span>
-              </div>
-            ))}
+        <section className="mt-5 border-y border-slate-200 bg-white">
+          <div className="mx-auto grid max-w-[1320px] grid-cols-2 gap-y-6 px-4 py-7 lg:grid-cols-4 lg:px-6">
+            {[
+              { icon: "truck" as IconName, title: "Giao nhanh toàn quốc", text: "Theo dõi đơn hàng minh bạch" },
+              { icon: "shield" as IconName, title: "Hàng chính hãng", text: "Đầy đủ CO/CQ và hóa đơn" },
+              { icon: "refresh" as IconName, title: "Đổi mới 30 ngày", text: "Nếu có lỗi nhà sản xuất" },
+              { icon: "headset" as IconName, title: "Tư vấn dự án", text: "Hotline 1800 6868 miễn phí" },
+            ].map((feature) => <div key={feature.title} className="flex items-center gap-3 px-2 lg:border-r lg:border-slate-200 lg:px-5 lg:last:border-0"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-orange-50 text-[#ff6b35]"><Icon name={feature.icon} /></span><span><b className="block text-xs sm:text-sm">{feature.title}</b><small className="text-[10px] text-slate-500 sm:text-[11px]">{feature.text}</small></span></div>)}
           </div>
         </section>
       </main>
 
       <footer className="bg-[#071b33] text-white">
-        <div className="mx-auto grid max-w-[1280px] gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-          <div>
-            <b className="text-2xl font-black">NOVA <span className="text-[#ff6b35]">HOME</span></b>
-            <p className="mt-4 max-w-xs text-sm leading-6 text-slate-400">Hệ thống bán lẻ điện máy và giải pháp sống thông minh dành cho mọi gia đình Việt.</p>
-          </div>
-          <div><h4 className="mb-4 font-bold">Về Nova Home</h4>{["Giới thiệu", "Tuyển dụng", "Hệ thống cửa hàng", "Tin tức"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
-          <div><h4 className="mb-4 font-bold">Hỗ trợ khách hàng</h4>{["Chính sách bảo hành", "Giao nhận & lắp đặt", "Đổi trả sản phẩm", "Hướng dẫn mua hàng"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
-          <div>
-            <h4 className="mb-4 font-bold">Tổng đài hỗ trợ</h4>
-            <p className="text-2xl font-black text-[#ff8a60]">1800 6868</p>
-            <p className="mt-1 text-xs text-slate-400">Miễn phí • 8:00 — 21:30 mỗi ngày</p>
-            <div className="mt-5 flex gap-2"><span className="rounded-md bg-white/10 px-3 py-2 text-xs font-bold">VISA</span><span className="rounded-md bg-white/10 px-3 py-2 text-xs font-bold">VNPAY</span><span className="rounded-md bg-white/10 px-3 py-2 text-xs font-bold">COD</span></div>
-          </div>
+        <div className="mx-auto grid max-w-[1320px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
+          <div><b className="text-2xl font-black">NOVA <span className="text-[#ff6b35]">TECH</span></b><p className="mt-4 max-w-xs text-sm leading-6 text-slate-400">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
+          <div><h4 className="mb-4 font-bold">Về Nova Tech</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
+          <div><h4 className="mb-4 font-bold">Hỗ trợ khách hàng</h4>{["Chính sách bảo hành", "Giao nhận", "Đổi trả", "Mua hàng doanh nghiệp"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
+          <div><h4 className="mb-4 font-bold">Tổng đài tư vấn</h4><p className="text-2xl font-black text-[#ff8a60]">1800 6868</p><p className="mt-1 text-xs text-slate-400">Miễn phí • 8:00 — 21:30 mỗi ngày</p></div>
         </div>
-        <div className="border-t border-white/10 py-4 text-center text-xs text-slate-500">© 2025 Nova Home. Thiết kế trải nghiệm điện máy hiện đại.</div>
       </footer>
     </div>
   );
