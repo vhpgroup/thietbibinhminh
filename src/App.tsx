@@ -333,9 +333,24 @@ export default function App() {
                 </button>
               ))}
               {activeMega !== null && (
-                <div className="mega-panel absolute left-[calc(100%+12px)] top-0 z-40 grid h-full min-h-[388px] w-[calc(1320px-248px-36px)] grid-cols-4 gap-7 overflow-hidden rounded-xl bg-white p-6 shadow-[0_14px_45px_rgba(10,35,66,0.18)]">
+                <div
+                  className="mega-panel absolute left-full top-0 z-40 grid h-full min-h-[388px] w-[calc(1320px-248px-24px)] grid-cols-4 gap-7 overflow-hidden rounded-r-xl bg-white p-6 shadow-[0_14px_45px_rgba(10,35,66,0.18)]"
+                  onMouseEnter={() => setActiveMega(activeMega)}
+                >
                   {categories[activeMega].columns.map((column) => (
-                    <div key={column.title}><p className="mb-3 text-sm font-extrabold text-[#ff6b35]">{column.title}</p>{column.items.map((item) => <a key={item} href="#" className="mb-2.5 block text-[13px] text-slate-600 transition hover:translate-x-0.5 hover:text-[#0a2342]">{item}</a>)}</div>
+                    <div key={column.title}>
+                      <p className="mb-3 text-sm font-extrabold text-[#ff6b35]">{column.title}</p>
+                      {column.items.map((item) => (
+                        <a
+                          key={item}
+                          href={`#category-section-${activeMega}`}
+                          onClick={() => setActiveMega(null)}
+                          className="mb-2.5 block rounded-md py-0.5 text-[13px] text-slate-600 transition hover:translate-x-0.5 hover:bg-orange-50 hover:text-[#ff6b35]"
+                        >
+                          {item}
+                        </a>
+                      ))}
+                    </div>
                   ))}
                   <div className="absolute bottom-0 right-0 h-1 w-1/3 bg-[#ff6b35]" />
                 </div>
@@ -421,13 +436,11 @@ export default function App() {
 
         <div className="py-4">
           {categoryProducts.map((category, categoryIndex) => (
-            <section key={category.name} className={categoryIndex % 2 === 1 ? "bg-white/60" : ""}>
+            <section id={`category-section-${categoryIndex}`} key={category.name} className={`scroll-mt-5 ${categoryIndex % 2 === 1 ? "bg-white/60" : ""}`}>
               <div className="mx-auto max-w-[1320px] px-4 py-7 lg:px-6">
                 <div className="mb-5 flex items-end justify-between gap-3">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#ff6b35]">
-                      {categoryIndex === 0 ? "Mua sắm theo nhu cầu" : "Gợi ý dành cho bạn"}
-                    </span>
+                    {categoryIndex === 0 && <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#ff6b35]">Mua sắm theo nhu cầu</span>}
                     <h2 className="mt-1 flex items-center gap-2 text-xl font-black tracking-[-0.03em] sm:text-2xl">
                       <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#0a2342] text-white"><Icon name={category.icon} size={18} /></span>
                       {category.name}
