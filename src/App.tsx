@@ -196,14 +196,69 @@ const categoryProducts = [
     ],
   },
   {
-    name: "Camera & hình ảnh",
+    name: "Camera & giám sát",
     icon: "camera" as IconName,
     products: [
-      { name: "Camera Sony Creator 4K", spec: "4K • Chống rung", price: "17.990.000₫", old: "20.490.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
-      { name: "Máy ảnh Canon Mirrorless", spec: "APS-C • Dual Pixel AF", price: "15.490.000₫", old: "17.990.000₫", image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=600&q=80" },
+      { name: "Camera Wi-Fi Imou Ranger 2", spec: "2K • Đàm thoại 2 chiều", price: "590.000₫", old: "790.000₫", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=600&q=80" },
+      { name: "Camera EZVIZ C6N", spec: "Full HD • Xoay 360°", price: "649.000₫", old: "849.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
       { name: "Camera hội nghị Tenveo PTZ", spec: "Full HD • Zoom quang", price: "8.290.000₫", old: "9.790.000₫", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=600&q=80" },
+      { name: "Ổ cứng camera WD Purple 4TB", spec: "SATA 3 • Hoạt động 24/7", price: "2.490.000₫", old: "2.890.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "Ổ cứng Seagate SkyHawk 6TB", spec: "Surveillance • 256MB cache", price: "3.890.000₫", old: "4.290.000₫", image: "https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Hội nghị & giáo dục",
+    icon: "meeting" as IconName,
+    products: [
+      { name: "Bộ hội nghị trực tuyến ProMeet", spec: "Camera 4K • Micro đa hướng", price: "18.990.000₫", old: "21.900.000₫", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=600&q=80" },
+      { name: "Camera PTZ Tenveo VHD20N", spec: "Zoom 20X • Full HD", price: "12.490.000₫", old: "14.290.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
+      { name: "Màn hình tương tác 65 inch", spec: "4K • Cảm ứng 20 điểm", price: "39.900.000₫", old: "45.900.000₫", image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy chiếu vật thể Joyusing", spec: "13MP • Khổ A3", price: "6.790.000₫", old: "7.990.000₫", image: "https://images.unsplash.com/photo-1706895040634-62055892cbbb?auto=format&fit=crop&w=600&q=80" },
+      { name: "Loa hội nghị USB Speaker Pro", spec: "Khử ồn AI • 6 micro", price: "4.290.000₫", old: "5.190.000₫", image: "https://images.unsplash.com/photo-1768818928341-3b31b8965c6d?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Phần mềm bản quyền",
+    icon: "software" as IconName,
+    products: [
+      { name: "Microsoft Windows 11 Pro", spec: "Bản quyền vĩnh viễn • 1 PC", price: "4.590.000₫", old: "5.290.000₫", image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=600&q=80" },
+      { name: "Microsoft 365 Business Standard", spec: "12 tháng • 1 người dùng", price: "3.290.000₫", old: "3.690.000₫", image: "https://images.unsplash.com/photo-1638821734607-02db76d614a6?auto=format&fit=crop&w=600&q=80" },
+      { name: "Kaspersky Small Office Security", spec: "10 thiết bị • 1 năm", price: "2.790.000₫", old: "3.190.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "Adobe Photoshop bản quyền", spec: "Creative Cloud • 12 tháng", price: "6.990.000₫", old: "7.990.000₫", image: "https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?auto=format&fit=crop&w=600&q=80" },
+      { name: "Microsoft Visio Plan 2", spec: "12 tháng • Cloud", price: "4.890.000₫", old: "5.490.000₫", image: "https://images.unsplash.com/photo-1572509018340-1fc13b5df491?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Thiết bị hình ảnh",
+    icon: "camera" as IconName,
+    products: [
+      { name: "Máy ảnh Sony Creator 4K", spec: "4K • Chống rung", price: "17.990.000₫", old: "20.490.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy ảnh Canon Mirrorless", spec: "APS-C • Dual Pixel AF", price: "15.490.000₫", old: "17.990.000₫", image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy quay Sony 4K Handycam", spec: "Zoom quang 20X • 4K HDR", price: "24.990.000₫", old: "27.900.000₫", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=600&q=80" },
       { name: "Action Cam GoPro 4K", spec: "4K60 • Chống nước", price: "9.990.000₫", old: "11.490.000₫", image: "https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=600&q=80" },
       { name: "Gimbal DJI Creator", spec: "Chống rung 3 trục", price: "3.890.000₫", old: "4.490.000₫", image: "https://images.unsplash.com/photo-1768818928341-3b31b8965c6d?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "IoT & công nghiệp",
+    icon: "iot" as IconName,
+    products: [
+      { name: "Gateway IoT công nghiệp Edge 200", spec: "4G LTE • Modbus", price: "8.990.000₫", old: "10.490.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "Máy tính công nghiệp Advantech", spec: "Fanless • Core i5", price: "24.900.000₫", old: "27.900.000₫", image: "https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?auto=format&fit=crop&w=600&q=80" },
+      { name: "Cảm biến nhiệt độ IoT Pro", spec: "LoRaWAN • IP67", price: "2.390.000₫", old: "2.790.000₫", image: "https://images.unsplash.com/photo-1777861845855-edb4b29158af?auto=format&fit=crop&w=600&q=80" },
+      { name: "Bộ giám sát điện năng Solar", spec: "Cloud • Cảnh báo realtime", price: "6.490.000₫", old: "7.290.000₫", image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=600&q=80" },
+      { name: "Mô-đun IoT điều khiển 8 kênh", spec: "Ethernet • RS485", price: "3.190.000₫", old: "3.690.000₫", image: "https://images.unsplash.com/photo-1572509018340-1fc13b5df491?auto=format&fit=crop&w=600&q=80" },
+    ],
+  },
+  {
+    name: "Âm thanh & nguồn điện",
+    icon: "power" as IconName,
+    products: [
+      { name: "Loa âm thanh IP TOA", spec: "PoE • Công suất 15W", price: "5.890.000₫", old: "6.590.000₫", image: "https://images.unsplash.com/photo-1768818928341-3b31b8965c6d?auto=format&fit=crop&w=600&q=80" },
+      { name: "Bộ truyền thanh IP 4G", spec: "Điều khiển từ xa • Cloud", price: "12.490.000₫", old: "14.900.000₫", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=600&q=80" },
+      { name: "UPS APC Smart 1500VA", spec: "Line Interactive • LCD", price: "11.790.000₫", old: "13.290.000₫", image: "https://images.unsplash.com/photo-1538503529202-7a0e79cbb6f6?auto=format&fit=crop&w=600&q=80" },
+      { name: "Bộ lưu điện Santak 1000VA", spec: "Offline • 600W", price: "2.390.000₫", old: "2.790.000₫", image: "https://images.unsplash.com/photo-1572509018340-1fc13b5df491?auto=format&fit=crop&w=600&q=80" },
+      { name: "Thiết bị chống sét lan truyền", spec: "3 pha • Bảo vệ nguồn", price: "4.690.000₫", old: "5.290.000₫", image: "https://images.unsplash.com/photo-1777861845855-edb4b29158af?auto=format&fit=crop&w=600&q=80" },
     ],
   },
 ];
