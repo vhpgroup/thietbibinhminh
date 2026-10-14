@@ -292,7 +292,7 @@ export default function App() {
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#ff6b35] font-black text-white">N</span>
             <span className="leading-none"><b className="block text-xl font-black tracking-[-0.04em] text-[#0a2342]">NOVA</b><span className="text-[9px] font-bold tracking-[0.28em] text-[#ff6b35]">TECH</span></span>
           </a>
-          <form className="relative hidden flex-1 md:block" onSubmit={(event) => event.preventDefault()}>
+          <form className="relative hidden w-full max-w-[580px] md:ml-6 md:block" onSubmit={(event) => event.preventDefault()}>
             <input className="h-11 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#ff6b35] focus:bg-white" placeholder="Tìm máy scan, laptop, camera, phần mềm..." aria-label="Tìm kiếm sản phẩm" />
             <button className="absolute right-1.5 top-1.5 grid h-8 w-10 place-items-center rounded-full bg-[#ff6b35] text-white" aria-label="Tìm kiếm"><Icon name="search" size={18} /></button>
           </form>
