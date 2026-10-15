@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import binhMinhLogo from "../assets/binh-minh-logo.png";
+import microsoft365Banner from "../assets/microsoft-365-family-banner.png";
 import { StoreHeader } from "../components/StoreShell";
 import { catalogProducts } from "../data/catalog";
 
@@ -130,19 +131,19 @@ const slides = [
     eyebrow: "BÌNH MINH NEXT • 2027", title: "Công nghệ thích ứng.", accent: "Tăng tốc tương lai.",
     description: "Thiết bị AI-ready và giải pháp hạ tầng được tuyển chọn cho cách làm việc thế hệ mới.",
     image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=1400&q=85",
-    theme: "bg-[#087c36]", label: "Laptop AI từ 18.990.000₫",
+    theme: "bg-[#087c36]", label: "Laptop AI từ 18.990.000₫", imageOnly: false,
   },
   {
-    eyebrow: "ADAPTIVE WORKSPACE", title: "Văn phòng tự vận hành.", accent: "Nhẹ hơn. Nhanh hơn.",
-    description: "Máy scan, máy in và giải pháp tài liệu dành cho mọi quy mô doanh nghiệp.",
-    image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1400&q=85",
-    theme: "bg-[#126f3a]", label: "Máy in giảm đến 25%",
+    eyebrow: "MICROSOFT 365 FAMILY", title: "Làm việc và sáng tạo.", accent: "Cho cả gia đình.",
+    description: "Bản quyền 12 tháng dành cho tối đa 6 người dùng.",
+    image: microsoft365Banner,
+    theme: "bg-white", label: "Chỉ từ 20.000đ/người/tháng", imageOnly: true,
   },
   {
     eyebrow: "CREATOR INTELLIGENCE", title: "Ý tưởng thành hình.", accent: "Không giới hạn.",
     description: "Máy ảnh, ống kính và thiết bị livestream cho nhà sáng tạo chuyên nghiệp.",
     image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=1400&q=85",
-    theme: "bg-[#8f1117]", label: "Combo creator từ 12.490.000₫",
+    theme: "bg-[#8f1117]", label: "Combo creator từ 12.490.000₫", imageOnly: false,
   },
 ];
 
@@ -328,15 +329,17 @@ export default function App() {
             <div className="soft-card relative h-[390px] overflow-hidden rounded-[28px] lg:h-[430px]" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
               {slides.map((item, index) => (
                 <article key={item.eyebrow} className={`carousel-slide absolute inset-0 ${item.theme} ${index === slide ? "is-active" : ""}`}>
-                  <img className="absolute inset-0 h-full w-full object-cover opacity-50" src={item.image} alt="" />
-                  <div className="carousel-shade absolute inset-0" />
-                  <div className="relative z-10 flex h-full max-w-[590px] flex-col justify-center px-7 text-white sm:px-11">
-                    <span className="mb-3 text-[11px] font-extrabold tracking-[0.2em] text-[#f6b511]">{item.eyebrow}</span>
-                    <h1 className="future-title text-4xl font-black leading-[1.02] sm:text-5xl lg:text-[52px]">{item.title}<br /><span className="text-[#f6b511]">{item.accent}</span></h1>
-                    <p className="mt-4 max-w-md text-sm leading-6 text-slate-200">{item.description}</p>
-                    <a href="#san-pham" className="mt-5 w-fit rounded-full bg-[#e31820] px-5 py-3 text-xs font-extrabold transition hover:-translate-y-0.5 hover:bg-[#c5131a]">Khám phá ngay</a>
-                  </div>
-                  <span className="absolute bottom-5 right-5 z-10 rounded-xl bg-white/95 px-4 py-3 text-xs font-extrabold text-[#26352d] shadow-xl">{item.label}</span>
+                  <img className={`absolute inset-0 h-full w-full object-cover ${item.imageOnly ? "opacity-100" : "opacity-50"}`} src={item.image} alt={item.imageOnly ? "Microsoft Office 365 Family dành cho tối đa 6 người dùng" : ""} />
+                  {!item.imageOnly && <>
+                    <div className="carousel-shade absolute inset-0" />
+                    <div className="relative z-10 flex h-full max-w-[590px] flex-col justify-center px-7 text-white sm:px-11">
+                      <span className="mb-3 text-[11px] font-extrabold tracking-[0.2em] text-[#f6b511]">{item.eyebrow}</span>
+                      <h1 className="future-title text-4xl font-black leading-[1.02] sm:text-5xl lg:text-[52px]">{item.title}<br /><span className="text-[#f6b511]">{item.accent}</span></h1>
+                      <p className="mt-4 max-w-md text-sm leading-6 text-slate-200">{item.description}</p>
+                      <a href="#san-pham" className="mt-5 w-fit rounded-full bg-[#e31820] px-5 py-3 text-xs font-extrabold transition hover:-translate-y-0.5 hover:bg-[#c5131a]">Khám phá ngay</a>
+                    </div>
+                    <span className="absolute bottom-5 right-5 z-10 rounded-xl bg-white/95 px-4 py-3 text-xs font-extrabold text-[#26352d] shadow-xl">{item.label}</span>
+                  </>}
                 </article>
               ))}
               <button onClick={() => goToSlide(slide - 1)} className="absolute left-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 rotate-180 place-items-center rounded-full bg-white/85 text-[#087c36] shadow-md" aria-label="Banner trước"><Icon name="chevron" size={17} /></button>
