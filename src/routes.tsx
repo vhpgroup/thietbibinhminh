@@ -11,6 +11,7 @@ export const router = createBrowserRouter([
   { path: "/san-pham", Component: ProductsPage },
   { path: "/san-pham/:slug", Component: ProductDetailPage },
   { path: "/tin-tuc", Component: NewsPage },
+  { path: "/tin-cong-nghe", Component: NewsPage },
   { path: "/gioi-thieu", Component: AboutPage },
   { path: "/lien-he", Component: ContactPage },
   { path: "*", Component: ProductsPage },
