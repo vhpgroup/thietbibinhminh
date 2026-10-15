@@ -62,31 +62,37 @@ export type SupportedTimezones =
   | 'Pacific/Fiji';
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "LexicalNodes_408D056C".
+ * via the `definition` "LexicalNodes_ADD3514C".
  */
-export type LexicalNodes_408D056C =
+export type LexicalNodes_ADD3514C =
   | SerializedTextNode
   | SerializedTabNode
   | SerializedLineBreakNode
-  | SerializedParagraphNode<LexicalNodes_408D056C>
+  | SerializedParagraphNode<LexicalNodes_ADD3514C>
   | SerializedHorizontalRuleNode
   | SerializedUploadNode<'media'>
-  | SerializedQuoteNode<LexicalNodes_408D056C>
+  | SerializedQuoteNode<LexicalNodes_ADD3514C>
   | SerializedRelationshipNode<
       | 'admins'
       | 'folders'
       | 'tags'
+      | 'product-categories'
+      | 'brands'
+      | 'products'
+      | 'article-categories'
       | 'posts'
+      | 'banners'
+      | 'contact-submissions'
       | 'payload-kv'
       | 'payload-locked-documents'
       | 'payload-preferences'
       | 'payload-migrations'
     >
-  | SerializedAutoLinkNode<LexicalNodes_408D056C, LexicalLinkFields>
-  | SerializedLinkNode<LexicalNodes_408D056C, LexicalLinkFields>
-  | SerializedListNode<LexicalNodes_408D056C>
-  | SerializedListItemNode<LexicalNodes_408D056C>
-  | SerializedHeadingNode<LexicalNodes_408D056C>;
+  | SerializedAutoLinkNode<LexicalNodes_ADD3514C, LexicalLinkFields>
+  | SerializedLinkNode<LexicalNodes_ADD3514C, LexicalLinkFields>
+  | SerializedListNode<LexicalNodes_ADD3514C>
+  | SerializedListItemNode<LexicalNodes_ADD3514C>
+  | SerializedHeadingNode<LexicalNodes_ADD3514C>;
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "LexicalNodes_3DE324E4".
@@ -110,7 +116,13 @@ export interface Config {
     media: Media;
     folders: Folder;
     tags: Tag;
+    'product-categories': ProductCategory;
+    brands: Brand;
+    products: Product;
+    'article-categories': ArticleCategory;
     posts: Post;
+    banners: Banner;
+    'contact-submissions': ContactSubmission;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -123,7 +135,13 @@ export interface Config {
     media: MediaSelect<false> | MediaSelect<true>;
     folders: FoldersSelect<false> | FoldersSelect<true>;
     tags: TagsSelect<false> | TagsSelect<true>;
+    'product-categories': ProductCategoriesSelect<false> | ProductCategoriesSelect<true>;
+    brands: BrandsSelect<false> | BrandsSelect<true>;
+    products: ProductsSelect<false> | ProductsSelect<true>;
+    'article-categories': ArticleCategoriesSelect<false> | ArticleCategoriesSelect<true>;
     posts: PostsSelect<false> | PostsSelect<true>;
+    banners: BannersSelect<false> | BannersSelect<true>;
+    'contact-submissions': ContactSubmissionsSelect<false> | ContactSubmissionsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -134,8 +152,12 @@ export interface Config {
     defaultIDType: string;
   };
   fallbackLocale: ('false' | 'none' | 'null') | false | null | 'en' | 'en'[];
-  globals: {};
-  globalsSelect: {};
+  globals: {
+    'site-settings': SiteSetting;
+  };
+  globalsSelect: {
+    'site-settings': SiteSettingsSelect<false> | SiteSettingsSelect<true>;
+  };
   locale: 'en';
   widgets: {
     welcome: WelcomeWidget;
@@ -276,12 +298,180 @@ export interface Tag {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "product-categories".
+ */
+export interface ProductCategory {
+  id: string;
+  name: string;
+  slug: string;
+  description?: string | null;
+  icon?: string | null;
+  order?: number | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "brands".
+ */
+export interface Brand {
+  id: string;
+  name: string;
+  slug: string;
+  logo?: (string | null) | Media;
+  website?: string | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products".
+ */
+export interface Product {
+  id: string;
+  name: string;
+  slug: string;
+  sku: string;
+  category: string | ProductCategory;
+  brand: string | Brand;
+  image: string | Media;
+  shortSpec?: string | null;
+  description?: string | null;
+  price: number;
+  oldPrice?: number | null;
+  badge?: string | null;
+  stock?: number | null;
+  featured?: boolean | null;
+  highlights?:
+    | {
+        text: string;
+        id?: string | null;
+      }[]
+    | null;
+  specs?:
+    | {
+        label: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  rating?: number | null;
+  reviews?: number | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "article-categories".
+ */
+export interface ArticleCategory {
+  id: string;
+  name: string;
+  slug: string;
+  order?: number | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "posts".
  */
 export interface Post {
   id: string;
   title: string;
-  content?: LexicalRichText<LexicalNodes_408D056C> | null;
+  slug: string;
+  excerpt?: string | null;
+  category: string | ArticleCategory;
+  heroImage: string | Media;
+  publishedAt: string;
+  featured?: boolean | null;
+  content?: LexicalRichText<LexicalNodes_ADD3514C> | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "banners".
+ */
+export interface Banner {
+  id: string;
+  title: string;
+  eyebrow?: string | null;
+  accent?: string | null;
+  description?: string | null;
+  image: string | Media;
+  displayMode?: ('overlay' | 'image-only') | null;
+  ctaLabel?: string | null;
+  ctaURL?: string | null;
+  active?: boolean | null;
+  order?: number | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contact-submissions".
+ */
+export interface ContactSubmission {
+  id: string;
+  name: string;
+  phone: string;
+  email: string;
+  topic: 'Mua sản phẩm' | 'Tư vấn giải pháp' | 'Báo giá dự án' | 'Hỗ trợ kỹ thuật';
+  message: string;
+  status?: ('new' | 'processing' | 'done') | null;
+  internalNote?: string | null;
   createdBy?: {
     relationTo: 'admins';
     value: string | Admin;
@@ -334,8 +524,32 @@ export interface PayloadLockedDocument {
         value: string | Tag;
       } | null)
     | ({
+        relationTo: 'product-categories';
+        value: string | ProductCategory;
+      } | null)
+    | ({
+        relationTo: 'brands';
+        value: string | Brand;
+      } | null)
+    | ({
+        relationTo: 'products';
+        value: string | Product;
+      } | null)
+    | ({
+        relationTo: 'article-categories';
+        value: string | ArticleCategory;
+      } | null)
+    | ({
         relationTo: 'posts';
         value: string | Post;
+      } | null)
+    | ({
+        relationTo: 'banners';
+        value: string | Banner;
+      } | null)
+    | ({
+        relationTo: 'contact-submissions';
+        value: string | ContactSubmission;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -482,11 +696,137 @@ export interface TagsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "product-categories_select".
+ */
+export interface ProductCategoriesSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  description?: T;
+  icon?: T;
+  order?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "brands_select".
+ */
+export interface BrandsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  logo?: T;
+  website?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products_select".
+ */
+export interface ProductsSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  sku?: T;
+  category?: T;
+  brand?: T;
+  image?: T;
+  shortSpec?: T;
+  description?: T;
+  price?: T;
+  oldPrice?: T;
+  badge?: T;
+  stock?: T;
+  featured?: T;
+  highlights?:
+    | T
+    | {
+        text?: T;
+        id?: T;
+      };
+  specs?:
+    | T
+    | {
+        label?: T;
+        value?: T;
+        id?: T;
+      };
+  rating?: T;
+  reviews?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "article-categories_select".
+ */
+export interface ArticleCategoriesSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  order?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "posts_select".
  */
 export interface PostsSelect<T extends boolean = true> {
   title?: T;
+  slug?: T;
+  excerpt?: T;
+  category?: T;
+  heroImage?: T;
+  publishedAt?: T;
+  featured?: T;
   content?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "banners_select".
+ */
+export interface BannersSelect<T extends boolean = true> {
+  title?: T;
+  eyebrow?: T;
+  accent?: T;
+  description?: T;
+  image?: T;
+  displayMode?: T;
+  ctaLabel?: T;
+  ctaURL?: T;
+  active?: T;
+  order?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contact-submissions_select".
+ */
+export interface ContactSubmissionsSelect<T extends boolean = true> {
+  name?: T;
+  phone?: T;
+  email?: T;
+  topic?: T;
+  message?: T;
+  status?: T;
+  internalNote?: T;
   createdBy?: T;
   updatedBy?: T;
   updatedAt?: T;
@@ -550,6 +890,46 @@ export interface PayloadLlmInstructionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-settings".
+ */
+export interface SiteSetting {
+  id: string;
+  announcement?: string | null;
+  shippingMessage?: string | null;
+  hotline?: string | null;
+  email?: string | null;
+  address?: string | null;
+  footerDescription?: string | null;
+  createdBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedBy?: {
+    relationTo: 'admins';
+    value: string | Admin;
+  } | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "site-settings_select".
+ */
+export interface SiteSettingsSelect<T extends boolean = true> {
+  announcement?: T;
+  shippingMessage?: T;
+  hotline?: T;
+  email?: T;
+  address?: T;
+  footerDescription?: T;
+  createdBy?: T;
+  updatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "welcome_widget".
  */
 export interface WelcomeWidget {
@@ -575,7 +955,18 @@ export interface CollectionsWidget {
 export interface CollectionQueryWidget {
   data?: {
     title?: string | null;
-    relatedCollection: 'admins' | 'media' | 'folders' | 'tags' | 'posts';
+    relatedCollection:
+      | 'admins'
+      | 'media'
+      | 'folders'
+      | 'tags'
+      | 'product-categories'
+      | 'brands'
+      | 'products'
+      | 'article-categories'
+      | 'posts'
+      | 'banners'
+      | 'contact-submissions';
     where?:
       | {
           [k: string]: unknown;
@@ -597,7 +988,21 @@ export interface CollectionQueryWidget {
  */
 export interface ActivityWidget {
   data?: {
-    excludedCollections?: ('admins' | 'media' | 'folders' | 'tags' | 'posts')[] | null;
+    excludedCollections?:
+      | (
+          | 'admins'
+          | 'media'
+          | 'folders'
+          | 'tags'
+          | 'product-categories'
+          | 'brands'
+          | 'products'
+          | 'article-categories'
+          | 'posts'
+          | 'banners'
+          | 'contact-submissions'
+        )[]
+      | null;
   };
   width: 'small' | 'medium' | 'large' | 'x-large' | 'full';
 }

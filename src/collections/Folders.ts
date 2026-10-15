@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-export const Folders: CollectionConfig = {
+export const createFolders = (): CollectionConfig => ({
   slug: 'folders',
   admin: {
     useAsTitle: 'name',
@@ -13,4 +13,4 @@ export const Folders: CollectionConfig = {
       required: true,
     },
   ],
-}
+})

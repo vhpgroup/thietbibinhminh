@@ -7,12 +7,15 @@ import {
   sanitizeHtmlAttribute,
 } from "@/lib/make-site-settings"
 import "./styles.css"
+import { SiteHeader } from "@/components/SiteHeader"
+import { SiteFooter } from "@/components/SiteFooter"
+import { getSiteSettings } from "@/lib/storefront"
 
-const defaultTitle = "figma-make-app"
+const defaultTitle = "Bình Minh | Thiết bị và giải pháp công nghệ"
 const title = makeSiteSettings.title ?? defaultTitle
 const description =
   makeSiteSettings.description ??
-  "Built with Next.js, Payload CMS, and Tailwind CSS"
+  "Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức."
 const favicon = makeSiteSettings.icons?.icon
 const socialImage = makeSiteSettings.openGraph?.image
 const googleAnalyticsId = sanitizeHtmlAttribute(
@@ -43,14 +46,15 @@ export const metadata: Metadata = {
     : undefined,
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const language = sanitizeHtmlAttribute(makeSiteSettings.language) || "en"
+  const language = sanitizeHtmlAttribute(makeSiteSettings.language) || "vi"
   const addBypassLinks = makeSiteSettings.accessibility?.addBypassLinks === true
   const customScripts = makeSiteSettings.customScripts
+  const settings = await getSiteSettings()
 
   return (
     <html lang={language}>
@@ -65,8 +69,10 @@ export default function RootLayout({
             Skip to content
           </a>
         )}
-        <div id="root" tabIndex={-1}>
+        <div id="root" tabIndex={-1} className="future-shell min-h-screen bg-[#f4f6f0]/80 text-[#183126]">
+          <SiteHeader announcement={settings.announcement} shippingMessage={settings.shippingMessage} />
           {children}
+          <SiteFooter hotline={settings.hotline} description={settings.footerDescription} />
         </div>
         {googleAnalyticsId && (
           <>

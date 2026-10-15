@@ -1,0 +1,7 @@
+import { ContactForm } from '@/components/ContactForm'
+import { getSiteSettings } from '@/lib/storefront'
+
+export default async function ContactPage() {
+  const settings = await getSiteSettings()
+  return <main className="mx-auto max-w-[1320px] px-4 py-12 lg:px-6"><div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16"><div><p className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#e31820]">Liên hệ Bình Minh</p><h1 className="future-title mt-4 text-4xl font-black leading-none sm:text-6xl">Cùng tìm lời giải<br /><span className="text-[#087c36]">phù hợp nhất.</span></h1><p className="mt-6 text-sm leading-7 text-slate-600">Cho chúng tôi biết nhu cầu của bạn. Đội ngũ tư vấn sẽ kết nối đúng chuyên gia.</p><div className="mt-9 space-y-3">{[['Tư vấn bán hàng', settings.hotline], ['Email', settings.email], ['Văn phòng', settings.address]].map(([label, value]) => <div key={label} className="tech-pill rounded-2xl p-5"><p className="text-[10px] font-bold uppercase text-slate-400">{label}</p><p className="mt-1 text-lg font-black text-[#087c36]">{value}</p></div>)}</div></div><div className="soft-card overflow-hidden rounded-[32px] bg-white"><div className="bg-[#043d20] p-7 text-white"><p className="text-[10px] font-bold uppercase tracking-wider text-[#f6b511]">Chuyên gia sẵn sàng lắng nghe</p><h2 className="mt-2 text-2xl font-black">Bạn cần chúng tôi hỗ trợ gì?</h2></div><ContactForm /></div></div></main>
+}

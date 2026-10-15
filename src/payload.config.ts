@@ -5,9 +5,16 @@ import { en as adminLanguage } from '@payloadcms/translations/languages/en'
 import { fileURLToPath } from 'url'
 import { Admins } from './collections/Admins'
 import { Media } from './collections/Media'
-import { Folders } from './collections/Folders'
-import { Tags } from './collections/Tags'
+import { createFolders } from './collections/Folders'
+import { createTags } from './collections/Tags'
 import { Posts } from './collections/Posts'
+import { ProductCategories } from './collections/ProductCategories'
+import { Brands } from './collections/Brands'
+import { Products } from './collections/Products'
+import { ArticleCategories } from './collections/ArticleCategories'
+import { Banners } from './collections/Banners'
+import { ContactSubmissions } from './collections/ContactSubmissions'
+import { SiteSettings } from './globals/SiteSettings'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -31,7 +38,20 @@ export default buildFigmaConfig({
     fallbackLanguage: 'en',
     supportedLanguages: { 'en': adminLanguage },
   },
-  collections: [Admins, Media, Folders, Tags, Posts],
+  collections: [
+    Admins,
+    Media,
+    createFolders(),
+    createTags(),
+    ProductCategories,
+    Brands,
+    Products,
+    ArticleCategories,
+    Posts,
+    Banners,
+    ContactSubmissions,
+  ],
+  globals: [SiteSettings],
   localization: {
     locales: [{ code: 'en', label: 'English' }],
     fallback: true,

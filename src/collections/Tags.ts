@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-export const Tags: CollectionConfig = {
+export const createTags = (): CollectionConfig => ({
   slug: 'tags',
   admin: {
     useAsTitle: 'name',
@@ -13,4 +13,4 @@ export const Tags: CollectionConfig = {
       required: true,
     },
   ],
-}
+})
