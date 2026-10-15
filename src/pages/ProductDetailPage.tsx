@@ -20,7 +20,7 @@ export default function ProductDetailPage() {
       <main className="mx-auto max-w-[1320px] px-4 py-6 lg:px-6">
         <nav className="mb-5 flex flex-wrap items-center gap-2 text-xs text-slate-500"><Link to="/" className="hover:text-[#087c36]">Trang chủ</Link><span>/</span><Link to="/san-pham" className="hover:text-[#087c36]">Sản phẩm</Link><span>/</span><span className="text-[#26352d]">{product.name}</span></nav>
 
-        <section className="grid gap-8 rounded-3xl bg-white p-4 shadow-[0_8px_36px_rgba(8,124,54,0.08)] sm:p-7 lg:grid-cols-[1fr_1fr] lg:p-9">
+        <section className="soft-card grid gap-8 rounded-[32px] bg-white/95 p-4 sm:p-7 lg:grid-cols-[1fr_1fr] lg:p-9">
           <div>
             <div className="relative h-[340px] overflow-hidden rounded-2xl bg-slate-100 sm:h-[500px]">
               <img className="h-full w-full object-cover" src={product.image} alt={product.name} />
@@ -33,7 +33,7 @@ export default function ProductDetailPage() {
 
           <div className="lg:py-2">
             <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#087c36]">{product.brand} • {product.category}</p>
-            <h1 className="mt-3 text-3xl font-black leading-tight tracking-[-0.04em]">{product.name}</h1>
+            <h1 className="future-title mt-3 text-3xl font-black leading-tight sm:text-4xl">{product.name}</h1>
             <div className="mt-3 flex flex-wrap items-center gap-3 text-xs"><span className="font-bold text-[#e31820]">★ {product.rating}/5</span><span className="text-slate-400">{product.reviews} đánh giá</span><span className="text-slate-300">|</span><span className="text-slate-500">Mã: {product.sku}</span></div>
             <p className="mt-5 text-sm leading-6 text-slate-600">{product.description}</p>
 

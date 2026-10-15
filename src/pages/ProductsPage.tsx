@@ -26,10 +26,10 @@ export default function ProductsPage() {
   return (
     <StorePage>
       <main>
-        <section className="border-b border-[#087c36]/10 bg-gradient-to-br from-[#e9f6ed] via-white to-[#fff7e0]">
-          <div className="mx-auto max-w-[1320px] px-4 py-10 lg:px-6 lg:py-14">
-            <p className="mb-2 text-xs font-extrabold uppercase tracking-[0.18em] text-[#e31820]">Danh mục sản phẩm</p>
-            <h1 className="max-w-2xl text-3xl font-black tracking-[-0.04em] sm:text-4xl">Công nghệ chính hãng cho mọi nhu cầu</h1>
+        <section className="relative overflow-hidden border-b border-[#087c36]/10 bg-gradient-to-br from-[#e8f2e8] via-white to-[#fff5d6]">
+          <div className="mx-auto max-w-[1320px] px-4 py-12 lg:px-6 lg:py-20">
+            <p className="mb-3 text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#e31820]">Bình Minh select • 2027 collection</p>
+            <h1 className="future-title max-w-3xl text-4xl font-black sm:text-5xl">Công nghệ đúng nhu cầu.<br /><span className="text-[#087c36]">Sẵn sàng cho tương lai.</span></h1>
             <p className="mt-3 max-w-xl text-sm leading-6 text-slate-600">Khám phá thiết bị văn phòng, máy tính và giải pháp công nghệ được tuyển chọn, hỗ trợ kỹ thuật tận tâm.</p>
             <div className="relative mt-6 max-w-2xl">
               <input value={query} onChange={(event) => setQuery(event.target.value)} className="h-12 w-full rounded-xl border border-white bg-white px-4 pr-24 text-sm shadow-[0_8px_30px_rgba(8,124,54,0.1)] outline-none focus:border-[#087c36]" placeholder="Bạn đang tìm sản phẩm nào?" aria-label="Tìm sản phẩm" />
@@ -66,7 +66,7 @@ export default function ProductsPage() {
               {visibleProducts.length ? (
                 <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-4">
                   {visibleProducts.map((product) => (
-                    <article key={product.slug} className="group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(8,124,54,0.06)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(8,124,54,0.12)]">
+                    <article key={product.slug} className="product-card group overflow-hidden rounded-[22px] border bg-white p-3 transition hover:-translate-y-1">
                       <Link to={`/san-pham/${product.slug}`} className="relative block h-36 overflow-hidden rounded-xl bg-slate-100 sm:h-44">
                         <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
                         {product.badge && <span className="absolute left-2 top-2 rounded-md bg-[#f6b511] px-2 py-1 text-[10px] font-black text-[#26352d]">{product.badge}</span>}

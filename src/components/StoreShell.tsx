@@ -9,27 +9,27 @@ function SearchIcon() {
 export function StoreHeader() {
   return (
     <>
-      <div className="bg-[#087c36] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white">
-        GIẢI PHÁP CÔNG NGHỆ CHÍNH HÃNG — Miễn phí giao hàng toàn quốc cho đơn từ 1 triệu
+      <div className="signal-bar px-4 py-2.5 text-center text-[11px] font-bold tracking-[0.08em] text-white">
+        HỆ SINH THÁI CÔNG NGHỆ 2027 <span className="mx-2 text-[#f6b511]">✦</span> Miễn phí giao hàng toàn quốc cho đơn từ 1 triệu
       </div>
-      <header className="sticky top-0 z-50 bg-white shadow-[0_3px_18px_rgba(8,124,54,0.1)]">
+      <header className="glass-header sticky top-0 z-50">
         <div className="mx-auto flex max-w-[1320px] items-center gap-4 px-4 py-2 lg:px-6">
           <Link to="/" className="flex h-14 w-[136px] shrink-0 items-center justify-center sm:h-16 sm:w-[156px]" aria-label="Bình Minh">
             <img className="h-full w-full object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" />
           </Link>
           <form className="relative hidden w-full max-w-[580px] md:ml-6 md:block" action="/san-pham">
-            <input name="q" className="h-11 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#e31820] focus:bg-white" placeholder="Tìm kiếm sản phẩm..." />
+            <input name="q" className="h-12 w-full rounded-2xl border border-[#087c36]/10 bg-[#f3f6f1] px-5 pr-14 text-sm outline-none transition focus:border-[#087c36]/40 focus:bg-white" placeholder="Tìm bằng tên, nhu cầu hoặc giải pháp AI..." />
             <button className="absolute right-1.5 top-1.5 grid h-8 w-10 place-items-center rounded-full bg-[#e31820] text-white" aria-label="Tìm kiếm"><SearchIcon /></button>
           </form>
           <div className="ml-auto flex items-center gap-3">
             <div className="hidden text-right text-xs text-slate-500 lg:block"><span className="block">Tư vấn miễn phí</span><b className="text-sm text-[#087c36]">1800 6868</b></div>
-            <Link to="/san-pham" className="rounded-full bg-[#eef7f0] px-4 py-2.5 text-xs font-extrabold text-[#087c36]">Sản phẩm</Link>
+            <Link to="/san-pham" className="tech-pill rounded-full px-4 py-2.5 text-xs font-extrabold text-[#087c36]">Khám phá sản phẩm</Link>
           </div>
         </div>
-        <nav className="border-t border-slate-100 bg-[#076b31] text-white">
+        <nav className="border-t border-[#087c36]/10 bg-white/70 text-[#183126]">
           <div className="mx-auto flex max-w-[1320px] overflow-x-auto px-4 lg:px-6">
             {[["Trang chủ", "/"], ["Sản phẩm", "/san-pham"], ["Giải pháp", "/#giai-phap"], ["Dự án", "/#du-an"], ["Tin tức", "/#tin-tuc"], ["Liên hệ", "/#lien-he"]].map(([label, to]) => (
-              <NavLink key={label} to={to} end={to === "/"} className={({ isActive }) => `shrink-0 px-5 py-3 text-xs font-bold uppercase transition hover:bg-white/10 ${isActive ? "bg-[#e31820]" : ""}`}>{label}</NavLink>
+              <NavLink key={label} to={to} end={to === "/"} className={({ isActive }) => `my-1 shrink-0 rounded-full px-5 py-2.5 text-[11px] font-extrabold uppercase tracking-wide transition hover:bg-[#e9f6ed] ${isActive ? "bg-[#087c36] text-white" : ""}`}>{label}</NavLink>
             ))}
           </div>
         </nav>
@@ -40,7 +40,7 @@ export function StoreHeader() {
 
 export function StoreFooter() {
   return (
-    <footer className="mt-14 bg-[#07552a] text-white">
+    <footer className="mt-16 border-t-4 border-[#f6b511] bg-[#043d20] text-white">
       <div className="mx-auto grid max-w-[1320px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
         <div><div className="w-fit rounded-xl bg-white p-1"><img className="h-20 w-32 object-contain" src={binhMinhLogo} alt="Bình Minh" /></div><p className="mt-4 max-w-xs text-sm leading-6 text-green-100/70">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
         <div><h4 className="mb-4 font-bold">Về Bình Minh</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <Link key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/">{item}</Link>)}</div>
@@ -52,5 +52,5 @@ export function StoreFooter() {
 }
 
 export function StorePage({ children }: { children: ReactNode }) {
-  return <div className="min-h-screen bg-[#f7f8f4] text-[#26352d]"><StoreHeader />{children}<StoreFooter /></div>;
+  return <div className="future-shell min-h-screen bg-[#f4f6f0]/80 text-[#183126]"><StoreHeader />{children}<StoreFooter /></div>;
 }

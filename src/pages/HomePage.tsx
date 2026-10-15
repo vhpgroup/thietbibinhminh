@@ -126,19 +126,19 @@ const categories: Category[] = [
 
 const slides = [
   {
-    eyebrow: "TECH WEEK 2025", title: "Hiệu suất bứt phá.", accent: "Sẵn sàng tương lai.",
-    description: "Laptop AI và workstation chính hãng, ưu đãi đến 30% cho cá nhân và doanh nghiệp.",
+    eyebrow: "BÌNH MINH NEXT • 2027", title: "Công nghệ thích ứng.", accent: "Tăng tốc tương lai.",
+    description: "Thiết bị AI-ready và giải pháp hạ tầng được tuyển chọn cho cách làm việc thế hệ mới.",
     image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=1400&q=85",
     theme: "bg-[#087c36]", label: "Laptop AI từ 18.990.000₫",
   },
   {
-    eyebrow: "VĂN PHÒNG THÔNG MINH", title: "Số hóa tinh gọn.", accent: "Vận hành tối ưu.",
+    eyebrow: "ADAPTIVE WORKSPACE", title: "Văn phòng tự vận hành.", accent: "Nhẹ hơn. Nhanh hơn.",
     description: "Máy scan, máy in và giải pháp tài liệu dành cho mọi quy mô doanh nghiệp.",
     image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1400&q=85",
     theme: "bg-[#126f3a]", label: "Máy in giảm đến 25%",
   },
   {
-    eyebrow: "CREATOR SEASON", title: "Ghi trọn khoảnh khắc.", accent: "Kể chuyện khác biệt.",
+    eyebrow: "CREATOR INTELLIGENCE", title: "Ý tưởng thành hình.", accent: "Không giới hạn.",
     description: "Máy ảnh, ống kính và thiết bị livestream cho nhà sáng tạo chuyên nghiệp.",
     image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=1400&q=85",
     theme: "bg-[#8f1117]", label: "Combo creator từ 12.490.000₫",
@@ -288,19 +288,19 @@ export default function App() {
   const goToSlide = (next: number) => setSlide((next + slides.length) % slides.length);
 
   return (
-    <div className="min-h-screen bg-[#f7f8f4] text-[#26352d]">
-      <div className="bg-[#087c36] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white">
-        GIẢI PHÁP CÔNG NGHỆ CHÍNH HÃNG — Miễn phí giao hàng toàn quốc cho đơn từ 1 triệu
+    <div className="future-shell min-h-screen bg-[#f4f6f0]/80 text-[#183126]">
+      <div className="signal-bar px-4 py-2.5 text-center text-[11px] font-bold tracking-[0.08em] text-white">
+        HỆ SINH THÁI CÔNG NGHỆ 2027 <span className="mx-2 text-[#f6b511]">✦</span> Miễn phí giao hàng toàn quốc cho đơn từ 1 triệu
       </div>
 
-      <header className="relative z-50 bg-white shadow-[0_3px_18px_rgba(8,124,54,0.1)]">
+      <header className="glass-header sticky top-0 z-50">
         <div className="mx-auto flex max-w-[1320px] items-center gap-4 px-4 py-3 lg:px-6">
           <button className="lg:hidden" onClick={() => setMobileOpen(true)} aria-label="Mở menu"><Icon name="menu" size={26} /></button>
           <a href="#" className="flex h-14 w-[136px] shrink-0 items-center justify-center overflow-hidden sm:h-16 sm:w-[156px]" aria-label="Bình Minh">
             <img className="h-full w-full object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" />
           </a>
           <form className="relative hidden w-full max-w-[580px] md:ml-6 md:block" onSubmit={(event) => event.preventDefault()}>
-            <input className="h-11 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#e31820] focus:bg-white" placeholder="Tìm máy scan, laptop, camera, phần mềm..." aria-label="Tìm kiếm sản phẩm" />
+            <input className="h-12 w-full rounded-2xl border border-[#087c36]/10 bg-[#f3f6f1] px-5 pr-14 text-sm outline-none transition focus:border-[#087c36]/40 focus:bg-white" placeholder="Tìm bằng tên, nhu cầu hoặc giải pháp AI..." aria-label="Tìm kiếm sản phẩm" />
             <button className="absolute right-1.5 top-1.5 grid h-8 w-10 place-items-center rounded-full bg-[#e31820] text-white" aria-label="Tìm kiếm"><Icon name="search" size={18} /></button>
           </form>
           <div className="ml-auto flex items-center gap-2 lg:gap-4">
@@ -312,10 +312,10 @@ export default function App() {
         <div className="mx-auto max-w-[1320px] px-4 pb-3 md:hidden">
           <form className="relative" onSubmit={(event) => event.preventDefault()}><input className="h-10 w-full rounded-full bg-slate-100 px-5 pr-12 text-sm outline-none" placeholder="Tìm kiếm sản phẩm..." /><button className="absolute right-3 top-2 text-[#e31820]" aria-label="Tìm kiếm"><Icon name="search" /></button></form>
         </div>
-        <nav className="border-t border-slate-100 bg-[#076b31] text-white">
+        <nav className="border-t border-[#087c36]/10 bg-white/70 text-[#183126]">
           <div className="mx-auto hidden max-w-[1320px] items-center lg:flex lg:px-6">
-            <span className="flex w-[248px] items-center gap-2 bg-[#e31820] px-4 py-3 text-sm font-extrabold"><Icon name="menu" size={19} /> DANH MỤC SẢN PHẨM</span>
-            {["Trang chủ", "Sản phẩm", "Giải pháp", "Dự án", "Đối tác", "Tin tức", "Giới thiệu", "Liên hệ"].map((item) => item === "Sản phẩm" ? <Link key={item} to="/san-pham" className="flex-1 py-3 text-center text-xs font-bold uppercase transition hover:bg-white/10">{item}</Link> : <a key={item} href="#" className="flex-1 py-3 text-center text-xs font-bold uppercase transition hover:bg-white/10">{item}</a>)}
+            <span className="my-1 flex w-[248px] items-center gap-2 rounded-full bg-[#087c36] px-4 py-2.5 text-[12px] font-extrabold text-white"><Icon name="menu" size={19} /> DANH MỤC SẢN PHẨM</span>
+            {["Trang chủ", "Sản phẩm", "Giải pháp", "Dự án", "Đối tác", "Tin tức", "Giới thiệu", "Liên hệ"].map((item) => item === "Sản phẩm" ? <Link key={item} to="/san-pham" className="my-1 flex-1 rounded-full py-2.5 text-center text-[11px] font-extrabold uppercase transition hover:bg-[#e9f6ed]">{item}</Link> : <a key={item} href="#" className="my-1 flex-1 rounded-full py-2.5 text-center text-[11px] font-extrabold uppercase transition hover:bg-[#e9f6ed]">{item}</a>)}
           </div>
         </nav>
       </header>
@@ -331,9 +331,9 @@ export default function App() {
       )}
 
       <main>
-        <section className="mx-auto max-w-[1320px] px-4 py-4 lg:px-6">
+        <section className="mx-auto max-w-[1320px] px-4 pb-5 pt-6 lg:px-6 lg:pt-8">
           <div className="relative grid gap-3 lg:grid-cols-[248px_minmax(0,1fr)_220px]">
-            <div className="relative z-30 hidden rounded-xl bg-white py-1 shadow-[0_5px_24px_rgba(8,124,54,0.1)] lg:block" onMouseLeave={() => setActiveMega(null)}>
+            <div className="soft-card relative z-30 hidden rounded-[24px] bg-white/90 py-2 lg:block" onMouseLeave={() => setActiveMega(null)}>
               {categories.map((category, index) => (
                 <button key={category.name} onMouseEnter={() => setActiveMega(index)} className={`flex h-[42px] w-full items-center gap-3 border-l-2 px-3 text-left text-[13px] font-semibold transition ${activeMega === index ? "border-[#e31820] bg-[#fff7e0] text-[#e31820]" : "border-transparent hover:bg-slate-50"}`}>
                   <span className={activeMega === index ? "text-[#e31820]" : "text-slate-500"}><Icon name={category.icon} size={18} /></span>{category.name}<span className="ml-auto text-slate-400"><Icon name="chevron" size={14} /></span>
@@ -364,14 +364,14 @@ export default function App() {
               )}
             </div>
 
-            <div className="relative h-[330px] overflow-hidden rounded-2xl lg:h-[388px]" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+            <div className="soft-card relative h-[390px] overflow-hidden rounded-[28px] lg:h-[430px]" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
               {slides.map((item, index) => (
                 <article key={item.eyebrow} className={`carousel-slide absolute inset-0 ${item.theme} ${index === slide ? "is-active" : ""}`}>
                   <img className="absolute inset-0 h-full w-full object-cover opacity-50" src={item.image} alt="" />
                   <div className="carousel-shade absolute inset-0" />
                   <div className="relative z-10 flex h-full max-w-[590px] flex-col justify-center px-7 text-white sm:px-11">
                     <span className="mb-3 text-[11px] font-extrabold tracking-[0.2em] text-[#f6b511]">{item.eyebrow}</span>
-                    <h1 className="text-3xl font-black leading-[1.08] tracking-[-0.04em] sm:text-4xl lg:text-[44px]">{item.title}<br /><span className="text-[#f6b511]">{item.accent}</span></h1>
+                    <h1 className="future-title text-4xl font-black leading-[1.02] sm:text-5xl lg:text-[52px]">{item.title}<br /><span className="text-[#f6b511]">{item.accent}</span></h1>
                     <p className="mt-4 max-w-md text-sm leading-6 text-slate-200">{item.description}</p>
                     <a href="#san-pham" className="mt-5 w-fit rounded-full bg-[#e31820] px-5 py-3 text-xs font-extrabold transition hover:-translate-y-0.5 hover:bg-[#c5131a]">Khám phá ngay</a>
                   </div>
@@ -397,7 +397,7 @@ export default function App() {
 
           <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
             {quickCategories.map((category) => (
-              <a key={category.name} href="#" className="flex items-center gap-2 rounded-xl bg-white px-3 py-3 text-xs font-bold shadow-[0_3px_12px_rgba(8,124,54,0.07)] transition hover:-translate-y-0.5 hover:text-[#e31820]">
+              <a key={category.name} href="#" className="tech-pill flex items-center gap-2 rounded-2xl px-3 py-3.5 text-xs font-bold transition hover:-translate-y-0.5 hover:text-[#e31820]">
                 <span className="text-[#087c36]"><Icon name={category.icon} size={19} /></span>{category.name}
               </a>
             ))}
@@ -405,14 +405,14 @@ export default function App() {
         </section>
 
         <section id="san-pham" className="mx-auto max-w-[1320px] px-4 py-5 lg:px-6">
-          <div className="rounded-[24px] bg-[#e31820] p-4 sm:p-6">
+          <div className="relative overflow-hidden rounded-[32px] bg-[#064b27] p-4 shadow-[0_24px_70px_rgba(6,75,39,0.2)] sm:p-7">
             <div className="mb-5 flex flex-wrap items-end justify-between gap-3 text-white">
-              <div><span className="text-[10px] font-bold uppercase tracking-[0.18em] text-red-100">Deal công nghệ mỗi ngày</span><h2 className="text-2xl font-black tracking-tight">Săn deal giá tốt</h2></div>
+              <div><span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#f6b511]">Live drop • Giá cập nhật theo thời gian thực</span><h2 className="future-title text-3xl font-black">Deal công nghệ chọn lọc</h2></div>
               <div className="flex items-center gap-2 text-xs font-bold"><span>Kết thúc sau</span>{["08", "24", "46"].map((time) => <span key={time} className="rounded-lg bg-white px-2.5 py-2 text-[#087c36]">{time}</span>)}</div>
             </div>
             <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
               {products.map((product, index) => (
-                <article key={product.name} className="group relative overflow-hidden rounded-2xl bg-white p-3 shadow-lg">
+                <article key={product.name} className="product-card group relative overflow-hidden rounded-[22px] bg-white p-3">
                   <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-[#f6b511] px-2 py-1 text-[10px] font-black text-[#26352d]">{product.sale}</span>
                   <button onClick={() => setLiked((items) => items.includes(index) ? items.filter((item) => item !== index) : [...items, index])} className={`absolute right-2.5 top-2.5 z-10 grid h-8 w-8 place-items-center rounded-full bg-white shadow ${liked.includes(index) ? "text-red-500" : "text-slate-400"}`} aria-label="Yêu thích"><Icon name="heart" size={16} /></button>
                   <Link to={productPath(product.name)} className="mb-3 block h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40"><img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} /></Link>
@@ -462,7 +462,7 @@ export default function App() {
                   {category.products.map((product, productIndex) => {
                     const favoriteId = productIndex + 100 + categoryIndex * 10;
                     return (
-                      <article key={product.name} className="category-product group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(8,124,54,0.06)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(8,124,54,0.12)]">
+                      <article key={product.name} className="product-card category-product group overflow-hidden rounded-[22px] border bg-white p-3 transition hover:-translate-y-1">
                         <div className="relative mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40">
                           <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
                           <span className="absolute left-2 top-2 rounded-md bg-white/95 px-2 py-1 text-[9px] font-extrabold text-[#087c36] shadow-sm">CHÍNH HÃNG</span>
@@ -502,7 +502,7 @@ export default function App() {
         </section>
       </main>
 
-      <footer className="bg-[#07552a] text-white">
+      <footer className="border-t-4 border-[#f6b511] bg-[#043d20] text-white">
         <div className="mx-auto grid max-w-[1320px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
           <div><div className="w-fit rounded-xl bg-white p-1"><img className="h-20 w-32 object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" /></div><p className="mt-4 max-w-xs text-sm leading-6 text-green-100/70">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
           <div><h4 className="mb-4 font-bold">Về Bình Minh</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <a key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" href="#">{item}</a>)}</div>
