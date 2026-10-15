@@ -28,7 +28,7 @@ export function StoreHeader() {
         </div>
         <nav className="border-t border-[#087c36]/10 bg-white/70 text-[#183126]">
           <div className="mx-auto flex max-w-[1320px] overflow-x-auto px-4 lg:px-6">
-            {[["Trang chủ", "/"], ["Sản phẩm", "/san-pham"], ["Giải pháp", "/#giai-phap"], ["Dự án", "/#du-an"], ["Tin tức", "/#tin-tuc"], ["Liên hệ", "/#lien-he"]].map(([label, to]) => (
+            {[["Trang chủ", "/"], ["Sản phẩm", "/san-pham"], ["Giải pháp", "/#giai-phap"], ["Tin tức", "/tin-tuc"], ["Giới thiệu", "/gioi-thieu"], ["Liên hệ", "/lien-he"]].map(([label, to]) => (
               <NavLink key={label} to={to} end={to === "/"} className={({ isActive }) => `my-1 shrink-0 rounded-full px-5 py-2.5 text-[11px] font-extrabold uppercase tracking-wide transition hover:bg-[#e9f6ed] ${isActive ? "bg-[#087c36] text-white" : ""}`}>{label}</NavLink>
             ))}
           </div>
@@ -43,7 +43,7 @@ export function StoreFooter() {
     <footer className="mt-16 border-t-4 border-[#f6b511] bg-[#043d20] text-white">
       <div className="mx-auto grid max-w-[1320px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
         <div><div className="w-fit rounded-xl bg-white p-1"><img className="h-20 w-32 object-contain" src={binhMinhLogo} alt="Bình Minh" /></div><p className="mt-4 max-w-xs text-sm leading-6 text-green-100/70">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
-        <div><h4 className="mb-4 font-bold">Về Bình Minh</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <Link key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/">{item}</Link>)}</div>
+        <div><h4 className="mb-4 font-bold">Về Bình Minh</h4><Link className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/gioi-thieu">Giới thiệu</Link><Link className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/tin-tuc">Tin tức công nghệ</Link>{["Đối tác", "Tuyển dụng"].map((item) => <Link key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/">{item}</Link>)}</div>
         <div><h4 className="mb-4 font-bold">Hỗ trợ khách hàng</h4>{["Chính sách bảo hành", "Giao nhận", "Đổi trả", "Mua hàng doanh nghiệp"].map((item) => <Link key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/">{item}</Link>)}</div>
         <div><h4 className="mb-4 font-bold">Tổng đài tư vấn</h4><p className="text-2xl font-black text-[#f6b511]">1800 6868</p><p className="mt-1 text-xs text-green-100/70">Miễn phí • 8:00 — 21:30 mỗi ngày</p></div>
       </div>

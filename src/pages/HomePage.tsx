@@ -315,7 +315,7 @@ export default function App() {
         <nav className="border-t border-[#087c36]/10 bg-white/70 text-[#183126]">
           <div className="mx-auto hidden max-w-[1320px] items-center lg:flex lg:px-6">
             <span className="my-1 flex w-[248px] items-center gap-2 rounded-full bg-[#087c36] px-4 py-2.5 text-[12px] font-extrabold text-white"><Icon name="menu" size={19} /> DANH MỤC SẢN PHẨM</span>
-            {["Trang chủ", "Sản phẩm", "Giải pháp", "Dự án", "Đối tác", "Tin tức", "Giới thiệu", "Liên hệ"].map((item) => item === "Sản phẩm" ? <Link key={item} to="/san-pham" className="my-1 flex-1 rounded-full py-2.5 text-center text-[11px] font-extrabold uppercase transition hover:bg-[#e9f6ed]">{item}</Link> : <a key={item} href="#" className="my-1 flex-1 rounded-full py-2.5 text-center text-[11px] font-extrabold uppercase transition hover:bg-[#e9f6ed]">{item}</a>)}
+            {[["Trang chủ", "/"], ["Sản phẩm", "/san-pham"], ["Giải pháp", "/#giai-phap"], ["Dự án", "/#du-an"], ["Tin tức", "/tin-tuc"], ["Giới thiệu", "/gioi-thieu"], ["Liên hệ", "/lien-he"]].map(([item, to]) => <Link key={item} to={to} className="my-1 flex-1 rounded-full py-2.5 text-center text-[11px] font-extrabold uppercase transition hover:bg-[#e9f6ed]">{item}</Link>)}
           </div>
         </nav>
       </header>
@@ -324,6 +324,9 @@ export default function App() {
         <div className="fixed inset-0 z-[60] bg-[#173e2b]/50" onClick={() => setMobileOpen(false)}>
           <aside className="h-full w-[86%] max-w-sm overflow-y-auto bg-white p-5" onClick={(event) => event.stopPropagation()}>
             <div className="mb-5 flex items-center justify-between"><img className="h-14 w-24 object-contain" src={binhMinhLogo} alt="Bình Minh" /><button onClick={() => setMobileOpen(false)} aria-label="Đóng menu"><Icon name="close" /></button></div>
+            <div className="mb-6 grid grid-cols-3 gap-2">
+              {[["Tin tức", "/tin-tuc"], ["Giới thiệu", "/gioi-thieu"], ["Liên hệ", "/lien-he"]].map(([label, to]) => <Link key={label} to={to} onClick={() => setMobileOpen(false)} className="rounded-xl bg-[#e8f2e8] px-2 py-3 text-center text-[10px] font-extrabold uppercase text-[#087c36]">{label}</Link>)}
+            </div>
             <p className="mb-2 text-xs font-extrabold uppercase tracking-wider text-slate-400">Danh mục sản phẩm</p>
             {categories.map((category) => <a key={category.name} href="#" className="flex items-center gap-3 border-b border-slate-100 py-3 text-sm font-bold"><span className="text-[#e31820]"><Icon name={category.icon} /></span>{category.name}<span className="ml-auto"><Icon name="chevron" size={16} /></span></a>)}
           </aside>
@@ -505,7 +508,7 @@ export default function App() {
       <footer className="border-t-4 border-[#f6b511] bg-[#043d20] text-white">
         <div className="mx-auto grid max-w-[1320px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
           <div><div className="w-fit rounded-xl bg-white p-1"><img className="h-20 w-32 object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" /></div><p className="mt-4 max-w-xs text-sm leading-6 text-green-100/70">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
-          <div><h4 className="mb-4 font-bold">Về Bình Minh</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <a key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" href="#">{item}</a>)}</div>
+          <div><h4 className="mb-4 font-bold">Về Bình Minh</h4><Link className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/gioi-thieu">Giới thiệu</Link><Link className="mb-2 block text-sm text-green-100/70 hover:text-white" to="/tin-tuc">Tin tức công nghệ</Link>{["Đối tác", "Tuyển dụng"].map((item) => <a key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" href="#">{item}</a>)}</div>
           <div><h4 className="mb-4 font-bold">Hỗ trợ khách hàng</h4>{["Chính sách bảo hành", "Giao nhận", "Đổi trả", "Mua hàng doanh nghiệp"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
           <div><h4 className="mb-4 font-bold">Tổng đài tư vấn</h4><p className="text-2xl font-black text-[#f6b511]">1800 6868</p><p className="mt-1 text-xs text-green-100/70">Miễn phí • 8:00 — 21:30 mỗi ngày</p></div>
         </div>
