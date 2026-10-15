@@ -68,23 +68,7 @@ export default function ProductsPage() {
     <StorePage>
       <main className="bg-[#f4f6f3]/70 pb-10">
         <section className="mx-auto max-w-[1420px] px-4 pt-5 lg:px-6">
-          <nav className="flex items-center gap-2 text-xs font-medium text-slate-500">
-            <Link to="/" className="transition hover:text-[#087c36]">Trang chủ</Link><span className="text-slate-300">›</span><span>Sản phẩm</span>
-          </nav>
-
-          <div className="mt-5 flex flex-col gap-4 border-b border-[#087c36]/10 pb-5 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#e31820]">Thiết bị công nghệ chính hãng</p>
-              <h1 className="future-title mt-1 text-3xl font-black sm:text-4xl">Tất cả sản phẩm</h1>
-              <p className="mt-2 text-xs text-slate-500">Tư vấn cấu hình • Báo giá nhanh • Xuất hóa đơn VAT • Giao hàng toàn quốc</p>
-            </div>
-            <div className="relative w-full max-w-md">
-              <input value={query} onChange={(event) => setQuery(event.target.value)} className="h-11 w-full rounded-xl border border-slate-200 bg-white px-4 pr-12 text-sm outline-none focus:border-[#087c36]" placeholder="Tìm sản phẩm, thương hiệu, mã SP..." aria-label="Tìm sản phẩm" />
-              <span className="absolute right-4 top-3 text-[#087c36]"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg></span>
-            </div>
-          </div>
-
-          <div className="mt-4 overflow-x-auto pb-1">
+          <div className="overflow-x-auto pb-1">
             <div className="flex min-w-max gap-2">
               {catalogCategories.map((item) => <button key={item} onClick={() => setCategory(item)} className={`rounded-lg border px-3.5 py-2 text-xs font-bold transition ${category === item ? "border-[#087c36] bg-[#087c36] text-white" : "border-slate-200 bg-white text-slate-600 hover:border-[#087c36] hover:text-[#087c36]"}`}>{item}</button>)}
             </div>
