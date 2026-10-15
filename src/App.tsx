@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import binhMinhLogo from "./assets/binh-minh-logo.png";
 
 type IconName =
   | "menu" | "search" | "map" | "user" | "cart" | "heart" | "chevron"
@@ -126,19 +127,19 @@ const slides = [
     eyebrow: "TECH WEEK 2025", title: "Hiệu suất bứt phá.", accent: "Sẵn sàng tương lai.",
     description: "Laptop AI và workstation chính hãng, ưu đãi đến 30% cho cá nhân và doanh nghiệp.",
     image: "https://images.unsplash.com/photo-1565021324739-7493c5a74a13?auto=format&fit=crop&w=1400&q=85",
-    theme: "bg-[#0a2342]", label: "Laptop AI từ 18.990.000₫",
+    theme: "bg-[#087c36]", label: "Laptop AI từ 18.990.000₫",
   },
   {
     eyebrow: "VĂN PHÒNG THÔNG MINH", title: "Số hóa tinh gọn.", accent: "Vận hành tối ưu.",
     description: "Máy scan, máy in và giải pháp tài liệu dành cho mọi quy mô doanh nghiệp.",
     image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1400&q=85",
-    theme: "bg-[#123a63]", label: "Máy in giảm đến 25%",
+    theme: "bg-[#126f3a]", label: "Máy in giảm đến 25%",
   },
   {
     eyebrow: "CREATOR SEASON", title: "Ghi trọn khoảnh khắc.", accent: "Kể chuyện khác biệt.",
     description: "Máy ảnh, ống kính và thiết bị livestream cho nhà sáng tạo chuyên nghiệp.",
     image: "https://images.unsplash.com/photo-1535540878298-a155c6d065ef?auto=format&fit=crop&w=1400&q=85",
-    theme: "bg-[#201f2b]", label: "Combo creator từ 12.490.000₫",
+    theme: "bg-[#8f1117]", label: "Combo creator từ 12.490.000₫",
   },
 ];
 
@@ -280,45 +281,44 @@ export default function App() {
   const goToSlide = (next: number) => setSlide((next + slides.length) % slides.length);
 
   return (
-    <div className="min-h-screen bg-[#f4f7fb] text-[#14213d]">
-      <div className="bg-[#0a2342] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white">
+    <div className="min-h-screen bg-[#f7f8f4] text-[#26352d]">
+      <div className="bg-[#087c36] px-4 py-2 text-center text-xs font-semibold tracking-wide text-white">
         GIẢI PHÁP CÔNG NGHỆ CHÍNH HÃNG — Miễn phí giao hàng toàn quốc cho đơn từ 1 triệu
       </div>
 
-      <header className="relative z-50 bg-white shadow-[0_3px_18px_rgba(10,35,66,0.08)]">
+      <header className="relative z-50 bg-white shadow-[0_3px_18px_rgba(8,124,54,0.1)]">
         <div className="mx-auto flex max-w-[1320px] items-center gap-4 px-4 py-3 lg:px-6">
           <button className="lg:hidden" onClick={() => setMobileOpen(true)} aria-label="Mở menu"><Icon name="menu" size={26} /></button>
-          <a href="#" className="flex shrink-0 items-center gap-2" aria-label="Nova Tech">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#ff6b35] font-black text-white">N</span>
-            <span className="leading-none"><b className="block text-xl font-black tracking-[-0.04em] text-[#0a2342]">NOVA</b><span className="text-[9px] font-bold tracking-[0.28em] text-[#ff6b35]">TECH</span></span>
+          <a href="#" className="flex h-14 w-[136px] shrink-0 items-center justify-center overflow-hidden sm:h-16 sm:w-[156px]" aria-label="Bình Minh">
+            <img className="h-full w-full object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" />
           </a>
           <form className="relative hidden w-full max-w-[580px] md:ml-6 md:block" onSubmit={(event) => event.preventDefault()}>
-            <input className="h-11 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#ff6b35] focus:bg-white" placeholder="Tìm máy scan, laptop, camera, phần mềm..." aria-label="Tìm kiếm sản phẩm" />
-            <button className="absolute right-1.5 top-1.5 grid h-8 w-10 place-items-center rounded-full bg-[#ff6b35] text-white" aria-label="Tìm kiếm"><Icon name="search" size={18} /></button>
+            <input className="h-11 w-full rounded-full border border-slate-200 bg-slate-50 px-5 pr-14 text-sm outline-none transition focus:border-[#e31820] focus:bg-white" placeholder="Tìm máy scan, laptop, camera, phần mềm..." aria-label="Tìm kiếm sản phẩm" />
+            <button className="absolute right-1.5 top-1.5 grid h-8 w-10 place-items-center rounded-full bg-[#e31820] text-white" aria-label="Tìm kiếm"><Icon name="search" size={18} /></button>
           </form>
           <div className="ml-auto flex items-center gap-2 lg:gap-4">
-            <button className="hidden items-center gap-2 text-left text-xs text-slate-500 xl:flex"><Icon name="map" /><span><small className="block">Giao đến</small><b className="text-sm text-[#14213d]">Hà Nội</b></span></button>
-            <button className="hidden items-center gap-2 text-left text-xs text-slate-500 sm:flex"><Icon name="user" /><span><small className="block">Tài khoản</small><b className="text-sm text-[#14213d]">Đăng nhập</b></span></button>
-            <button className="relative grid h-10 w-10 place-items-center rounded-full bg-[#eef3f8]" aria-label={`Giỏ hàng có ${cartCount} sản phẩm`}><Icon name="cart" />{cartCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-[#ff6b35] px-1 text-[10px] font-bold text-white">{cartCount}</span>}</button>
+            <button className="hidden items-center gap-2 text-left text-xs text-slate-500 xl:flex"><Icon name="map" /><span><small className="block">Giao đến</small><b className="text-sm text-[#26352d]">Hà Nội</b></span></button>
+            <button className="hidden items-center gap-2 text-left text-xs text-slate-500 sm:flex"><Icon name="user" /><span><small className="block">Tài khoản</small><b className="text-sm text-[#26352d]">Đăng nhập</b></span></button>
+            <button className="relative grid h-10 w-10 place-items-center rounded-full bg-[#eef7f0]" aria-label={`Giỏ hàng có ${cartCount} sản phẩm`}><Icon name="cart" />{cartCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-[#e31820] px-1 text-[10px] font-bold text-white">{cartCount}</span>}</button>
           </div>
         </div>
         <div className="mx-auto max-w-[1320px] px-4 pb-3 md:hidden">
-          <form className="relative" onSubmit={(event) => event.preventDefault()}><input className="h-10 w-full rounded-full bg-slate-100 px-5 pr-12 text-sm outline-none" placeholder="Tìm kiếm sản phẩm..." /><button className="absolute right-3 top-2 text-[#ff6b35]" aria-label="Tìm kiếm"><Icon name="search" /></button></form>
+          <form className="relative" onSubmit={(event) => event.preventDefault()}><input className="h-10 w-full rounded-full bg-slate-100 px-5 pr-12 text-sm outline-none" placeholder="Tìm kiếm sản phẩm..." /><button className="absolute right-3 top-2 text-[#e31820]" aria-label="Tìm kiếm"><Icon name="search" /></button></form>
         </div>
-        <nav className="border-t border-slate-100 bg-[#0d2852] text-white">
+        <nav className="border-t border-slate-100 bg-[#076b31] text-white">
           <div className="mx-auto hidden max-w-[1320px] items-center lg:flex lg:px-6">
-            <span className="flex w-[248px] items-center gap-2 bg-[#ff6b35] px-4 py-3 text-sm font-extrabold"><Icon name="menu" size={19} /> DANH MỤC SẢN PHẨM</span>
+            <span className="flex w-[248px] items-center gap-2 bg-[#e31820] px-4 py-3 text-sm font-extrabold"><Icon name="menu" size={19} /> DANH MỤC SẢN PHẨM</span>
             {["Trang chủ", "Sản phẩm", "Giải pháp", "Dự án", "Đối tác", "Tin tức", "Giới thiệu", "Liên hệ"].map((item) => <a key={item} href="#" className="flex-1 py-3 text-center text-xs font-bold uppercase transition hover:bg-white/10">{item}</a>)}
           </div>
         </nav>
       </header>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-[60] bg-[#08182c]/50" onClick={() => setMobileOpen(false)}>
+        <div className="fixed inset-0 z-[60] bg-[#173e2b]/50" onClick={() => setMobileOpen(false)}>
           <aside className="h-full w-[86%] max-w-sm overflow-y-auto bg-white p-5" onClick={(event) => event.stopPropagation()}>
-            <div className="mb-5 flex items-center justify-between"><b className="text-xl font-black">NOVA <span className="text-[#ff6b35]">TECH</span></b><button onClick={() => setMobileOpen(false)} aria-label="Đóng menu"><Icon name="close" /></button></div>
+            <div className="mb-5 flex items-center justify-between"><img className="h-14 w-24 object-contain" src={binhMinhLogo} alt="Bình Minh" /><button onClick={() => setMobileOpen(false)} aria-label="Đóng menu"><Icon name="close" /></button></div>
             <p className="mb-2 text-xs font-extrabold uppercase tracking-wider text-slate-400">Danh mục sản phẩm</p>
-            {categories.map((category) => <a key={category.name} href="#" className="flex items-center gap-3 border-b border-slate-100 py-3 text-sm font-bold"><span className="text-[#ff6b35]"><Icon name={category.icon} /></span>{category.name}<span className="ml-auto"><Icon name="chevron" size={16} /></span></a>)}
+            {categories.map((category) => <a key={category.name} href="#" className="flex items-center gap-3 border-b border-slate-100 py-3 text-sm font-bold"><span className="text-[#e31820]"><Icon name={category.icon} /></span>{category.name}<span className="ml-auto"><Icon name="chevron" size={16} /></span></a>)}
           </aside>
         </div>
       )}
@@ -326,33 +326,33 @@ export default function App() {
       <main>
         <section className="mx-auto max-w-[1320px] px-4 py-4 lg:px-6">
           <div className="relative grid gap-3 lg:grid-cols-[248px_minmax(0,1fr)_220px]">
-            <div className="relative z-30 hidden rounded-xl bg-white py-1 shadow-[0_5px_24px_rgba(10,35,66,0.08)] lg:block" onMouseLeave={() => setActiveMega(null)}>
+            <div className="relative z-30 hidden rounded-xl bg-white py-1 shadow-[0_5px_24px_rgba(8,124,54,0.1)] lg:block" onMouseLeave={() => setActiveMega(null)}>
               {categories.map((category, index) => (
-                <button key={category.name} onMouseEnter={() => setActiveMega(index)} className={`flex h-[42px] w-full items-center gap-3 border-l-2 px-3 text-left text-[13px] font-semibold transition ${activeMega === index ? "border-[#ff6b35] bg-orange-50 text-[#ff6b35]" : "border-transparent hover:bg-slate-50"}`}>
-                  <span className={activeMega === index ? "text-[#ff6b35]" : "text-slate-500"}><Icon name={category.icon} size={18} /></span>{category.name}<span className="ml-auto text-slate-400"><Icon name="chevron" size={14} /></span>
+                <button key={category.name} onMouseEnter={() => setActiveMega(index)} className={`flex h-[42px] w-full items-center gap-3 border-l-2 px-3 text-left text-[13px] font-semibold transition ${activeMega === index ? "border-[#e31820] bg-[#fff7e0] text-[#e31820]" : "border-transparent hover:bg-slate-50"}`}>
+                  <span className={activeMega === index ? "text-[#e31820]" : "text-slate-500"}><Icon name={category.icon} size={18} /></span>{category.name}<span className="ml-auto text-slate-400"><Icon name="chevron" size={14} /></span>
                 </button>
               ))}
               {activeMega !== null && (
                 <div
-                  className="mega-panel absolute left-full top-0 z-40 grid h-full min-h-[388px] w-[calc(1320px-248px-24px)] grid-cols-4 gap-7 overflow-hidden rounded-r-xl bg-white p-6 shadow-[0_14px_45px_rgba(10,35,66,0.18)]"
+                  className="mega-panel absolute left-full top-0 z-40 grid h-full min-h-[388px] w-[calc(1320px-248px-24px)] grid-cols-4 gap-7 overflow-hidden rounded-r-xl bg-white p-6 shadow-[0_14px_45px_rgba(8,124,54,0.18)]"
                   onMouseEnter={() => setActiveMega(activeMega)}
                 >
                   {categories[activeMega].columns.map((column) => (
                     <div key={column.title}>
-                      <p className="mb-3 text-sm font-extrabold text-[#ff6b35]">{column.title}</p>
+                      <p className="mb-3 text-sm font-extrabold text-[#e31820]">{column.title}</p>
                       {column.items.map((item) => (
                         <a
                           key={item}
                           href={`#category-section-${activeMega}`}
                           onClick={() => setActiveMega(null)}
-                          className="mb-2.5 block rounded-md py-0.5 text-[13px] text-slate-600 transition hover:translate-x-0.5 hover:bg-orange-50 hover:text-[#ff6b35]"
+                          className="mb-2.5 block rounded-md py-0.5 text-[13px] text-slate-600 transition hover:translate-x-0.5 hover:bg-[#fff7e0] hover:text-[#e31820]"
                         >
                           {item}
                         </a>
                       ))}
                     </div>
                   ))}
-                  <div className="absolute bottom-0 right-0 h-1 w-1/3 bg-[#ff6b35]" />
+                  <div className="absolute bottom-0 right-0 h-1 w-1/3 bg-[#f6b511]" />
                 </div>
               )}
             </div>
@@ -363,57 +363,57 @@ export default function App() {
                   <img className="absolute inset-0 h-full w-full object-cover opacity-50" src={item.image} alt="" />
                   <div className="carousel-shade absolute inset-0" />
                   <div className="relative z-10 flex h-full max-w-[590px] flex-col justify-center px-7 text-white sm:px-11">
-                    <span className="mb-3 text-[11px] font-extrabold tracking-[0.2em] text-[#ffb000]">{item.eyebrow}</span>
-                    <h1 className="text-3xl font-black leading-[1.08] tracking-[-0.04em] sm:text-4xl lg:text-[44px]">{item.title}<br /><span className="text-[#ffb000]">{item.accent}</span></h1>
+                    <span className="mb-3 text-[11px] font-extrabold tracking-[0.2em] text-[#f6b511]">{item.eyebrow}</span>
+                    <h1 className="text-3xl font-black leading-[1.08] tracking-[-0.04em] sm:text-4xl lg:text-[44px]">{item.title}<br /><span className="text-[#f6b511]">{item.accent}</span></h1>
                     <p className="mt-4 max-w-md text-sm leading-6 text-slate-200">{item.description}</p>
-                    <a href="#san-pham" className="mt-5 w-fit rounded-full bg-[#ff6b35] px-5 py-3 text-xs font-extrabold transition hover:-translate-y-0.5">Khám phá ngay</a>
+                    <a href="#san-pham" className="mt-5 w-fit rounded-full bg-[#e31820] px-5 py-3 text-xs font-extrabold transition hover:-translate-y-0.5 hover:bg-[#c5131a]">Khám phá ngay</a>
                   </div>
-                  <span className="absolute bottom-5 right-5 z-10 rounded-xl bg-white/95 px-4 py-3 text-xs font-extrabold text-[#14213d] shadow-xl">{item.label}</span>
+                  <span className="absolute bottom-5 right-5 z-10 rounded-xl bg-white/95 px-4 py-3 text-xs font-extrabold text-[#26352d] shadow-xl">{item.label}</span>
                 </article>
               ))}
-              <button onClick={() => goToSlide(slide - 1)} className="absolute left-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 rotate-180 place-items-center rounded-full bg-white/85 text-[#0a2342] shadow-md" aria-label="Banner trước"><Icon name="chevron" size={17} /></button>
-              <button onClick={() => goToSlide(slide + 1)} className="absolute right-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#0a2342] shadow-md" aria-label="Banner tiếp theo"><Icon name="chevron" size={17} /></button>
-              <div className="absolute bottom-5 left-7 z-20 flex gap-2 sm:left-11">{slides.map((item, index) => <button key={item.eyebrow} onClick={() => goToSlide(index)} className={`h-1.5 rounded-full transition-all ${index === slide ? "w-8 bg-[#ff6b35]" : "w-3 bg-white/60"}`} aria-label={`Xem banner ${index + 1}`} />)}</div>
+              <button onClick={() => goToSlide(slide - 1)} className="absolute left-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 rotate-180 place-items-center rounded-full bg-white/85 text-[#087c36] shadow-md" aria-label="Banner trước"><Icon name="chevron" size={17} /></button>
+              <button onClick={() => goToSlide(slide + 1)} className="absolute right-3 top-1/2 z-20 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#087c36] shadow-md" aria-label="Banner tiếp theo"><Icon name="chevron" size={17} /></button>
+              <div className="absolute bottom-5 left-7 z-20 flex gap-2 sm:left-11">{slides.map((item, index) => <button key={item.eyebrow} onClick={() => goToSlide(index)} className={`h-1.5 rounded-full transition-all ${index === slide ? "w-8 bg-[#e31820]" : "w-3 bg-white/60"}`} aria-label={`Xem banner ${index + 1}`} />)}</div>
             </div>
 
             <div className="hidden grid-rows-2 gap-3 lg:grid">
-              <a href="#" className="group relative overflow-hidden rounded-2xl bg-[#e9f4ff] p-5">
+              <a href="#" className="group relative overflow-hidden rounded-2xl bg-[#fff8df] p-5">
                 <img className="absolute inset-0 h-full w-full object-cover opacity-25 transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=500&q=80" alt="" />
-                <div className="relative"><span className="text-[10px] font-extrabold uppercase tracking-widest text-[#ff6b35]">Văn phòng số</span><h2 className="mt-1 text-xl font-black leading-tight">Máy in<br />giảm đến 25%</h2><span className="mt-4 inline-block text-xs font-bold">Xem ưu đãi →</span></div>
+                <div className="relative"><span className="text-[10px] font-extrabold uppercase tracking-widest text-[#e31820]">Văn phòng số</span><h2 className="mt-1 text-xl font-black leading-tight">Máy in<br />giảm đến 25%</h2><span className="mt-4 inline-block text-xs font-bold">Xem ưu đãi →</span></div>
               </a>
-              <a href="#" className="group relative overflow-hidden rounded-2xl bg-[#171c28] p-5 text-white">
+              <a href="#" className="group relative overflow-hidden rounded-2xl bg-[#07552a] p-5 text-white">
                 <img className="absolute inset-0 h-full w-full object-cover opacity-35 transition duration-500 group-hover:scale-105" src="https://images.unsplash.com/photo-1587090564077-c7b8f2f1249e?auto=format&fit=crop&w=500&q=80" alt="" />
-                <div className="relative"><span className="text-[10px] font-extrabold uppercase tracking-widest text-[#ffb000]">Creator studio</span><h2 className="mt-1 text-xl font-black leading-tight">Combo quay<br />video chuyên nghiệp</h2><span className="mt-4 inline-block text-xs font-bold">Khám phá →</span></div>
+                <div className="relative"><span className="text-[10px] font-extrabold uppercase tracking-widest text-[#f6b511]">Creator studio</span><h2 className="mt-1 text-xl font-black leading-tight">Combo quay<br />video chuyên nghiệp</h2><span className="mt-4 inline-block text-xs font-bold">Khám phá →</span></div>
               </a>
             </div>
           </div>
 
           <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
             {quickCategories.map((category) => (
-              <a key={category.name} href="#" className="flex items-center gap-2 rounded-xl bg-white px-3 py-3 text-xs font-bold shadow-[0_3px_12px_rgba(10,35,66,0.05)] transition hover:-translate-y-0.5 hover:text-[#ff6b35]">
-                <span className="text-[#ff6b35]"><Icon name={category.icon} size={19} /></span>{category.name}
+              <a key={category.name} href="#" className="flex items-center gap-2 rounded-xl bg-white px-3 py-3 text-xs font-bold shadow-[0_3px_12px_rgba(8,124,54,0.07)] transition hover:-translate-y-0.5 hover:text-[#e31820]">
+                <span className="text-[#087c36]"><Icon name={category.icon} size={19} /></span>{category.name}
               </a>
             ))}
           </div>
         </section>
 
         <section id="san-pham" className="mx-auto max-w-[1320px] px-4 py-5 lg:px-6">
-          <div className="rounded-[24px] bg-[#ff6b35] p-4 sm:p-6">
+          <div className="rounded-[24px] bg-[#e31820] p-4 sm:p-6">
             <div className="mb-5 flex flex-wrap items-end justify-between gap-3 text-white">
-              <div><span className="text-[10px] font-bold uppercase tracking-[0.18em] text-orange-100">Deal công nghệ mỗi ngày</span><h2 className="text-2xl font-black tracking-tight">Săn deal giá tốt</h2></div>
-              <div className="flex items-center gap-2 text-xs font-bold"><span>Kết thúc sau</span>{["08", "24", "46"].map((time) => <span key={time} className="rounded-lg bg-white px-2.5 py-2 text-[#0a2342]">{time}</span>)}</div>
+              <div><span className="text-[10px] font-bold uppercase tracking-[0.18em] text-red-100">Deal công nghệ mỗi ngày</span><h2 className="text-2xl font-black tracking-tight">Săn deal giá tốt</h2></div>
+              <div className="flex items-center gap-2 text-xs font-bold"><span>Kết thúc sau</span>{["08", "24", "46"].map((time) => <span key={time} className="rounded-lg bg-white px-2.5 py-2 text-[#087c36]">{time}</span>)}</div>
             </div>
             <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
               {products.map((product, index) => (
                 <article key={product.name} className="group relative overflow-hidden rounded-2xl bg-white p-3 shadow-lg">
-                  <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-[#ff6b35] px-2 py-1 text-[10px] font-black text-white">{product.sale}</span>
+                  <span className="absolute left-2.5 top-2.5 z-10 rounded-md bg-[#f6b511] px-2 py-1 text-[10px] font-black text-[#26352d]">{product.sale}</span>
                   <button onClick={() => setLiked((items) => items.includes(index) ? items.filter((item) => item !== index) : [...items, index])} className={`absolute right-2.5 top-2.5 z-10 grid h-8 w-8 place-items-center rounded-full bg-white shadow ${liked.includes(index) ? "text-red-500" : "text-slate-400"}`} aria-label="Yêu thích"><Icon name="heart" size={16} /></button>
                   <div className="mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40"><img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} /></div>
                   <p className="mb-1 text-[10px] font-semibold text-slate-400">{product.tag}</p>
                   <h3 className="min-h-10 text-xs font-bold leading-5 sm:text-[13px]">{product.name}</h3>
-                  <p className="mt-2 text-base font-black text-[#ff4d1c]">{product.price}</p>
+                  <p className="mt-2 text-base font-black text-[#d71920]">{product.price}</p>
                   <p className="text-[10px] text-slate-400 line-through">{product.old}</p>
-                  <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg bg-[#0a2342] py-2.5 text-[11px] font-extrabold text-white transition hover:bg-[#ff6b35]">Thêm vào giỏ</button>
+                  <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg bg-[#087c36] py-2.5 text-[11px] font-extrabold text-white transition hover:bg-[#e31820]">Thêm vào giỏ</button>
                 </article>
               ))}
             </div>
@@ -426,10 +426,10 @@ export default function App() {
             { title: "Hạ tầng mạng doanh nghiệp", text: "Wi-Fi • Switch • Bảo mật", image: "https://images.unsplash.com/photo-1548092372-0d1bd40894a3?auto=format&fit=crop&w=700&q=80" },
             { title: "Studio sáng tạo nội dung", text: "Camera • Ánh sáng • Âm thanh", image: "https://images.unsplash.com/photo-1643327269452-a291a5f3f72a?auto=format&fit=crop&w=700&q=80" },
           ].map((banner) => (
-            <a key={banner.title} href="#" className="group relative min-h-[170px] overflow-hidden rounded-2xl bg-[#0a2342] p-6 text-white">
+            <a key={banner.title} href="#" className="group relative min-h-[170px] overflow-hidden rounded-2xl bg-[#087c36] p-6 text-white">
               <img className="absolute inset-0 h-full w-full object-cover opacity-40 transition duration-500 group-hover:scale-105" src={banner.image} alt="" />
-              <div className="absolute inset-0 bg-[#081c35]/30" />
-              <div className="relative"><h3 className="max-w-[250px] text-xl font-black">{banner.title}</h3><p className="mt-2 text-xs text-slate-200">{banner.text}</p><span className="mt-5 inline-block text-xs font-extrabold text-[#ffb000]">Tìm hiểu thêm →</span></div>
+              <div className="absolute inset-0 bg-[#173e2b]/30" />
+              <div className="relative"><h3 className="max-w-[250px] text-xl font-black">{banner.title}</h3><p className="mt-2 text-xs text-slate-200">{banner.text}</p><span className="mt-5 inline-block text-xs font-extrabold text-[#f6b511]">Tìm hiểu thêm →</span></div>
             </a>
           ))}
         </section>
@@ -440,13 +440,13 @@ export default function App() {
               <div className="mx-auto max-w-[1320px] px-4 py-7 lg:px-6">
                 <div className="mb-5 flex items-end justify-between gap-3">
                   <div>
-                    {categoryIndex === 0 && <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#ff6b35]">Mua sắm theo nhu cầu</span>}
+                    {categoryIndex === 0 && <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-[#e31820]">Mua sắm theo nhu cầu</span>}
                     <h2 className="mt-1 flex items-center gap-2 text-xl font-black tracking-[-0.03em] sm:text-2xl">
-                      <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#0a2342] text-white"><Icon name={category.icon} size={18} /></span>
+                      <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#087c36] text-white"><Icon name={category.icon} size={18} /></span>
                       {category.name}
                     </h2>
                   </div>
-                  <a href="#" className="flex shrink-0 items-center gap-1 text-xs font-extrabold text-[#ff6b35]">
+                  <a href="#" className="flex shrink-0 items-center gap-1 text-xs font-extrabold text-[#e31820]">
                     Xem tất cả <span className="hidden sm:inline">{category.name.toLowerCase()}</span> <Icon name="chevron" size={15} />
                   </a>
                 </div>
@@ -455,10 +455,10 @@ export default function App() {
                   {category.products.map((product, productIndex) => {
                     const favoriteId = productIndex + 100 + categoryIndex * 10;
                     return (
-                      <article key={product.name} className="category-product group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(10,35,66,0.05)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(10,35,66,0.1)]">
+                      <article key={product.name} className="category-product group overflow-hidden rounded-2xl border border-slate-100 bg-white p-3 shadow-[0_4px_18px_rgba(8,124,54,0.06)] transition hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(8,124,54,0.12)]">
                         <div className="relative mb-3 h-32 overflow-hidden rounded-xl bg-slate-100 sm:h-40">
                           <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={product.image} alt={product.name} />
-                          <span className="absolute left-2 top-2 rounded-md bg-white/95 px-2 py-1 text-[9px] font-extrabold text-[#ff6b35] shadow-sm">CHÍNH HÃNG</span>
+                          <span className="absolute left-2 top-2 rounded-md bg-white/95 px-2 py-1 text-[9px] font-extrabold text-[#087c36] shadow-sm">CHÍNH HÃNG</span>
                           <button
                             onClick={() => setLiked((items) => items.includes(favoriteId) ? items.filter((item) => item !== favoriteId) : [...items, favoriteId])}
                             className={`absolute right-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-white/95 shadow-sm transition ${liked.includes(favoriteId) ? "text-red-500" : "text-slate-400 hover:text-red-500"}`}
@@ -470,10 +470,10 @@ export default function App() {
                         <p className="mb-1 text-[10px] font-semibold text-slate-400">{product.spec}</p>
                         <h3 className="min-h-10 text-xs font-bold leading-5 sm:text-[13px]">{product.name}</h3>
                         <div className="mt-2 flex flex-wrap items-baseline gap-x-2">
-                          <p className="text-base font-black text-[#ff4d1c]">{product.price}</p>
+                          <p className="text-base font-black text-[#d71920]">{product.price}</p>
                           {product.old && <p className="text-[10px] text-slate-400 line-through">{product.old}</p>}
                         </div>
-                        <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg border border-[#0a2342] py-2.5 text-[11px] font-extrabold text-[#0a2342] transition hover:bg-[#0a2342] hover:text-white">Thêm vào giỏ</button>
+                        <button onClick={() => setCartCount((count) => count + 1)} className="mt-3 w-full rounded-lg border border-[#087c36] py-2.5 text-[11px] font-extrabold text-[#087c36] transition hover:bg-[#087c36] hover:text-white">Thêm vào giỏ</button>
                       </article>
                     );
                   })}
@@ -490,17 +490,17 @@ export default function App() {
               { icon: "shield" as IconName, title: "Hàng chính hãng", text: "Đầy đủ CO/CQ và hóa đơn" },
               { icon: "refresh" as IconName, title: "Đổi mới 30 ngày", text: "Nếu có lỗi nhà sản xuất" },
               { icon: "headset" as IconName, title: "Tư vấn dự án", text: "Hotline 1800 6868 miễn phí" },
-            ].map((feature) => <div key={feature.title} className="flex items-center gap-3 px-2 lg:border-r lg:border-slate-200 lg:px-5 lg:last:border-0"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-orange-50 text-[#ff6b35]"><Icon name={feature.icon} /></span><span><b className="block text-xs sm:text-sm">{feature.title}</b><small className="text-[10px] text-slate-500 sm:text-[11px]">{feature.text}</small></span></div>)}
+            ].map((feature) => <div key={feature.title} className="flex items-center gap-3 px-2 lg:border-r lg:border-slate-200 lg:px-5 lg:last:border-0"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[#fff7e0] text-[#e31820]"><Icon name={feature.icon} /></span><span><b className="block text-xs sm:text-sm">{feature.title}</b><small className="text-[10px] text-slate-500 sm:text-[11px]">{feature.text}</small></span></div>)}
           </div>
         </section>
       </main>
 
-      <footer className="bg-[#071b33] text-white">
+      <footer className="bg-[#07552a] text-white">
         <div className="mx-auto grid max-w-[1320px] gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
-          <div><b className="text-2xl font-black">NOVA <span className="text-[#ff6b35]">TECH</span></b><p className="mt-4 max-w-xs text-sm leading-6 text-slate-400">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
-          <div><h4 className="mb-4 font-bold">Về Nova Tech</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
+          <div><div className="w-fit rounded-xl bg-white p-1"><img className="h-20 w-32 object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" /></div><p className="mt-4 max-w-xs text-sm leading-6 text-green-100/70">Thiết bị và giải pháp công nghệ chính hãng cho cá nhân, doanh nghiệp và tổ chức.</p></div>
+          <div><h4 className="mb-4 font-bold">Về Bình Minh</h4>{["Giới thiệu", "Dự án", "Đối tác", "Tuyển dụng"].map((item) => <a key={item} className="mb-2 block text-sm text-green-100/70 hover:text-white" href="#">{item}</a>)}</div>
           <div><h4 className="mb-4 font-bold">Hỗ trợ khách hàng</h4>{["Chính sách bảo hành", "Giao nhận", "Đổi trả", "Mua hàng doanh nghiệp"].map((item) => <a key={item} className="mb-2 block text-sm text-slate-400 hover:text-white" href="#">{item}</a>)}</div>
-          <div><h4 className="mb-4 font-bold">Tổng đài tư vấn</h4><p className="text-2xl font-black text-[#ff8a60]">1800 6868</p><p className="mt-1 text-xs text-slate-400">Miễn phí • 8:00 — 21:30 mỗi ngày</p></div>
+          <div><h4 className="mb-4 font-bold">Tổng đài tư vấn</h4><p className="text-2xl font-black text-[#f6b511]">1800 6868</p><p className="mt-1 text-xs text-green-100/70">Miễn phí • 8:00 — 21:30 mỗi ngày</p></div>
         </div>
       </footer>
     </div>
