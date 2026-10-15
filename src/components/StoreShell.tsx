@@ -14,7 +14,7 @@ export function StoreHeader() {
       </div>
       <header className="glass-header sticky top-0 z-50">
         <div className="mx-auto flex max-w-[1320px] items-center gap-4 px-4 py-2 lg:px-6">
-          <Link to="/" className="flex h-14 w-[136px] shrink-0 items-center justify-center sm:h-16 sm:w-[156px]" aria-label="Bình Minh">
+          <Link to="/" className="flex h-16 w-[152px] shrink-0 items-center justify-center sm:h-[72px] sm:w-[176px]" aria-label="Bình Minh">
             <img className="h-full w-full object-contain" src={binhMinhLogo} alt="Bình Minh - Kiến tạo tương lai" />
           </Link>
           <form className="relative hidden w-full max-w-[580px] md:ml-6 md:block" action="/san-pham">
