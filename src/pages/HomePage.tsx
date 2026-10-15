@@ -329,7 +329,7 @@ export default function App() {
             <div className="soft-card relative h-[390px] overflow-hidden rounded-[28px] lg:h-[430px]" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
               {slides.map((item, index) => (
                 <article key={item.eyebrow} className={`carousel-slide absolute inset-0 ${item.theme} ${index === slide ? "is-active" : ""}`}>
-                  <img className={`absolute inset-0 h-full w-full object-cover ${item.imageOnly ? "opacity-100" : "opacity-50"}`} src={item.image} alt={item.imageOnly ? "Microsoft Office 365 Family dành cho tối đa 6 người dùng" : ""} />
+                  <img className={item.imageOnly ? "banner-clean-edge absolute inset-y-0 -left-6 h-full w-[calc(100%+24px)] max-w-none object-cover opacity-100" : "absolute inset-0 h-full w-full object-cover opacity-50"} src={item.image} alt={item.imageOnly ? "Microsoft Office 365 Family dành cho tối đa 6 người dùng" : ""} />
                   {!item.imageOnly && <>
                     <div className="carousel-shade absolute inset-0" />
                     <div className="relative z-10 flex h-full max-w-[590px] flex-col justify-center px-7 text-white sm:px-11">

@@ -140,6 +140,11 @@ button {
   transform: scale(1);
 }
 
+.carousel-slide img.banner-clean-edge,
+.carousel-slide.is-active img.banner-clean-edge {
+  transform: none;
+}
+
 .carousel-shade {
   background:
     linear-gradient(90deg, rgba(4, 45, 25, 0.98) 0%, rgba(5, 79, 37, 0.82) 52%, rgba(5, 79, 37, 0.08) 100%),
