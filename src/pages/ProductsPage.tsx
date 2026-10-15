@@ -68,13 +68,7 @@ export default function ProductsPage() {
     <StorePage>
       <main className="bg-[#f4f6f3]/70 pb-10">
         <section className="mx-auto max-w-[1420px] px-4 pt-5 lg:px-6">
-          <div className="overflow-x-auto pb-1">
-            <div className="flex min-w-max gap-2">
-              {catalogCategories.map((item) => <button key={item} onClick={() => setCategory(item)} className={`rounded-lg border px-3.5 py-2 text-xs font-bold transition ${category === item ? "border-[#087c36] bg-[#087c36] text-white" : "border-slate-200 bg-white text-slate-600 hover:border-[#087c36] hover:text-[#087c36]"}`}>{item}</button>)}
-            </div>
-          </div>
-
-          <div className="soft-card relative z-20 mt-4 rounded-2xl bg-white p-3.5">
+          <div className="soft-card relative z-20 rounded-2xl bg-white p-3.5">
             <div className="flex flex-wrap items-center gap-2.5">
               <span className="inline-flex items-center gap-2 pr-1 text-[11px] font-black uppercase tracking-wide text-[#183126]">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M4 5h16l-6 7v6l-4 2v-8Z" /></svg>
