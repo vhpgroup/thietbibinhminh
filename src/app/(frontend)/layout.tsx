@@ -11,6 +11,8 @@ import { SiteHeader } from "@/components/SiteHeader"
 import { SiteFooter } from "@/components/SiteFooter"
 import { getSiteSettings } from "@/lib/storefront"
 
+export const dynamic = "force-dynamic"
+
 const defaultTitle = "Bình Minh | Thiết bị và giải pháp công nghệ"
 const title = makeSiteSettings.title ?? defaultTitle
 const description =

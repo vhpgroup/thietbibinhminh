@@ -1,12 +1,11 @@
 import path from 'path'
-import { buildFigmaConfig } from '@payloadcms/figma'
-import { mcpPlugin } from '@payloadcms/plugin-mcp'
+import { postgresAdapter } from '@payloadcms/db-postgres'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { en as adminLanguage } from '@payloadcms/translations/languages/en'
+import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import { Admins } from './collections/Admins'
 import { Media } from './collections/Media'
-import { createFolders } from './collections/Folders'
-import { createTags } from './collections/Tags'
 import { Posts } from './collections/Posts'
 import { ProductCategories } from './collections/ProductCategories'
 import { Brands } from './collections/Brands'
@@ -19,14 +18,12 @@ import { SiteSettings } from './globals/SiteSettings'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
-export default buildFigmaConfig({
+export default buildConfig({
   admin: {
     user: Admins.slug,
-    constrainWidth: true,
     dashboard: {
       widgets: [],
       defaultLayout: [
-        { widgetSlug: 'activity', width: 'full' },
         { widgetSlug: 'collections', width: 'full' },
       ],
     },
@@ -38,11 +35,16 @@ export default buildFigmaConfig({
     fallbackLanguage: 'en',
     supportedLanguages: { 'en': adminLanguage },
   },
+  db: postgresAdapter({
+    pool: {
+      connectionString: process.env.DATABASE_URL,
+    },
+    push: process.env.PAYLOAD_DB_PUSH === 'true',
+  }),
+  editor: lexicalEditor(),
   collections: [
     Admins,
     Media,
-    createFolders(),
-    createTags(),
     ProductCategories,
     Brands,
     Products,
@@ -60,6 +62,5 @@ export default buildFigmaConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  plugins: [mcpPlugin({})],
-  figma: {},
+  secret: process.env.PAYLOAD_SECRET || '',
 })

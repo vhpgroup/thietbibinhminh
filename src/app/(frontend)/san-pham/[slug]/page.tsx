@@ -2,12 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { formatPrice } from '@/components/ProductCard'
-import { getProductBySlug, getProducts } from '@/lib/storefront'
-
-export async function generateStaticParams() {
-  const products = await getProducts()
-  return products.map((product) => ({ slug: product.slug }))
-}
+import { getProductBySlug } from '@/lib/storefront'
 
 export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params

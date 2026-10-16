@@ -6,7 +6,7 @@ import type { Banner, Brand, Media, Post, Product, ProductCategory, SiteSetting 
 export type StoreMedia = { url: string; alt: string; width: number; height: number }
 
 export type StoreProduct = {
-  id: string
+  id: string | number
   name: string
   slug: string
   sku: string
@@ -27,7 +27,7 @@ export type StoreProduct = {
 }
 
 export type StorePost = {
-  id: string
+  id: string | number
   title: string
   slug: string
   excerpt?: string | null
@@ -38,7 +38,7 @@ export type StorePost = {
 }
 
 export type StoreBanner = {
-  id: string
+  id: string | number
   title: string
   eyebrow?: string | null
   accent?: string | null
@@ -49,8 +49,8 @@ export type StoreBanner = {
   ctaURL?: string | null
 }
 
-const mediaView = (value: string | Media | null | undefined): StoreMedia | null => {
-  if (!value || typeof value === 'string' || !value.url) return null
+const mediaView = (value: string | number | Media | null | undefined): StoreMedia | null => {
+  if (!value || typeof value !== 'object' || !value.url) return null
   return {
     url: value.url,
     alt: value.alt,
@@ -59,7 +59,7 @@ const mediaView = (value: string | Media | null | undefined): StoreMedia | null 
   }
 }
 
-const relationName = (value: string | ProductCategory | Brand | null | undefined) =>
+const relationName = (value: string | number | ProductCategory | Brand | null | undefined) =>
   value && typeof value === 'object' ? value.name : ''
 
 const productView = (product: Product): StoreProduct => ({
