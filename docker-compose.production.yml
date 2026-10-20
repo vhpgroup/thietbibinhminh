@@ -1,0 +1,70 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: https://thietbibinhminh.com.vn
+    environment:
+      NODE_ENV: production
+      NODE_OPTIONS: --max-old-space-size=1536
+      DATABASE_URL: postgres://payload:${SERVICE_PASSWORD_POSTGRES}@postgres:5432/binhminh
+      PAYLOAD_SECRET: ${SERVICE_BASE64_PAYLOAD}
+      PAYLOAD_DB_PUSH: "false"
+      NEXT_PUBLIC_SITE_URL: https://thietbibinhminh.com.vn
+      R2_BUCKET: ${R2_BUCKET}
+      R2_ACCESS_KEY_ID: ${R2_ACCESS_KEY_ID}
+      R2_SECRET_ACCESS_KEY: ${R2_SECRET_ACCESS_KEY}
+      R2_ENDPOINT: ${R2_ENDPOINT}
+      R2_REGION: ${R2_REGION:-auto}
+      SMTP_HOST: mail9234.maychuemail.com
+      SMTP_PORT: "465"
+      SMTP_USER: kinhdoanh@thietbibinhminh.com.vn
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      SMTP_FROM: Bình Minh <kinhdoanh@thietbibinhminh.com.vn>
+      SALES_NOTIFICATION_EMAIL: kinhdoanh@thietbibinhminh.com.vn
+      NOTIFICATION_CRON_SECRET: ${SERVICE_BASE64_NOTIFICATIONS}
+      TRUST_PROXY_HEADERS: "false"
+    expose:
+      - "3000"
+    volumes:
+      - media:/app/media
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      start_period: 45s
+      retries: 3
+    restart: unless-stopped
+  migrate:
+    build:
+      context: .
+      target: migrator
+    environment:
+      DATABASE_URL: postgres://payload:${SERVICE_PASSWORD_POSTGRES}@postgres:5432/binhminh
+      PAYLOAD_SECRET: ${SERVICE_BASE64_PAYLOAD}
+      PAYLOAD_DB_PUSH: "false"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: binhminh
+      POSTGRES_USER: payload
+      POSTGRES_PASSWORD: ${SERVICE_PASSWORD_POSTGRES}
+    command: ["postgres", "-c", "max_connections=60", "-c", "shared_buffers=128MB"]
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U payload -d binhminh"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    restart: unless-stopped
+volumes:
+  media:
+  postgres_data:
