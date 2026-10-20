@@ -6,6 +6,7 @@ services:
         NEXT_PUBLIC_SITE_URL: https://thietbibinhminh.com.vn
     environment:
       NODE_ENV: production
+      HOSTNAME: 0.0.0.0
       NODE_OPTIONS: --max-old-space-size=1536
       DATABASE_URL: postgres://payload:${SERVICE_PASSWORD_POSTGRES}@postgres:5432/binhminh
       PAYLOAD_SECRET: ${SERVICE_BASE64_PAYLOAD}
