@@ -1,0 +1,513 @@
+{
+  "verifiedAt": "2026-10-20",
+  "policy": {
+    "price": 0,
+    "stock": 0,
+    "rating": 0,
+    "reviews": 0
+  },
+  "products": [
+    {
+      "sku": "BM-SUP-dell-cp5723",
+      "name": "Balo laptop Dell EcoLoop Pro CP5723",
+      "slug": "balo-laptop-dell-ecoloop-pro-cp5723",
+      "brand": "Dell",
+      "tax": "Thiết bị văn phòng",
+      "categories": [
+        "balo-tui-laptop"
+      ],
+      "shortSpec": "CP5723 · Đen · Ngăn laptop và phụ kiện",
+      "description": "Balo dành cho việc mang laptop và phụ kiện khi đi làm. Thiết kế chia ngăn giúp sắp xếp thiết bị gọn gàng.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Balo laptop"
+        },
+        {
+          "label": "Mẫu sản phẩm",
+          "value": "CP5723"
+        },
+        {
+          "label": "Màu sắc",
+          "value": "Đen"
+        },
+        {
+          "label": "Thiết kế",
+          "value": "Ngăn laptop và nhiều ngăn phụ kiện"
+        }
+      ],
+      "image": {
+        "key": "dell-cp5723",
+        "url": "/catalog-supplement/dell-cp5723.png",
+        "source": "https://i.dell.com/sites/csdocuments/Merchandizing_Docs/ja/220915_DellTechnologies_A3_EcoLoop-carrying-case.pdf",
+        "width": 224,
+        "height": 337,
+        "mime": "image/png"
+      },
+      "sourceURL": "https://www.dell.com/pt-br/shop/mochila-dell-ecoloop-pro-15/apd/460-bdlk/malas-e-pastas-para-computador-port%C3%A1til?dbp=1",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "thiet-bi-van-phong-645"
+    },
+    {
+      "sku": "BM-SUP-ugreen-20471",
+      "name": "Giá đỡ laptop dạng dọc UGREEN 20471",
+      "slug": "gia-do-laptop-doc-ugreen-20471",
+      "brand": "Ugreen",
+      "tax": "Thiết bị văn phòng",
+      "categories": [
+        "gia-do-phu-kien-khac"
+      ],
+      "shortSpec": "20471 · Nhôm · Điều chỉnh độ rộng",
+      "description": "Giá đỡ đặt laptop theo chiều dọc khi cất máy hoặc sử dụng cùng màn hình ngoài. Khe giữ có thể điều chỉnh và có đệm silicone bảo vệ bề mặt máy.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Giá đỡ laptop"
+        },
+        {
+          "label": "Mã hãng",
+          "value": "20471"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Hợp kim nhôm"
+        },
+        {
+          "label": "Điều chỉnh",
+          "value": "Độ rộng khe giữ bằng vít"
+        },
+        {
+          "label": "Đệm bảo vệ",
+          "value": "Silicone"
+        }
+      ],
+      "image": {
+        "key": "ugreen-20471",
+        "url": "/catalog-supplement/ugreen-20471.png",
+        "source": "https://nz.ugreen.com/cdn/shop/files/UGREENAdjustableVerticalLaptopStand-NCPGroup.png?v=1773821325",
+        "width": 738,
+        "height": 493,
+        "mime": "image/png"
+      },
+      "sourceURL": "https://nz.ugreen.com/products/ugreen-adjustable-vertical-laptop-stand",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "thiet-bi-van-phong-645"
+    },
+    {
+      "sku": "BM-SUP-apple-m4",
+      "name": "Apple Mac mini M4 16GB 256GB SSD",
+      "slug": "apple-mac-mini-m4-16gb-256gb",
+      "brand": "Apple",
+      "tax": "Máy tính để bàn",
+      "categories": [
+        "mac-mini",
+        "apple-mac-mini"
+      ],
+      "shortSpec": "M4 · 16GB · 256GB SSD",
+      "description": "Máy tính nhỏ gọn dùng chip Apple M4. Cấu hình 16GB bộ nhớ hợp nhất và SSD 256GB.",
+      "specs": [
+        {
+          "label": "Vi xử lý",
+          "value": "Apple M4, CPU 10 lõi"
+        },
+        {
+          "label": "Đồ họa",
+          "value": "GPU 10 lõi"
+        },
+        {
+          "label": "Bộ nhớ",
+          "value": "16GB"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "256GB SSD"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "macOS"
+        }
+      ],
+      "image": {
+        "key": "mac-mini-2024",
+        "url": "/catalog-supplement/mac-mini-2024.png",
+        "source": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-mini-2024.png",
+        "width": 1000,
+        "height": 1000,
+        "mime": "image/png",
+        "alt": "Apple Mac mini (2024), ảnh dòng sản phẩm"
+      },
+      "sourceURL": "https://support.apple.com/en-us/121555",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "may-tinh-de-ban"
+    },
+    {
+      "sku": "BM-SUP-apple-m4-pro",
+      "name": "Apple Mac mini M4 Pro 24GB 512GB SSD",
+      "slug": "apple-mac-mini-m4-pro-24gb-512gb",
+      "brand": "Apple",
+      "tax": "Máy tính để bàn",
+      "categories": [
+        "mac-mini",
+        "apple-mac-mini"
+      ],
+      "shortSpec": "M4 Pro · 24GB · 512GB SSD",
+      "description": "Phiên bản Mac mini M4 Pro với 24GB bộ nhớ hợp nhất, SSD 512GB và kết nối Thunderbolt 5.",
+      "specs": [
+        {
+          "label": "Vi xử lý",
+          "value": "Apple M4 Pro, CPU 12 lõi"
+        },
+        {
+          "label": "Đồ họa",
+          "value": "GPU 16 lõi"
+        },
+        {
+          "label": "Bộ nhớ",
+          "value": "24GB"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD"
+        },
+        {
+          "label": "Kết nối",
+          "value": "Thunderbolt 5"
+        }
+      ],
+      "image": {
+        "key": "mac-mini-2024",
+        "url": "/catalog-supplement/mac-mini-2024.png",
+        "source": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mac-mini-2024.png",
+        "width": 1000,
+        "height": 1000,
+        "mime": "image/png",
+        "alt": "Apple Mac mini (2024), ảnh dòng sản phẩm"
+      },
+      "sourceURL": "https://support.apple.com/en-us/121555",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "may-tinh-de-ban"
+    },
+    {
+      "sku": "BM-SUP-samsung-990-evo-plus",
+      "name": "SSD Samsung 990 EVO Plus 1TB M.2 NVMe MZ-V9S1T0BW",
+      "slug": "ssd-samsung-990-evo-plus-1tb-mz-v9s1t0bw",
+      "brand": "Samsung",
+      "tax": "Linh kiện máy tính",
+      "categories": [
+        "nang-cap-ssd"
+      ],
+      "shortSpec": "1TB · M.2 2280 · NVMe 2.0",
+      "description": "SSD M.2 cho máy tính có khe tương thích. Tốc độ thực tế phụ thuộc cấu hình và điều kiện sử dụng.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "SSD"
+        },
+        {
+          "label": "Mã hãng",
+          "value": "MZ-V9S1T0BW"
+        },
+        {
+          "label": "Dung lượng",
+          "value": "1TB"
+        },
+        {
+          "label": "Kích thước",
+          "value": "M.2 2280"
+        },
+        {
+          "label": "Giao tiếp",
+          "value": "PCIe 4.0 x4 / PCIe 5.0 x2, NVMe 2.0"
+        },
+        {
+          "label": "Đọc tuần tự tối đa",
+          "value": "7.150 MB/s"
+        },
+        {
+          "label": "Ghi tuần tự tối đa",
+          "value": "6.300 MB/s"
+        }
+      ],
+      "image": {
+        "key": "samsung-990-evo-plus-1tb",
+        "url": "/catalog-supplement/samsung-990-evo-plus-1tb.png",
+        "source": "https://images.samsung.com/is/image/samsung/p6pim/sg/mz-v9s1t0bw/gallery/sg-990-evo-plus-nvme-m2-ssd-mz-v9s1t0bw-545115487?$1164_776_PNG$",
+        "width": 1164,
+        "height": 776,
+        "mime": "image/png"
+      },
+      "sourceURL": "https://www.samsung.com/sg/memory-storage/nvme-ssd/990-evo-plus-1tb-mz-v9s1t0bw/",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "linh-kien-may-tinh-646"
+    },
+    {
+      "sku": "BM-SUP-skyhawk-4tb",
+      "name": "Ổ cứng camera Seagate SkyHawk 4TB ST4000VX016",
+      "slug": "o-cung-camera-seagate-skyhawk-4tb-st4000vx016",
+      "brand": "Seagate",
+      "tax": "Thiết bị mạng",
+      "categories": [
+        "o-cung-camera"
+      ],
+      "shortSpec": "4TB · 3.5 inch · SATA · SkyHawk",
+      "description": "Ổ cứng dành cho hệ thống ghi hình giám sát. Kiểm tra danh sách ổ tương thích của đầu ghi trước khi lựa chọn.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Ổ cứng camera"
+        },
+        {
+          "label": "Mã hãng",
+          "value": "ST4000VX016"
+        },
+        {
+          "label": "Dung lượng",
+          "value": "4TB"
+        },
+        {
+          "label": "Kích thước",
+          "value": "3.5 inch"
+        },
+        {
+          "label": "Giao tiếp",
+          "value": "SATA 6Gb/s"
+        },
+        {
+          "label": "Bộ nhớ đệm",
+          "value": "256MB"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Lưu trữ video giám sát"
+        }
+      ],
+      "image": {
+        "key": "seagate-skyhawk",
+        "url": "/catalog-supplement/seagate-skyhawk.png",
+        "source": "https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS2118-1-2208-GB-en_EM.pdf",
+        "width": 546,
+        "height": 546,
+        "mime": "image/png"
+      },
+      "sourceURL": "https://www.seagate.com/content/dam/seagate/migrated-assets/www-content/datasheets/pdfs/skyhawk-3-5-hdd-DS2118-1-2208-GB-en_EM.pdf",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "thiet-bi-mang"
+    },
+    {
+      "sku": "BM-SUP-ironwolf-18tb",
+      "name": "Ổ cứng NAS Seagate IronWolf 18TB ST18000VN000",
+      "slug": "o-cung-nas-seagate-ironwolf-18tb-st18000vn000",
+      "brand": "Seagate",
+      "tax": "Máy chủ và lưu trữ",
+      "categories": [
+        "o-cung-nas"
+      ],
+      "shortSpec": "18TB · CMR · SATA · 7.200 vòng/phút",
+      "description": "Ổ cứng dòng IronWolf dành cho NAS nhiều khay. Kiểm tra tương thích với thiết bị NAS và cấu hình lưu trữ trước khi đặt hàng.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Ổ cứng NAS"
+        },
+        {
+          "label": "Mã hãng",
+          "value": "ST18000VN000"
+        },
+        {
+          "label": "Dung lượng",
+          "value": "18TB"
+        },
+        {
+          "label": "Kích thước",
+          "value": "3.5 inch"
+        },
+        {
+          "label": "Giao tiếp",
+          "value": "SATA 6Gb/s"
+        },
+        {
+          "label": "Công nghệ ghi",
+          "value": "CMR"
+        },
+        {
+          "label": "Tốc độ quay",
+          "value": "7.200 vòng/phút"
+        },
+        {
+          "label": "Bộ nhớ đệm",
+          "value": "256MB"
+        }
+      ],
+      "image": {
+        "key": "seagate-ironwolf-18tb",
+        "url": "/catalog-supplement/seagate-ironwolf-18tb.png",
+        "source": "https://www.seagate.com/files/www-content/datasheets/pdfs/ironwolf-18tb-DS1904-20-2111US-en_US.pdf",
+        "width": 562,
+        "height": 562,
+        "mime": "image/png"
+      },
+      "sourceURL": "https://www.seagate.com/files/www-content/datasheets/pdfs/ironwolf-18tb-DS1904-20-2111US-en_US.pdf",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "may-chu-va-luu-tru"
+    },
+    {
+      "sku": "BM-SUP-hpe-gen11",
+      "name": "Máy chủ HPE ProLiant MicroServer Gen11 E-2414 16GB P68820-371",
+      "slug": "may-chu-hpe-proliant-microserver-gen11-e2414-16gb",
+      "brand": "HPE",
+      "tax": "Máy chủ và lưu trữ",
+      "categories": [
+        "may-chu-hp"
+      ],
+      "shortSpec": "Xeon E-2414 · 16GB DDR5 ECC · 4 LFF · Chưa kèm HDD",
+      "description": "Máy chủ nhỏ gọn cho văn phòng. Cấu hình tham chiếu P68820-371 chưa kèm ổ cứng; trao đổi nhu cầu lưu trữ khi nhận báo giá.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Máy chủ"
+        },
+        {
+          "label": "Mã hãng",
+          "value": "P68820-371"
+        },
+        {
+          "label": "Vi xử lý",
+          "value": "Intel Xeon E-2414, 4 lõi"
+        },
+        {
+          "label": "Bộ nhớ",
+          "value": "16GB DDR5 ECC UDIMM"
+        },
+        {
+          "label": "Khay ổ đĩa",
+          "value": "4 LFF, non-hot-plug"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "Chưa kèm ổ cứng"
+        },
+        {
+          "label": "Nguồn",
+          "value": "180W ngoài"
+        }
+      ],
+      "image": {
+        "key": "hpe-microserver-gen11",
+        "url": "/catalog-supplement/hpe-microserver-gen11.jpg",
+        "source": "https://media.stockinthechannel.com/pic/gMlSr3avIE2r9_brqib1aQ.c-r.jpg",
+        "width": 2000,
+        "height": 1650,
+        "mime": "image/jpeg"
+      },
+      "sourceURL": "https://www.hpe.com/psnow/doc/a50007028enw",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "may-chu-va-luu-tru"
+    },
+    {
+      "sku": "BM-SUP-lenovo-st50-v3",
+      "name": "Máy chủ Lenovo ThinkSystem ST50 V3 — cấu hình theo yêu cầu",
+      "slug": "may-chu-lenovo-thinksystem-st50-v3",
+      "brand": "Lenovo",
+      "tax": "Máy chủ và lưu trữ",
+      "categories": [
+        "may-chu-lenovo"
+      ],
+      "shortSpec": "Tower · 1 CPU · DDR5 ECC · Cấu hình theo yêu cầu",
+      "description": "Dòng máy chủ tower một socket. CPU, RAM và ổ đĩa được lựa chọn theo nhu cầu; các giới hạn hỗ trợ dưới đây không phải cấu hình lắp sẵn.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Máy chủ"
+        },
+        {
+          "label": "Dạng máy",
+          "value": "Tower"
+        },
+        {
+          "label": "Nền tảng CPU hỗ trợ",
+          "value": "Intel Xeon E-2400 hoặc Xeon 6300 Series"
+        },
+        {
+          "label": "Số socket",
+          "value": "1"
+        },
+        {
+          "label": "Loại bộ nhớ",
+          "value": "DDR5 ECC UDIMM"
+        },
+        {
+          "label": "Bộ nhớ tối đa hỗ trợ",
+          "value": "128GB"
+        },
+        {
+          "label": "Mạng tích hợp",
+          "value": "2 cổng Gigabit Ethernet"
+        },
+        {
+          "label": "Cấu hình bán",
+          "value": "Theo yêu cầu báo giá"
+        }
+      ],
+      "image": {
+        "key": "lenovo-st50-v3",
+        "url": "/catalog-supplement/lenovo-st50-v3.jpg",
+        "source": "https://lenovopress.lenovo.com/assets/images/LP1907/ST50%20V3%20Owasco%20front%20angled%20right.jpg",
+        "width": 786,
+        "height": 1200,
+        "mime": "image/jpeg"
+      },
+      "sourceURL": "https://lenovopress.lenovo.com/lp1907-thinksystem-st50-v3-server",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "may-chu-va-luu-tru"
+    },
+    {
+      "sku": "BM-SUP-asus-et700i-w7",
+      "name": "Máy trạm ASUS ExpertCenter Pro ET700I W7 — cấu hình theo yêu cầu",
+      "slug": "may-tram-asus-expertcenter-pro-et700i-w7",
+      "brand": "Asus",
+      "tax": "Máy chủ và lưu trữ",
+      "categories": [
+        "may-tram-asus"
+      ],
+      "shortSpec": "Workstation · Intel W790 · DDR5 ECC · Cấu hình theo yêu cầu",
+      "description": "Nền tảng workstation cho công việc chuyên nghiệp. CPU, dung lượng RAM, GPU và lưu trữ được chốt theo yêu cầu; thông số hỗ trợ không phải cấu hình lắp sẵn.",
+      "specs": [
+        {
+          "label": "Loại sản phẩm",
+          "value": "Máy trạm Workstation"
+        },
+        {
+          "label": "Chipset",
+          "value": "Intel W790"
+        },
+        {
+          "label": "CPU hỗ trợ",
+          "value": "Intel Xeon W-3500/W-3400/W-2500/W-2400"
+        },
+        {
+          "label": "Bộ nhớ hỗ trợ",
+          "value": "DDR5 ECC RDIMM, tối đa 8 khe"
+        },
+        {
+          "label": "Mạng tích hợp",
+          "value": "2 cổng 2.5Gb Ethernet"
+        },
+        {
+          "label": "Cấu hình bán",
+          "value": "Theo yêu cầu báo giá"
+        }
+      ],
+      "image": {
+        "key": "asus-et700i-w7",
+        "url": "/catalog-supplement/asus-et700i-w7.png",
+        "source": "https://dlcdnwebimgs.asus.com/gain/87ae2cb7-3399-4ad3-8836-c472b9f4e2d3/w800",
+        "width": 800,
+        "height": 800,
+        "mime": "image/png"
+      },
+      "sourceURL": "https://www.asus.com/my/displays-desktops/workstations/advanced/expertcenter-pro-et700i-w7/",
+      "verifiedAt": "2026-10-20",
+      "taxSlug": "may-chu-va-luu-tru"
+    }
+  ]
+}

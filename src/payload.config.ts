@@ -14,6 +14,7 @@ import { ArticleCategories } from './collections/ArticleCategories'
 import { Banners } from './collections/Banners'
 import { ContactSubmissions } from './collections/ContactSubmissions'
 import { SiteSettings } from './globals/SiteSettings'
+import { Policies } from './globals/Policies'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -53,7 +54,7 @@ export default buildConfig({
     Banners,
     ContactSubmissions,
   ],
-  globals: [SiteSettings],
+  globals: [SiteSettings, Policies],
   localization: {
     locales: [{ code: 'en', label: 'English' }],
     fallback: true,

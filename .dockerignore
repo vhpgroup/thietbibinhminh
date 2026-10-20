@@ -6,4 +6,6 @@ media
 !.env.example
 npm-debug.log*
 pnpm-debug.log*
+.backups
+.tmp-*
 

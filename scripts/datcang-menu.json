@@ -1,0 +1,3269 @@
+[
+  {
+    "name": "Laptop",
+    "url": "https://maytinhdatcang.vn/laptop/",
+    "children": [
+      {
+        "name": "Laptop theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "Laptop Dell",
+            "url": "https://maytinhdatcang.vn/laptop/dell/",
+            "children": [
+              {
+                "name": "Dell Pro",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=e70bb3f",
+                "children": []
+              },
+              {
+                "name": "Dell 14 / 15 / 16",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=d6e1704",
+                "children": []
+              },
+              {
+                "name": "Dell 14 / 16 Plus",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=4b34f2c",
+                "children": []
+              },
+              {
+                "name": "Inspiron",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=da6c915",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop HP",
+            "url": "https://maytinhdatcang.vn/laptop/hp/",
+            "children": [
+              {
+                "name": "EliteBook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=27e6b52",
+                "children": []
+              },
+              {
+                "name": "ProBook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=4ae3ee1",
+                "children": []
+              },
+              {
+                "name": "OmniBook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=67f3799",
+                "children": []
+              },
+              {
+                "name": "ZBook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=d26eb48",
+                "children": []
+              },
+              {
+                "name": "Victus",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=7fda444",
+                "children": []
+              },
+              {
+                "name": "Omen",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=53de4e5",
+                "children": []
+              },
+              {
+                "name": "HP 14 / 15",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=21895de",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop Asus",
+            "url": "https://maytinhdatcang.vn/laptop/asus/",
+            "children": [
+              {
+                "name": "Vivobook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=872be6e",
+                "children": []
+              },
+              {
+                "name": "Vivobook S",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=25cedd6",
+                "children": []
+              },
+              {
+                "name": "Zenbook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=04bb7c8",
+                "children": []
+              },
+              {
+                "name": "ExpertBook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=03f96d3",
+                "children": []
+              },
+              {
+                "name": "ProArt",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=020cfec",
+                "children": []
+              },
+              {
+                "name": "TUF Gaming",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=be6a7a4",
+                "children": []
+              },
+              {
+                "name": "ROG Gaming",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=974b281",
+                "children": []
+              },
+              {
+                "name": "Vivobook Gaming",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=b89e6d9",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop Lenovo",
+            "url": "https://maytinhdatcang.vn/laptop/lenovo/",
+            "children": [
+              {
+                "name": "ThinkPad",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=e76649e",
+                "children": []
+              },
+              {
+                "name": "ThinkBook",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=7b89ec7",
+                "children": []
+              },
+              {
+                "name": "IdeaPad",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=c443778",
+                "children": []
+              },
+              {
+                "name": "Yoga",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=9d575d8",
+                "children": []
+              },
+              {
+                "name": "LOQ",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=79d44d0",
+                "children": []
+              },
+              {
+                "name": "Legion",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=1e9aaa9",
+                "children": []
+              },
+              {
+                "name": "Lenovo V14 / V15",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=34db22b",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop MSI",
+            "url": "https://maytinhdatcang.vn/laptop/msi/",
+            "children": [
+              {
+                "name": "Katana",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=1b5fc0a",
+                "children": []
+              },
+              {
+                "name": "Cyborg",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=fa11bcb",
+                "children": []
+              },
+              {
+                "name": "Thin / Crosshair",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=0f307fe",
+                "children": []
+              },
+              {
+                "name": "Sword",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=80dda04",
+                "children": []
+              },
+              {
+                "name": "Raider",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=d6e6107",
+                "children": []
+              },
+              {
+                "name": "Vector",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=a1c254e",
+                "children": []
+              },
+              {
+                "name": "Titan / Stealth",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=3e09006",
+                "children": []
+              },
+              {
+                "name": "Prestige",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=1db760c",
+                "children": []
+              },
+              {
+                "name": "Modern",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=e72a09c",
+                "children": []
+              },
+              {
+                "name": "Venture / Creator",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=8c95587",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop Acer",
+            "url": "https://maytinhdatcang.vn/laptop/acer/",
+            "children": [
+              {
+                "name": "Aspire",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=f226c10",
+                "children": []
+              },
+              {
+                "name": "Nitro",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=b3bfd40",
+                "children": []
+              },
+              {
+                "name": "Predator",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=97243b8",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "MacBook",
+            "url": "https://maytinhdatcang.vn/laptop/apple/",
+            "children": [
+              {
+                "name": "MacBook Air",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=b1e81ee",
+                "children": []
+              },
+              {
+                "name": "MacBook Pro",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=9db165c",
+                "children": []
+              },
+              {
+                "name": "MacBook Neo",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=f1b00d4",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop Gigabyte",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=96373ce",
+            "children": [
+              {
+                "name": "Aorus",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=e026543",
+                "children": []
+              },
+              {
+                "name": "Aero",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=3be235f",
+                "children": []
+              },
+              {
+                "name": "Gigabyte A16 / G6",
+                "url": "https://maytinhdatcang.vn/laptop/?dm=dcdbe47",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Laptop LG Gram",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=8e3829e",
+            "children": []
+          },
+          {
+            "name": "Microsoft Surface",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=4dccac4",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop văn phòng – doanh nhân",
+        "url": null,
+        "children": [
+          {
+            "name": "Lenovo ThinkPad",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=ad73d75",
+            "children": []
+          },
+          {
+            "name": "Lenovo ThinkBook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=9cca1c2",
+            "children": []
+          },
+          {
+            "name": "Lenovo IdeaPad",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=644ce6a",
+            "children": []
+          },
+          {
+            "name": "Dell Pro",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=11ac9ca",
+            "children": []
+          },
+          {
+            "name": "Dell Inspiron",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=31af503",
+            "children": []
+          },
+          {
+            "name": "Dell 14 / 15",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=19179d6",
+            "children": []
+          },
+          {
+            "name": "HP EliteBook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=b89b1ad",
+            "children": []
+          },
+          {
+            "name": "HP ProBook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=d89f05c",
+            "children": []
+          },
+          {
+            "name": "HP OmniBook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=42e0376",
+            "children": []
+          },
+          {
+            "name": "Asus ExpertBook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=f7f6016",
+            "children": []
+          },
+          {
+            "name": "Asus Vivobook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=99c3eac",
+            "children": []
+          },
+          {
+            "name": "Asus Zenbook",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=67e5dee",
+            "children": []
+          },
+          {
+            "name": "Acer Aspire",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=bf91152",
+            "children": []
+          },
+          {
+            "name": "MSI Modern / Prestige",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=885ae7f",
+            "children": []
+          },
+          {
+            "name": "MacBook Air",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=0d2bbab",
+            "children": []
+          },
+          {
+            "name": "MacBook Pro",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=22cd81c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop gaming HOT",
+        "url": null,
+        "children": [
+          {
+            "name": "Asus ROG",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=f9f9178",
+            "children": []
+          },
+          {
+            "name": "Asus TUF Gaming",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=1dbac71",
+            "children": []
+          },
+          {
+            "name": "Lenovo Legion",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=78152a2",
+            "children": []
+          },
+          {
+            "name": "Lenovo LOQ",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=8dddcb2",
+            "children": []
+          },
+          {
+            "name": "HP Victus",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=66945c1",
+            "children": []
+          },
+          {
+            "name": "HP Omen",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=2ec3c3b",
+            "children": []
+          },
+          {
+            "name": "Acer Nitro",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=10142fb",
+            "children": []
+          },
+          {
+            "name": "Acer Predator",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=7aed0e3",
+            "children": []
+          },
+          {
+            "name": "MSI Gaming",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=84d4f38",
+            "children": []
+          },
+          {
+            "name": "Gigabyte Gaming",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=f89afd6",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop theo nhu cầu",
+        "url": null,
+        "children": [
+          {
+            "name": "Laptop văn phòng",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=91a53b4",
+            "children": []
+          },
+          {
+            "name": "Laptop gaming HOT",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=caf60fc",
+            "children": []
+          },
+          {
+            "name": "Laptop đồ hoạ – kỹ thuật",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=4c74369",
+            "children": []
+          },
+          {
+            "name": "Laptop AI (Core Ultra, Ryzen AI) NEW",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=6c0a377",
+            "children": []
+          },
+          {
+            "name": "Laptop mỏng nhẹ",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=cd952f9",
+            "children": []
+          },
+          {
+            "name": "Laptop 2 trong 1 cảm ứng",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=42988d3",
+            "children": []
+          },
+          {
+            "name": "Máy trạm di động",
+            "url": "https://maytinhdatcang.vn/may-chu/may-tram/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop theo CPU",
+        "url": null,
+        "children": [
+          {
+            "name": "Intel Core Ultra 9",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=245a980",
+            "children": []
+          },
+          {
+            "name": "Intel Core Ultra 7",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=cfc4df8",
+            "children": []
+          },
+          {
+            "name": "Intel Core Ultra 5",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=820d2b5",
+            "children": []
+          },
+          {
+            "name": "Intel Core 7 / i7",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=f3abafe",
+            "children": []
+          },
+          {
+            "name": "Intel Core 5 / i5",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=f31c0f1",
+            "children": []
+          },
+          {
+            "name": "Intel Core 3 / i3",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=1727b9c",
+            "children": []
+          },
+          {
+            "name": "Intel Core i9",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=ae94602",
+            "children": []
+          },
+          {
+            "name": "AMD Ryzen 9",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=88139ff",
+            "children": []
+          },
+          {
+            "name": "AMD Ryzen 7",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=cf51aeb",
+            "children": []
+          },
+          {
+            "name": "AMD Ryzen 5",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=0541415",
+            "children": []
+          },
+          {
+            "name": "Apple M5",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=e712abf",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop theo RAM – ổ cứng",
+        "url": null,
+        "children": [
+          {
+            "name": "RAM 8GB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=03d60d2",
+            "children": []
+          },
+          {
+            "name": "RAM 16GB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=8779ec3",
+            "children": []
+          },
+          {
+            "name": "RAM 24GB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=ced4621",
+            "children": []
+          },
+          {
+            "name": "RAM 32GB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=d37aa0a",
+            "children": []
+          },
+          {
+            "name": "RAM 64GB trở lên",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=4e7c67b",
+            "children": []
+          },
+          {
+            "name": "SSD 256GB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=3b5ecba",
+            "children": []
+          },
+          {
+            "name": "SSD 512GB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=abe6aff",
+            "children": []
+          },
+          {
+            "name": "SSD 1TB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=c0140c6",
+            "children": []
+          },
+          {
+            "name": "SSD 2TB",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=6d11dc7",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop theo kích thước",
+        "url": null,
+        "children": [
+          {
+            "name": "13 – 13.6 inch",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=a57beb3",
+            "children": []
+          },
+          {
+            "name": "14 inch",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=bda9a35",
+            "children": []
+          },
+          {
+            "name": "15 – 15.6 inch",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=a9ff1a6",
+            "children": []
+          },
+          {
+            "name": "16 inch",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=231d42e",
+            "children": []
+          },
+          {
+            "name": "17 – 18 inch",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=a5eb76a",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Laptop theo khoảng giá",
+        "url": null,
+        "children": [
+          {
+            "name": "15 – 20 triệu",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=5b7cb6b",
+            "children": []
+          },
+          {
+            "name": "20 – 25 triệu",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=8e2249f",
+            "children": []
+          },
+          {
+            "name": "25 – 30 triệu",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=4ba3f1c",
+            "children": []
+          },
+          {
+            "name": "30 – 40 triệu",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=82fc5c6",
+            "children": []
+          },
+          {
+            "name": "40 – 50 triệu",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=895e86e",
+            "children": []
+          },
+          {
+            "name": "Trên 50 triệu",
+            "url": "https://maytinhdatcang.vn/laptop/?dm=9d89fbc",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phụ kiện laptop",
+        "url": null,
+        "children": [
+          {
+            "name": "Balo – túi laptop",
+            "url": "https://maytinhdatcang.vn/linh-kien/balo/",
+            "children": []
+          },
+          {
+            "name": "Sạc laptop",
+            "url": "https://maytinhdatcang.vn/linh-kien/sac-laptop/",
+            "children": []
+          },
+          {
+            "name": "RAM laptop",
+            "url": "https://maytinhdatcang.vn/linh-kien/ram-laptop/",
+            "children": []
+          },
+          {
+            "name": "Chuột",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/chuot/",
+            "children": []
+          },
+          {
+            "name": "Bộ chuyển đổi – Hub USB-C",
+            "url": "https://maytinhdatcang.vn/linh-kien/bo-chuyen-doi/",
+            "children": []
+          },
+          {
+            "name": "Giá đỡ – phụ kiện khác",
+            "url": "https://maytinhdatcang.vn/linh-kien/phu-kien-khac/",
+            "children": []
+          },
+          {
+            "name": "Bảo hành mở rộng",
+            "url": "https://maytinhdatcang.vn/phan-mem/bao-hanh-mo-rong/",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Apple",
+    "url": "https://maytinhdatcang.vn/apple/",
+    "children": [
+      {
+        "name": "MacBook",
+        "url": null,
+        "children": [
+          {
+            "name": "MacBook Air",
+            "url": "https://maytinhdatcang.vn/apple/?dm=c35ecb9",
+            "children": []
+          },
+          {
+            "name": "MacBook Pro",
+            "url": "https://maytinhdatcang.vn/apple/?dm=c9aad67",
+            "children": []
+          },
+          {
+            "name": "MacBook Neo",
+            "url": "https://maytinhdatcang.vn/apple/?dm=5640110",
+            "children": []
+          },
+          {
+            "name": "MacBook chip M5",
+            "url": "https://maytinhdatcang.vn/apple/?dm=069a8e8",
+            "children": []
+          },
+          {
+            "name": "Tất cả MacBook",
+            "url": "https://maytinhdatcang.vn/laptop/apple/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "iMac – Mac mini",
+        "url": null,
+        "children": [
+          {
+            "name": "iMac",
+            "url": "https://maytinhdatcang.vn/apple/?dm=da6a40c",
+            "children": []
+          },
+          {
+            "name": "Mac mini",
+            "url": "https://maytinhdatcang.vn/apple/?dm=42ec882",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "iPad",
+        "url": null,
+        "children": [
+          {
+            "name": "iPad Pro",
+            "url": "https://maytinhdatcang.vn/apple/?dm=dc4f74b",
+            "children": []
+          },
+          {
+            "name": "iPad Air",
+            "url": "https://maytinhdatcang.vn/apple/?dm=9041c8e",
+            "children": []
+          },
+          {
+            "name": "iPad mini",
+            "url": "https://maytinhdatcang.vn/apple/?dm=a6790c6",
+            "children": []
+          },
+          {
+            "name": "iPad Gen (A16)",
+            "url": "https://maytinhdatcang.vn/apple/?dm=1fcd73a",
+            "children": []
+          },
+          {
+            "name": "iPad bản Wi-Fi",
+            "url": "https://maytinhdatcang.vn/apple/?dm=8421f38",
+            "children": []
+          },
+          {
+            "name": "iPad bản 5G",
+            "url": "https://maytinhdatcang.vn/apple/?dm=5b1a97b",
+            "children": []
+          },
+          {
+            "name": "Tất cả iPad",
+            "url": "https://maytinhdatcang.vn/apple/ipad/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "iPhone",
+        "url": null,
+        "children": [
+          {
+            "name": "iPhone 18 series",
+            "url": "https://maytinhdatcang.vn/apple/?dm=5fcd629",
+            "children": []
+          },
+          {
+            "name": "iPhone 16 Pro Max",
+            "url": "https://maytinhdatcang.vn/apple/?dm=e4a541d",
+            "children": []
+          },
+          {
+            "name": "iPhone 16 / 16 Plus",
+            "url": "https://maytinhdatcang.vn/apple/?dm=1447881",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phụ kiện Apple",
+        "url": null,
+        "children": [
+          {
+            "name": "Bàn phím Magic Keyboard",
+            "url": "https://maytinhdatcang.vn/apple/?dm=9945f28",
+            "children": []
+          },
+          {
+            "name": "Chuột – Trackpad",
+            "url": "https://maytinhdatcang.vn/apple/?dm=0895bbf",
+            "children": []
+          },
+          {
+            "name": "Apple Pencil",
+            "url": "https://maytinhdatcang.vn/apple/?dm=f6f4043",
+            "children": []
+          },
+          {
+            "name": "AirPods",
+            "url": "https://maytinhdatcang.vn/apple/?dm=057bd84",
+            "children": []
+          },
+          {
+            "name": "Củ sạc – cáp Apple",
+            "url": "https://maytinhdatcang.vn/apple/?dm=c457ad3",
+            "children": []
+          },
+          {
+            "name": "Ốp lưng iPhone",
+            "url": "https://maytinhdatcang.vn/apple/?dm=98b53ac",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Máy tính bảng & phụ kiện",
+    "url": "https://maytinhdatcang.vn/dien-thoai/",
+    "children": [
+      {
+        "name": "Máy tính bảng",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả máy tính bảng",
+            "url": "https://maytinhdatcang.vn/dien-thoai/may-tinh-bang/",
+            "children": []
+          },
+          {
+            "name": "Samsung Galaxy Tab S",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=aec5508",
+            "children": []
+          },
+          {
+            "name": "Samsung Galaxy Tab A",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=64a9320",
+            "children": []
+          },
+          {
+            "name": "Lenovo Tab",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=f21530b",
+            "children": []
+          },
+          {
+            "name": "Apple iPad",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=fe3b4c0",
+            "children": []
+          },
+          {
+            "name": "Bản 5G / LTE",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=dcd9bf9",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Máy tính bảng theo giá",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 5 triệu",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=67c54e8",
+            "children": []
+          },
+          {
+            "name": "5 – 10 triệu",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=119ecf1",
+            "children": []
+          },
+          {
+            "name": "10 – 20 triệu",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=f5cfe88",
+            "children": []
+          },
+          {
+            "name": "Trên 20 triệu",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=43453db",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Sạc – cáp – pin dự phòng",
+        "url": null,
+        "children": [
+          {
+            "name": "Củ sạc",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=f4f8378",
+            "children": []
+          },
+          {
+            "name": "Cáp sạc",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=89728a8",
+            "children": []
+          },
+          {
+            "name": "Pin sạc dự phòng",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=b2af66f",
+            "children": []
+          },
+          {
+            "name": "Sạc không dây – MagSafe",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=d949b0e",
+            "children": []
+          },
+          {
+            "name": "Đầu chuyển – OTG",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=02ad048",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phụ kiện máy tính bảng",
+        "url": null,
+        "children": [
+          {
+            "name": "Bàn phím cho iPad / tablet",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=e03135d",
+            "children": []
+          },
+          {
+            "name": "Bao da – ốp lưng",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=3f57b8d",
+            "children": []
+          },
+          {
+            "name": "Bút cảm ứng",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=c97bf17",
+            "children": []
+          },
+          {
+            "name": "Tai nghe",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=77ffc21",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phụ kiện theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "Pisen",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=f3440d7",
+            "children": []
+          },
+          {
+            "name": "Mcdodo",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=ebf7a82",
+            "children": []
+          },
+          {
+            "name": "Apple",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=fa40aac",
+            "children": []
+          },
+          {
+            "name": "Samsung",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=dae3665",
+            "children": []
+          },
+          {
+            "name": "Ugreen",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=d177d77",
+            "children": []
+          },
+          {
+            "name": "Anker",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=e43ab57",
+            "children": []
+          },
+          {
+            "name": "Logitech",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=2399dd5",
+            "children": []
+          },
+          {
+            "name": "WIWU",
+            "url": "https://maytinhdatcang.vn/dien-thoai/?dm=e00b162",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PC & Máy bộ",
+    "url": "https://maytinhdatcang.vn/pc/",
+    "children": [
+      {
+        "name": "Loại máy",
+        "url": null,
+        "children": [
+          {
+            "name": "PC đồng bộ để bàn",
+            "url": "https://maytinhdatcang.vn/pc/?dm=a98f90c",
+            "children": []
+          },
+          {
+            "name": "Máy tính All in One",
+            "url": "https://maytinhdatcang.vn/pc/may-tinh-lien-man/",
+            "children": []
+          },
+          {
+            "name": "Mini PC",
+            "url": "https://maytinhdatcang.vn/pc/may-tinh-mini/",
+            "children": []
+          },
+          {
+            "name": "Máy trạm Workstation",
+            "url": "https://maytinhdatcang.vn/may-chu/may-tram/",
+            "children": []
+          },
+          {
+            "name": "Máy chủ – Server",
+            "url": "https://maytinhdatcang.vn/may-chu/may-chu/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "PC đồng bộ theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "PC Dell",
+            "url": "https://maytinhdatcang.vn/pc/dell/",
+            "children": [
+              {
+                "name": "Dell Pro",
+                "url": "https://maytinhdatcang.vn/pc/?dm=3ac03eb",
+                "children": []
+              },
+              {
+                "name": "Dell Tower",
+                "url": "https://maytinhdatcang.vn/pc/?dm=082fda0",
+                "children": []
+              },
+              {
+                "name": "Dell Slim",
+                "url": "https://maytinhdatcang.vn/pc/?dm=53bf312",
+                "children": []
+              },
+              {
+                "name": "Dell liền màn hình",
+                "url": "https://maytinhdatcang.vn/pc/?dm=ae01651",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "PC HP",
+            "url": "https://maytinhdatcang.vn/pc/hp/",
+            "children": [
+              {
+                "name": "ProDesk",
+                "url": "https://maytinhdatcang.vn/pc/?dm=21a5531",
+                "children": []
+              },
+              {
+                "name": "EliteDesk",
+                "url": "https://maytinhdatcang.vn/pc/?dm=ac71ef6",
+                "children": []
+              },
+              {
+                "name": "HP Pro Tower",
+                "url": "https://maytinhdatcang.vn/pc/?dm=c3c691e",
+                "children": []
+              },
+              {
+                "name": "OmniDesk",
+                "url": "https://maytinhdatcang.vn/pc/?dm=6fa0e5b",
+                "children": []
+              },
+              {
+                "name": "EliteOne",
+                "url": "https://maytinhdatcang.vn/pc/?dm=5cbfa97",
+                "children": []
+              },
+              {
+                "name": "ProOne",
+                "url": "https://maytinhdatcang.vn/pc/?dm=d243429",
+                "children": []
+              },
+              {
+                "name": "EliteStudio / ProStudio",
+                "url": "https://maytinhdatcang.vn/pc/?dm=575b4bb",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "PC Lenovo",
+            "url": "https://maytinhdatcang.vn/pc/lenovo/",
+            "children": [
+              {
+                "name": "ThinkCentre Neo",
+                "url": "https://maytinhdatcang.vn/pc/?dm=ede49ac",
+                "children": []
+              },
+              {
+                "name": "ThinkCentre M",
+                "url": "https://maytinhdatcang.vn/pc/?dm=7a7eb02",
+                "children": []
+              },
+              {
+                "name": "IdeaCentre",
+                "url": "https://maytinhdatcang.vn/pc/?dm=a3e9aab",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "PC Asus",
+            "url": "https://maytinhdatcang.vn/pc/?dm=6f89444",
+            "children": []
+          },
+          {
+            "name": "PC MSI",
+            "url": "https://maytinhdatcang.vn/pc/?dm=3393b5b",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "PC đồng bộ theo dòng",
+        "url": null,
+        "children": [
+          {
+            "name": "Dell Pro / OptiPlex",
+            "url": "https://maytinhdatcang.vn/pc/?dm=f9872da",
+            "children": []
+          },
+          {
+            "name": "Dell Tower / Slim",
+            "url": "https://maytinhdatcang.vn/pc/?dm=444cd39",
+            "children": []
+          },
+          {
+            "name": "HP ProDesk",
+            "url": "https://maytinhdatcang.vn/pc/?dm=46dfa62",
+            "children": []
+          },
+          {
+            "name": "HP Pro Tower",
+            "url": "https://maytinhdatcang.vn/pc/?dm=b092e2c",
+            "children": []
+          },
+          {
+            "name": "HP EliteDesk",
+            "url": "https://maytinhdatcang.vn/pc/?dm=9916d97",
+            "children": []
+          },
+          {
+            "name": "HP 280 / 290",
+            "url": "https://maytinhdatcang.vn/pc/?dm=fad31b4",
+            "children": []
+          },
+          {
+            "name": "Lenovo ThinkCentre",
+            "url": "https://maytinhdatcang.vn/pc/?dm=f6ff98f",
+            "children": []
+          },
+          {
+            "name": "Asus ExpertCenter",
+            "url": "https://maytinhdatcang.vn/pc/?dm=0262261",
+            "children": []
+          },
+          {
+            "name": "MSI PRO",
+            "url": "https://maytinhdatcang.vn/pc/?dm=695f6b1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "All in One theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "AIO HP",
+            "url": "https://maytinhdatcang.vn/pc/?dm=d038254",
+            "children": []
+          },
+          {
+            "name": "AIO Asus",
+            "url": "https://maytinhdatcang.vn/pc/?dm=95903a0",
+            "children": []
+          },
+          {
+            "name": "Apple iMac",
+            "url": "https://maytinhdatcang.vn/pc/?dm=dfabf8e",
+            "children": []
+          },
+          {
+            "name": "AIO Lenovo",
+            "url": "https://maytinhdatcang.vn/pc/?dm=3087e4a",
+            "children": []
+          },
+          {
+            "name": "AIO Dell",
+            "url": "https://maytinhdatcang.vn/pc/?dm=1c1ae56",
+            "children": []
+          },
+          {
+            "name": "AIO màn 27 inch",
+            "url": "https://maytinhdatcang.vn/pc/?dm=6a60fd8",
+            "children": []
+          },
+          {
+            "name": "AIO màn 23.8 – 24 inch",
+            "url": "https://maytinhdatcang.vn/pc/?dm=ed1c6fb",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mini PC theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "Asus NUC",
+            "url": "https://maytinhdatcang.vn/pc/?dm=cc7aa14",
+            "children": []
+          },
+          {
+            "name": "MSI Cubi",
+            "url": "https://maytinhdatcang.vn/pc/?dm=fa185ff",
+            "children": []
+          },
+          {
+            "name": "HP Pro Mini",
+            "url": "https://maytinhdatcang.vn/pc/?dm=5474426",
+            "children": []
+          },
+          {
+            "name": "Apple Mac mini",
+            "url": "https://maytinhdatcang.vn/pc/?dm=aa0a36e",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Theo CPU",
+        "url": null,
+        "children": [
+          {
+            "name": "Intel Core Ultra",
+            "url": "https://maytinhdatcang.vn/pc/?dm=2236eb6",
+            "children": []
+          },
+          {
+            "name": "Core i7 / Core 7",
+            "url": "https://maytinhdatcang.vn/pc/?dm=9ff34b0",
+            "children": []
+          },
+          {
+            "name": "Core i5 / Core 5",
+            "url": "https://maytinhdatcang.vn/pc/?dm=25d46b0",
+            "children": []
+          },
+          {
+            "name": "Core i3 / Core 3",
+            "url": "https://maytinhdatcang.vn/pc/?dm=d6e97fd",
+            "children": []
+          },
+          {
+            "name": "AMD Ryzen",
+            "url": "https://maytinhdatcang.vn/pc/?dm=d762f19",
+            "children": []
+          },
+          {
+            "name": "Apple M4 / M5",
+            "url": "https://maytinhdatcang.vn/pc/?dm=61bd142",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Theo khoảng giá",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 10 triệu",
+            "url": "https://maytinhdatcang.vn/pc/?dm=27b84bb",
+            "children": []
+          },
+          {
+            "name": "10 – 15 triệu",
+            "url": "https://maytinhdatcang.vn/pc/?dm=077827d",
+            "children": []
+          },
+          {
+            "name": "15 – 20 triệu",
+            "url": "https://maytinhdatcang.vn/pc/?dm=c3bf8ca",
+            "children": []
+          },
+          {
+            "name": "20 – 30 triệu",
+            "url": "https://maytinhdatcang.vn/pc/?dm=34238f1",
+            "children": []
+          },
+          {
+            "name": "Trên 30 triệu",
+            "url": "https://maytinhdatcang.vn/pc/?dm=7096397",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phụ kiện PC",
+        "url": null,
+        "children": [
+          {
+            "name": "Màn hình",
+            "url": "https://maytinhdatcang.vn/man-hinh/",
+            "children": []
+          },
+          {
+            "name": "Bàn phím – chuột",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/bo-phim-chuot/",
+            "children": []
+          },
+          {
+            "name": "Loa vi tính",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/loa/",
+            "children": []
+          },
+          {
+            "name": "Webcam",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/webcam/",
+            "children": []
+          },
+          {
+            "name": "Bộ lưu điện UPS",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/",
+            "children": []
+          },
+          {
+            "name": "Nâng cấp RAM",
+            "url": "https://maytinhdatcang.vn/linh-kien/ram/",
+            "children": []
+          },
+          {
+            "name": "Nâng cấp SSD",
+            "url": "https://maytinhdatcang.vn/linh-kien/ssd/",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Màn hình",
+    "url": "https://maytinhdatcang.vn/man-hinh/",
+    "children": [
+      {
+        "name": "Màn hình theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "Màn hình Dell",
+            "url": "https://maytinhdatcang.vn/man-hinh/dell/",
+            "children": [
+              {
+                "name": "UltraSharp",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=3e34914",
+                "children": []
+              },
+              {
+                "name": "Dell Pro",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=74fa5ce",
+                "children": []
+              },
+              {
+                "name": "Dell E / SE",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=f267d83",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình Samsung",
+            "url": "https://maytinhdatcang.vn/man-hinh/samsung/",
+            "children": [
+              {
+                "name": "Odyssey",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=643f75e",
+                "children": []
+              },
+              {
+                "name": "ViewFinity",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=8e8ecad",
+                "children": []
+              },
+              {
+                "name": "Smart Monitor",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=aeac590",
+                "children": []
+              },
+              {
+                "name": "Smart Tivi",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=0ea0727",
+                "children": []
+              },
+              {
+                "name": "Màn hình cong",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=9c721af",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình LG",
+            "url": "https://maytinhdatcang.vn/man-hinh/lg/",
+            "children": [
+              {
+                "name": "UltraGear",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=f0eb6d2",
+                "children": []
+              },
+              {
+                "name": "UltraFine",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=d1c6c47",
+                "children": []
+              },
+              {
+                "name": "UltraWide",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=19e7e2b",
+                "children": []
+              },
+              {
+                "name": "Smart Tivi",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=3ab30a3",
+                "children": []
+              },
+              {
+                "name": "Màn hình đồ hoạ",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=85cca7c",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình ViewSonic",
+            "url": "https://maytinhdatcang.vn/man-hinh/viewsonic/",
+            "children": [
+              {
+                "name": "ViewSonic VA",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=08b0d1a",
+                "children": []
+              },
+              {
+                "name": "ViewSonic VX",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=0b10d45",
+                "children": []
+              },
+              {
+                "name": "ViewSonic XG gaming",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=56fc2fb",
+                "children": []
+              },
+              {
+                "name": "ViewSonic VP đồ hoạ",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=510992a",
+                "children": []
+              },
+              {
+                "name": "Màn hình cảm ứng",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=8574cc5",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình Asus",
+            "url": "https://maytinhdatcang.vn/man-hinh/asus/",
+            "children": [
+              {
+                "name": "ROG",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=ec1e863",
+                "children": []
+              },
+              {
+                "name": "TUF Gaming",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=3f7a1e0",
+                "children": []
+              },
+              {
+                "name": "ProArt",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=6569f5e",
+                "children": []
+              },
+              {
+                "name": "Asus VA / VY / VZ",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=d317cf4",
+                "children": []
+              },
+              {
+                "name": "Màn hình di động",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=2f1fca1",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình MSI",
+            "url": "https://maytinhdatcang.vn/man-hinh/msi/",
+            "children": [
+              {
+                "name": "MAG",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=99a35de",
+                "children": []
+              },
+              {
+                "name": "MPG",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=0471267",
+                "children": []
+              },
+              {
+                "name": "MSI Pro",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=4f0ab75",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình HP",
+            "url": "https://maytinhdatcang.vn/man-hinh/hp/",
+            "children": [
+              {
+                "name": "HP Series 3 / 5 / 7",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=95fde40",
+                "children": []
+              },
+              {
+                "name": "Omen",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=b6cb54d",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình AOC",
+            "url": "https://maytinhdatcang.vn/man-hinh/aoc/",
+            "children": []
+          },
+          {
+            "name": "Màn hình Acer",
+            "url": "https://maytinhdatcang.vn/man-hinh/acer/",
+            "children": [
+              {
+                "name": "Nitro",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=ff80738",
+                "children": []
+              },
+              {
+                "name": "Acer KA / EK / SA",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=becc904",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Màn hình BenQ",
+            "url": "https://maytinhdatcang.vn/man-hinh/benq/",
+            "children": [
+              {
+                "name": "Gaming Mobiuz / Zowie",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=1b26914",
+                "children": []
+              },
+              {
+                "name": "Đồ hoạ PD / SW",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=ad6b801",
+                "children": []
+              },
+              {
+                "name": "Văn phòng GW / BL",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=7928b80",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Lenovo",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=c0e66de",
+            "children": [
+              {
+                "name": "ThinkVision",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=a2cce2a",
+                "children": []
+              },
+              {
+                "name": "Legion",
+                "url": "https://maytinhdatcang.vn/man-hinh/?dm=0cfb08e",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "E-Dra",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=db1151c",
+            "children": []
+          },
+          {
+            "name": "Philips",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=45b5e5d",
+            "children": []
+          },
+          {
+            "name": "Gigabyte",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=04af5bc",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Màn hình theo nhu cầu",
+        "url": null,
+        "children": [
+          {
+            "name": "Màn hình văn phòng",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=63cafaa",
+            "children": []
+          },
+          {
+            "name": "Màn hình gaming HOT",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=b774d0a",
+            "children": []
+          },
+          {
+            "name": "Màn hình đồ hoạ",
+            "url": "https://maytinhdatcang.vn/man-hinh/do-hoa/",
+            "children": []
+          },
+          {
+            "name": "Màn hình cong",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=ab81789",
+            "children": []
+          },
+          {
+            "name": "Màn hình Ultrawide 34 inch+",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=a0d755b",
+            "children": []
+          },
+          {
+            "name": "Màn hình di động",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=65771b2",
+            "children": []
+          },
+          {
+            "name": "Màn hình cảm ứng",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=2487658",
+            "children": []
+          },
+          {
+            "name": "Màn hình có USB-C",
+            "url": "https://maytinhdatcang.vn/man-hinh/usb-c/",
+            "children": []
+          },
+          {
+            "name": "Màn hình OLED",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=647802b",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Kích thước",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 22 inch",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=bcaca4a",
+            "children": []
+          },
+          {
+            "name": "22 – 23.8 inch",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=4f13808",
+            "children": []
+          },
+          {
+            "name": "24 – 25 inch",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=8fde203",
+            "children": []
+          },
+          {
+            "name": "27 inch",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=315e509",
+            "children": []
+          },
+          {
+            "name": "32 inch",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=ca79bcc",
+            "children": []
+          },
+          {
+            "name": "34 inch trở lên",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=5e81783",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Độ phân giải",
+        "url": null,
+        "children": [
+          {
+            "name": "Full HD 1080p",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=9767f7a",
+            "children": []
+          },
+          {
+            "name": "2K QHD",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=3696166",
+            "children": []
+          },
+          {
+            "name": "4K UHD",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=7b18fd1",
+            "children": []
+          },
+          {
+            "name": "5K – 6K",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=25a1785",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tần số quét",
+        "url": null,
+        "children": [
+          {
+            "name": "60 – 75Hz",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=d43fccc",
+            "children": []
+          },
+          {
+            "name": "100 – 120Hz",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=dd3b707",
+            "children": []
+          },
+          {
+            "name": "144 – 165Hz",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=defbf3c",
+            "children": []
+          },
+          {
+            "name": "180 – 200Hz",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=c6de420",
+            "children": []
+          },
+          {
+            "name": "240Hz trở lên",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=9866187",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tấm nền",
+        "url": null,
+        "children": [
+          {
+            "name": "IPS",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=eed5a0f",
+            "children": []
+          },
+          {
+            "name": "VA",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=f948efe",
+            "children": []
+          },
+          {
+            "name": "OLED",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=369614d",
+            "children": []
+          },
+          {
+            "name": "TN",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=d333303",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Khoảng giá màn hình",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 3 triệu",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=b3c62d1",
+            "children": []
+          },
+          {
+            "name": "3 – 5 triệu",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=edc5da3",
+            "children": []
+          },
+          {
+            "name": "5 – 8 triệu",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=23ac2a1",
+            "children": []
+          },
+          {
+            "name": "8 – 15 triệu",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=a4e71d3",
+            "children": []
+          },
+          {
+            "name": "Trên 15 triệu",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=01ecb2a",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tivi – Màn hình tương tác",
+        "url": null,
+        "children": [
+          {
+            "name": "Tivi",
+            "url": "https://maytinhdatcang.vn/man-hinh/tivi/",
+            "children": []
+          },
+          {
+            "name": "Tivi Samsung",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=b274357",
+            "children": []
+          },
+          {
+            "name": "Tivi LG",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=cb241ab",
+            "children": []
+          },
+          {
+            "name": "Tivi Sony",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=47d5984",
+            "children": []
+          },
+          {
+            "name": "Google TV / TCL",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=3a89de1",
+            "children": []
+          },
+          {
+            "name": "Màn hình tương tác",
+            "url": "https://maytinhdatcang.vn/man-hinh/man-hinh-tuong-tac/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phụ kiện màn hình",
+        "url": null,
+        "children": [
+          {
+            "name": "Giá treo màn hình",
+            "url": "https://maytinhdatcang.vn/man-hinh/gia-treo/",
+            "children": []
+          },
+          {
+            "name": "Giá treo tivi",
+            "url": "https://maytinhdatcang.vn/man-hinh/gia-treo-tivi/",
+            "children": []
+          },
+          {
+            "name": "Cáp HDMI – DisplayPort",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=564424e",
+            "children": []
+          },
+          {
+            "name": "Bộ chuyển đổi hình ảnh",
+            "url": "https://maytinhdatcang.vn/man-hinh/?dm=2976c38",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thiết bị mạng & Camera",
+    "url": "https://maytinhdatcang.vn/thiet-bi-mang/",
+    "children": [
+      {
+        "name": "Bộ phát Wi-Fi HOT",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả bộ phát Wi-Fi",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/wifi/",
+            "children": []
+          },
+          {
+            "name": "Wi-Fi 7",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=0005ad6",
+            "children": []
+          },
+          {
+            "name": "Wi-Fi 6 / 6E",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=182e7e4",
+            "children": []
+          },
+          {
+            "name": "Wi-Fi Mesh",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=899deaf",
+            "children": []
+          },
+          {
+            "name": "Bộ phát Wi-Fi 4G / 5G",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=5c8e98c",
+            "children": []
+          },
+          {
+            "name": "Bộ mở rộng sóng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=515f743",
+            "children": []
+          },
+          {
+            "name": "Access Point doanh nghiệp",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=bf8755f",
+            "children": []
+          },
+          {
+            "name": "Wi-Fi TP-Link",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=0823e56",
+            "children": []
+          },
+          {
+            "name": "Wi-Fi Asus",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=3ca38a7",
+            "children": []
+          },
+          {
+            "name": "Wi-Fi Mercusys",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=f657492",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Switch – Router",
+        "url": null,
+        "children": [
+          {
+            "name": "Switch",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/switch/",
+            "children": []
+          },
+          {
+            "name": "Switch PoE",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=91303e4",
+            "children": []
+          },
+          {
+            "name": "Switch quản lý (Managed)",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=e3f1006",
+            "children": []
+          },
+          {
+            "name": "Switch 5 – 8 cổng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=6ea66e3",
+            "children": []
+          },
+          {
+            "name": "Switch 16 – 24 cổng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=8d829cf",
+            "children": []
+          },
+          {
+            "name": "Switch 48 cổng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=4306837",
+            "children": []
+          },
+          {
+            "name": "Router",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/router/",
+            "children": []
+          },
+          {
+            "name": "Cân bằng tải",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/can-bang-tai/",
+            "children": []
+          },
+          {
+            "name": "Tường lửa Firewall",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/tuong-lua/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Thiết bị mạng theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "TP-Link",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/tp-link/",
+            "children": []
+          },
+          {
+            "name": "Cisco",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/cisco/",
+            "children": []
+          },
+          {
+            "name": "Aruba",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=275e42b",
+            "children": []
+          },
+          {
+            "name": "Ubiquiti",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=37c1dbd",
+            "children": []
+          },
+          {
+            "name": "Mikrotik",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=9f73f85",
+            "children": []
+          },
+          {
+            "name": "Draytek",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=fdc07df",
+            "children": []
+          },
+          {
+            "name": "Fortigate",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=3851b68",
+            "children": []
+          },
+          {
+            "name": "Ruijie",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=23616a0",
+            "children": []
+          },
+          {
+            "name": "Asus",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=23a3033",
+            "children": []
+          },
+          {
+            "name": "Mercusys",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=2c10744",
+            "children": []
+          },
+          {
+            "name": "Totolink",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=36107b3",
+            "children": []
+          },
+          {
+            "name": "Netis",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=a2f8efa",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Camera an ninh",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả camera",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/camera/",
+            "children": []
+          },
+          {
+            "name": "Camera Wi-Fi trong nhà",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=670b681",
+            "children": []
+          },
+          {
+            "name": "Camera ngoài trời",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=8ed1a09",
+            "children": []
+          },
+          {
+            "name": "Camera dùng pin – 4G",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=c9ed0f8",
+            "children": []
+          },
+          {
+            "name": "Camera Imou",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=bf1839c",
+            "children": []
+          },
+          {
+            "name": "Camera EZVIZ",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=b233d73",
+            "children": []
+          },
+          {
+            "name": "Camera Hikvision",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=6c8b08b",
+            "children": []
+          },
+          {
+            "name": "Camera TP-Link Tapo",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=1b0a37b",
+            "children": []
+          },
+          {
+            "name": "Camera Dahua",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=216465d",
+            "children": []
+          },
+          {
+            "name": "Đầu ghi hình",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/dau-ghi-hinh/",
+            "children": []
+          },
+          {
+            "name": "Ổ cứng camera",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=c92ac24",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Card mạng – Phụ kiện",
+        "url": null,
+        "children": [
+          {
+            "name": "Card mạng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/card-mang/",
+            "children": []
+          },
+          {
+            "name": "Card Wi-Fi USB",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=72438a7",
+            "children": []
+          },
+          {
+            "name": "Card Wi-Fi PCI-e",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=032afd1",
+            "children": []
+          },
+          {
+            "name": "Phụ kiện mạng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/phu-kien-mang/",
+            "children": []
+          },
+          {
+            "name": "Cáp mạng – dây nhảy",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=c3df928",
+            "children": []
+          },
+          {
+            "name": "Module quang SFP",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/?dm=c5777c9",
+            "children": []
+          },
+          {
+            "name": "Chuyển đổi quang",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/chuyen-doi-quang/",
+            "children": []
+          },
+          {
+            "name": "Tủ mạng – Tủ Rack",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/tu-mang/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Nhà thông minh",
+        "url": null,
+        "children": [
+          {
+            "name": "Thiết bị nhà thông minh",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/nha-thong-minh/",
+            "children": []
+          },
+          {
+            "name": "Máy hút ẩm",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-hut-am/",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Máy chủ & Máy trạm",
+    "url": "https://maytinhdatcang.vn/may-chu/",
+    "children": [
+      {
+        "name": "Máy chủ – Server",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả máy chủ",
+            "url": "https://maytinhdatcang.vn/may-chu/may-chu/",
+            "children": []
+          },
+          {
+            "name": "Máy chủ Dell",
+            "url": "https://maytinhdatcang.vn/may-chu/dell/",
+            "children": []
+          },
+          {
+            "name": "Máy chủ HP",
+            "url": "https://maytinhdatcang.vn/may-chu/hp/",
+            "children": []
+          },
+          {
+            "name": "Máy chủ Lenovo",
+            "url": "https://maytinhdatcang.vn/may-chu/lenovo/",
+            "children": []
+          },
+          {
+            "name": "Máy chủ Asus",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=28ef133",
+            "children": []
+          },
+          {
+            "name": "Server dạng tháp (Tower)",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=c704266",
+            "children": []
+          },
+          {
+            "name": "Server gắn tủ (Rack)",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=c2b74af",
+            "children": []
+          },
+          {
+            "name": "Linh kiện máy chủ",
+            "url": "https://maytinhdatcang.vn/may-chu/linh-kien-may-chu/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Máy trạm Workstation",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả máy trạm",
+            "url": "https://maytinhdatcang.vn/may-chu/may-tram/",
+            "children": []
+          },
+          {
+            "name": "Dell Pro Max / Precision",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=ca87fb1",
+            "children": []
+          },
+          {
+            "name": "Lenovo ThinkStation",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=876bed4",
+            "children": []
+          },
+          {
+            "name": "HP Z Workstation",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=7f73ff3",
+            "children": []
+          },
+          {
+            "name": "Máy trạm dựng sẵn PAWS",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=76ce775",
+            "children": []
+          },
+          {
+            "name": "Máy trạm Asus",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=0e30fbf",
+            "children": []
+          },
+          {
+            "name": "Laptop máy trạm",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=3d3dfbe",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Thiết bị lưu trữ NAS",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả NAS",
+            "url": "https://maytinhdatcang.vn/may-chu/nas/",
+            "children": []
+          },
+          {
+            "name": "NAS Synology",
+            "url": "https://maytinhdatcang.vn/may-chu/synology/",
+            "children": []
+          },
+          {
+            "name": "NAS QNAP",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=427c8aa",
+            "children": []
+          },
+          {
+            "name": "NAS TerraMaster",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=e2e43e6",
+            "children": []
+          },
+          {
+            "name": "NAS 1 – 2 khay",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=95ea6a7",
+            "children": []
+          },
+          {
+            "name": "NAS 4 khay trở lên",
+            "url": "https://maytinhdatcang.vn/may-chu/?dm=2a827fb",
+            "children": []
+          },
+          {
+            "name": "Mở rộng cho NAS",
+            "url": "https://maytinhdatcang.vn/may-chu/mo-rong-nas/",
+            "children": []
+          },
+          {
+            "name": "Ổ cứng NAS",
+            "url": "https://maytinhdatcang.vn/linh-kien/o-cung-nas/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Hạ tầng phòng máy",
+        "url": null,
+        "children": [
+          {
+            "name": "Bộ lưu điện Online",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/luu-dien-online/",
+            "children": []
+          },
+          {
+            "name": "Tủ mạng – Tủ Rack",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/tu-mang/",
+            "children": []
+          },
+          {
+            "name": "Switch",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/switch/",
+            "children": []
+          },
+          {
+            "name": "Tường lửa Firewall",
+            "url": "https://maytinhdatcang.vn/thiet-bi-mang/tuong-lua/",
+            "children": []
+          },
+          {
+            "name": "Windows Server",
+            "url": "https://maytinhdatcang.vn/phan-mem/windows-server/",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bộ lưu điện",
+    "url": "https://maytinhdatcang.vn/bo-luu-dien/",
+    "children": [
+      {
+        "name": "Loại bộ lưu điện",
+        "url": null,
+        "children": [
+          {
+            "name": "UPS Online",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/luu-dien-online/",
+            "children": []
+          },
+          {
+            "name": "UPS Offline – Line Interactive",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/luu-dien-offline/",
+            "children": []
+          },
+          {
+            "name": "UPS Line Interactive",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=65d647a",
+            "children": []
+          },
+          {
+            "name": "UPS gắn tủ Rack",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=8bd0f2e",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Theo công suất",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 1000VA",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=18b153f",
+            "children": []
+          },
+          {
+            "name": "1000 – 1500VA",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=29f13cf",
+            "children": []
+          },
+          {
+            "name": "2000 – 3000VA",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=8033e26",
+            "children": []
+          },
+          {
+            "name": "5000 – 6000VA",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=0c54e89",
+            "children": []
+          },
+          {
+            "name": "10kVA trở lên",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=1f4cf2c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Bộ lưu điện theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "APC",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/apc/",
+            "children": [
+              {
+                "name": "Smart-UPS",
+                "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=3db99d1",
+                "children": []
+              },
+              {
+                "name": "Easy UPS",
+                "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=acec20b",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Santak",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/santak/",
+            "children": [
+              {
+                "name": "Santak Online",
+                "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=e36376d",
+                "children": []
+              },
+              {
+                "name": "Santak Offline",
+                "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=951761d",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "CyberPower",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/cyberpower/",
+            "children": []
+          },
+          {
+            "name": "Prolink",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/prolink/",
+            "children": []
+          },
+          {
+            "name": "ARES",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=fbdf9e2",
+            "children": []
+          },
+          {
+            "name": "Eaton",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=1c9a3e9",
+            "children": []
+          },
+          {
+            "name": "Sorotec",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=e33f1a4",
+            "children": []
+          },
+          {
+            "name": "Hikvision",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=ceaf80f",
+            "children": []
+          },
+          {
+            "name": "Maruson",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=603d281",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Theo khoảng giá",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 3 triệu",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=6aa7f41",
+            "children": []
+          },
+          {
+            "name": "3 – 10 triệu",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=e227489",
+            "children": []
+          },
+          {
+            "name": "10 – 30 triệu",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=e843cdd",
+            "children": []
+          },
+          {
+            "name": "Trên 30 triệu",
+            "url": "https://maytinhdatcang.vn/bo-luu-dien/?dm=5f97b31",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thiết bị văn phòng",
+    "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/",
+    "children": [
+      {
+        "name": "Chuột – Bàn phím",
+        "url": null,
+        "children": [
+          {
+            "name": "Chuột văn phòng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/chuot/",
+            "children": []
+          },
+          {
+            "name": "Chuột không dây",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=638ce9c",
+            "children": []
+          },
+          {
+            "name": "Bàn phím",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/ban-phim/",
+            "children": []
+          },
+          {
+            "name": "Bộ bàn phím chuột",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/bo-phim-chuot/",
+            "children": []
+          },
+          {
+            "name": "Lót chuột",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/lot-chuot/",
+            "children": []
+          },
+          {
+            "name": "Chuột Logitech",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=e617ce0",
+            "children": []
+          },
+          {
+            "name": "Bàn phím Logitech",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=5759931",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Gaming gear HOT",
+        "url": null,
+        "children": [
+          {
+            "name": "Chuột gaming",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/chuot-gaming/",
+            "children": []
+          },
+          {
+            "name": "Bàn phím cơ",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/ban-phim-co/",
+            "children": []
+          },
+          {
+            "name": "Bàn phím cơ không dây",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=25590ef",
+            "children": []
+          },
+          {
+            "name": "Tai nghe gaming",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/tai-nghe-gaming/",
+            "children": []
+          },
+          {
+            "name": "Ghế gaming – công thái học",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/ghe/",
+            "children": []
+          },
+          {
+            "name": "Bàn gaming",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/ban/",
+            "children": []
+          },
+          {
+            "name": "Razer",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=44b9baf",
+            "children": []
+          },
+          {
+            "name": "Aula",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=88f310a",
+            "children": []
+          },
+          {
+            "name": "AKKO",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=e906153",
+            "children": []
+          },
+          {
+            "name": "E-Dra",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=deb6993",
+            "children": []
+          },
+          {
+            "name": "Dareu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=7b055f9",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Âm thanh – Hội họp",
+        "url": null,
+        "children": [
+          {
+            "name": "Tai nghe",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/tai-nghe/",
+            "children": []
+          },
+          {
+            "name": "Tai nghe call center",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=187e7d0",
+            "children": []
+          },
+          {
+            "name": "Tai nghe Bluetooth",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=a1b47a4",
+            "children": []
+          },
+          {
+            "name": "Loa vi tính",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/loa/",
+            "children": []
+          },
+          {
+            "name": "Loa Bluetooth",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=0ed8813",
+            "children": []
+          },
+          {
+            "name": "Webcam – Thiết bị hội nghị",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/webcam/",
+            "children": []
+          },
+          {
+            "name": "Loa – mic hội nghị",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=d6fd600",
+            "children": []
+          },
+          {
+            "name": "Micro",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/micro/",
+            "children": []
+          },
+          {
+            "name": "Máy trợ giảng",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/tro-giang/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Trình chiếu",
+        "url": null,
+        "children": [
+          {
+            "name": "Máy chiếu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-chieu/",
+            "children": []
+          },
+          {
+            "name": "Máy chiếu Epson",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=c01ee34",
+            "children": []
+          },
+          {
+            "name": "Máy chiếu ViewSonic",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=4a9d3d8",
+            "children": []
+          },
+          {
+            "name": "Máy chiếu Panasonic",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=9669c07",
+            "children": []
+          },
+          {
+            "name": "Máy chiếu mini – gia đình",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=bb50dc1",
+            "children": []
+          },
+          {
+            "name": "Máy chiếu vật thể",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=e3fc4b0",
+            "children": []
+          },
+          {
+            "name": "Màn chiếu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/man-chieu/",
+            "children": []
+          },
+          {
+            "name": "Giá treo máy chiếu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/gia-treo-may-chieu/",
+            "children": []
+          },
+          {
+            "name": "Bút trình chiếu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/but-trinh-chieu/",
+            "children": []
+          },
+          {
+            "name": "Màn hình tương tác",
+            "url": "https://maytinhdatcang.vn/man-hinh/man-hinh-tuong-tac/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Máy văn phòng",
+        "url": null,
+        "children": [
+          {
+            "name": "Máy scan tài liệu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-quet/",
+            "children": []
+          },
+          {
+            "name": "Máy scan 2 mặt tự động",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=8edcf76",
+            "children": []
+          },
+          {
+            "name": "Máy huỷ tài liệu",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-huy-tai-lieu/",
+            "children": []
+          },
+          {
+            "name": "Máy huỷ công nghiệp",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=8d2a55c",
+            "children": []
+          },
+          {
+            "name": "Máy đếm tiền",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-dem-tien/",
+            "children": []
+          },
+          {
+            "name": "Máy chấm công",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-cham-cong/",
+            "children": []
+          },
+          {
+            "name": "Điện thoại bàn",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/dien-thoai-ban/",
+            "children": []
+          },
+          {
+            "name": "Điện thoại IP",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/dien-thoai-ip/",
+            "children": []
+          },
+          {
+            "name": "Bảng vẽ điện tử",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/bang-ve/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mã vạch – Bán hàng",
+        "url": null,
+        "children": [
+          {
+            "name": "Máy quét mã vạch",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-quet-ma-vach/",
+            "children": []
+          },
+          {
+            "name": "Máy quét mã vạch 2D",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=6cd02f9",
+            "children": []
+          },
+          {
+            "name": "Máy in mã vạch – tem nhãn",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-in-ma-vach/",
+            "children": []
+          },
+          {
+            "name": "Máy in hoá đơn",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/?dm=66cbd9b",
+            "children": []
+          },
+          {
+            "name": "Máy kiểm kho",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/kiem-kho/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Ghi hình – Lưu trữ",
+        "url": null,
+        "children": [
+          {
+            "name": "Máy ảnh",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-anh/",
+            "children": []
+          },
+          {
+            "name": "Máy quay",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-quay/",
+            "children": []
+          },
+          {
+            "name": "Máy ghi âm",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-ghi-am/",
+            "children": []
+          },
+          {
+            "name": "Tủ chống ẩm",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/tu-chong-am/",
+            "children": []
+          },
+          {
+            "name": "Máy hút ẩm",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-hut-am/",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Máy in & Mực in",
+    "url": "https://maytinhdatcang.vn/may-in/",
+    "children": [
+      {
+        "name": "Máy in theo loại HOT",
+        "url": null,
+        "children": [
+          {
+            "name": "Máy in laser đen trắng",
+            "url": "https://maytinhdatcang.vn/may-in/laser-den-trang/",
+            "children": []
+          },
+          {
+            "name": "Máy in laser màu",
+            "url": "https://maytinhdatcang.vn/may-in/laser-mau/",
+            "children": []
+          },
+          {
+            "name": "Máy in phun màu",
+            "url": "https://maytinhdatcang.vn/may-in/phun-mau/",
+            "children": []
+          },
+          {
+            "name": "Máy in đa năng",
+            "url": "https://maytinhdatcang.vn/may-in/da-nang/",
+            "children": []
+          },
+          {
+            "name": "Máy in in 2 mặt tự động",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=49b3e46",
+            "children": []
+          },
+          {
+            "name": "Máy in khổ A3",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=4155dcf",
+            "children": []
+          },
+          {
+            "name": "Máy in Wi-Fi",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=b9ca809",
+            "children": []
+          },
+          {
+            "name": "Máy in hoá đơn",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=15169f7",
+            "children": []
+          },
+          {
+            "name": "Máy in kim",
+            "url": "https://maytinhdatcang.vn/may-in/in-kim/",
+            "children": []
+          },
+          {
+            "name": "Máy in mã vạch",
+            "url": "https://maytinhdatcang.vn/thiet-bi-van-phong/may-in-ma-vach/",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Máy in theo hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "Máy in Canon",
+            "url": "https://maytinhdatcang.vn/may-in/canon/",
+            "children": [
+              {
+                "name": "Laser đen trắng",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=477e6ce",
+                "children": []
+              },
+              {
+                "name": "Laser màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=cf65226",
+                "children": []
+              },
+              {
+                "name": "In phun màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=e3725f9",
+                "children": []
+              },
+              {
+                "name": "Đa năng",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=4eb2838",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Máy in HP",
+            "url": "https://maytinhdatcang.vn/may-in/hp/",
+            "children": [
+              {
+                "name": "Laser đen trắng",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=7ab2093",
+                "children": []
+              },
+              {
+                "name": "Laser màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=5a6d322",
+                "children": []
+              },
+              {
+                "name": "In phun màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=ac7613c",
+                "children": []
+              },
+              {
+                "name": "Đa năng",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=7059a34",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Máy in Brother",
+            "url": "https://maytinhdatcang.vn/may-in/brother/",
+            "children": [
+              {
+                "name": "Laser đen trắng",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=adf9d89",
+                "children": []
+              },
+              {
+                "name": "Laser màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=73203d3",
+                "children": []
+              },
+              {
+                "name": "In phun màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=c3175bc",
+                "children": []
+              },
+              {
+                "name": "Đa năng",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=c928023",
+                "children": []
+              },
+              {
+                "name": "In mã vạch",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=9e1a01e",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Máy in Epson",
+            "url": "https://maytinhdatcang.vn/may-in/epson/",
+            "children": [
+              {
+                "name": "In phun màu",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=0f0bd18",
+                "children": []
+              },
+              {
+                "name": "In kim",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=291c645",
+                "children": []
+              },
+              {
+                "name": "In hoá đơn",
+                "url": "https://maytinhdatcang.vn/may-in/?dm=b9b4bc4",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Máy in Pantum",
+            "url": "https://maytinhdatcang.vn/may-in/pantum/",
+            "children": []
+          },
+          {
+            "name": "Máy in Kyocera",
+            "url": "https://maytinhdatcang.vn/may-in/kyocera/",
+            "children": []
+          },
+          {
+            "name": "Ricoh",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=f67e252",
+            "children": []
+          },
+          {
+            "name": "TSC",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=b539027",
+            "children": []
+          },
+          {
+            "name": "Zebra",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=7835a27",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Máy in theo giá",
+        "url": null,
+        "children": [
+          {
+            "name": "Dưới 3 triệu",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=4487a5e",
+            "children": []
+          },
+          {
+            "name": "3 – 5 triệu",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=efaf6b8",
+            "children": []
+          },
+          {
+            "name": "5 – 10 triệu",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=52f09ba",
+            "children": []
+          },
+          {
+            "name": "10 – 30 triệu",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=e82c7a6",
+            "children": []
+          },
+          {
+            "name": "Trên 30 triệu",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=6647a2c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Mực in chính hãng",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả mực in",
+            "url": "https://maytinhdatcang.vn/muc-may-in/",
+            "children": []
+          },
+          {
+            "name": "Mực HP",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=e4154bc",
+            "children": []
+          },
+          {
+            "name": "Mực Canon",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=b9b0f53",
+            "children": []
+          },
+          {
+            "name": "Mực Brother",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=9c554f6",
+            "children": []
+          },
+          {
+            "name": "Mực Epson",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=b671262",
+            "children": []
+          },
+          {
+            "name": "Mực Pantum",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=8ab7d66",
+            "children": []
+          },
+          {
+            "name": "Mực Fuji Xerox",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=9db8801",
+            "children": []
+          },
+          {
+            "name": "Mực in laser",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=ea62784",
+            "children": []
+          },
+          {
+            "name": "Mực in phun",
+            "url": "https://maytinhdatcang.vn/may-in/?dm=851771e",
+            "children": []
+          },
+          {
+            "name": "Mực photocopy",
+            "url": "https://maytinhdatcang.vn/muc-may-in/muc-photocopy/",
+            "children": []
+          },
+          {
+            "name": "Trống – Drum",
+            "url": "https://maytinhdatcang.vn/muc-may-in/trong-muc/",
+            "children": []
+          },
+          {
+            "name": "Giấy in",
+            "url": "https://maytinhdatcang.vn/muc-may-in/giay-in/",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phần mềm bản quyền",
+    "url": "https://maytinhdatcang.vn/phan-mem/",
+    "children": [
+      {
+        "name": "Microsoft HOT",
+        "url": null,
+        "children": [
+          {
+            "name": "Windows bản quyền",
+            "url": "https://maytinhdatcang.vn/phan-mem/windows/",
+            "children": []
+          },
+          {
+            "name": "Windows Server",
+            "url": "https://maytinhdatcang.vn/phan-mem/windows-server/",
+            "children": []
+          },
+          {
+            "name": "Office bản quyền",
+            "url": "https://maytinhdatcang.vn/phan-mem/office/",
+            "children": []
+          },
+          {
+            "name": "Microsoft 365",
+            "url": "https://maytinhdatcang.vn/phan-mem/microsoft-365/",
+            "children": []
+          },
+          {
+            "name": "Microsoft 365 Business",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=85dad8f",
+            "children": []
+          },
+          {
+            "name": "Microsoft Teams",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=92f86b5",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phần mềm diệt virus",
+        "url": null,
+        "children": [
+          {
+            "name": "Tất cả phần mềm diệt virus",
+            "url": "https://maytinhdatcang.vn/phan-mem/diet-virus/",
+            "children": []
+          },
+          {
+            "name": "Kaspersky",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=bb33444",
+            "children": []
+          },
+          {
+            "name": "Bkav",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=f90395b",
+            "children": []
+          },
+          {
+            "name": "Trend Micro – Symantec",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=9020657",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Phần mềm ứng dụng",
+        "url": null,
+        "children": [
+          {
+            "name": "Phần mềm khác",
+            "url": "https://maytinhdatcang.vn/phan-mem/phan-mem-khac/",
+            "children": []
+          },
+          {
+            "name": "Adobe",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=68087b3",
+            "children": []
+          },
+          {
+            "name": "Autodesk – AutoCAD",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=c4b8100",
+            "children": []
+          },
+          {
+            "name": "Zoom",
+            "url": "https://maytinhdatcang.vn/phan-mem/?dm=9428b2c",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

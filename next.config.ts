@@ -3,6 +3,10 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   output: 'standalone',
+  images: {
+    minimumCacheTTL: 86400,
+    remotePatterns: [{ protocol: 'https', hostname: 'hpttech.vn', pathname: '/api/media/file/**' }, { protocol: 'https', hostname: 'maytinhdatcang.vn', pathname: '/wp-content/uploads/**' }],
+  },
   // `next dev` serves the Make preview at a per-sandbox cross-origin host. Next
   // blocks its dev resources (`/_next/*`, HMR WebSocket, internal endpoints)
   // unless the origin is listed here, and a blocked HMR socket stalls Turbopack

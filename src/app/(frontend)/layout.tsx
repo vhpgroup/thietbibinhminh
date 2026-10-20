@@ -1,3 +1,8 @@
+import { StructuredData } from '@/components/StructuredData'
+import { siteURL } from '@/lib/site-url'
+import { companyDetails } from '@/lib/company'
+import { ContactWidget } from '@/components/ContactWidget'
+import { CartProvider } from '@/components/Cart'
 import React from "react"
 import type { Metadata } from "next"
 import Script from "next/script"
@@ -25,9 +30,7 @@ const googleAnalyticsId = sanitizeHtmlAttribute(
 )
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ),
+  metadataBase: new URL(siteURL()),
   title,
   description,
   robots:
@@ -72,9 +75,11 @@ export default async function RootLayout({
           </a>
         )}
         <div id="root" tabIndex={-1} className="future-shell min-h-screen bg-[#f4f6f0]/80 text-[#183126]">
-          <SiteHeader announcement={settings.announcement} shippingMessage={settings.shippingMessage} />
+          <StructuredData value={{ "@context": "https://schema.org", "@type": "Organization", "@id": siteURL("/#organization"), name: settings.companyName || companyDetails.companyName, url: siteURL(), logo: siteURL("/binh-minh-logo.png"), telephone: settings.hotline || companyDetails.hotline, email: settings.email || undefined, taxID: settings.businessCode || companyDetails.businessCode, address: { "@type": "PostalAddress", streetAddress: settings.address || companyDetails.address, addressCountry: "VN" } }} />
+          <CartProvider><SiteHeader announcement={settings.announcement} shippingMessage={settings.shippingMessage} />
           {children}
-          <SiteFooter hotline={settings.hotline} description={settings.footerDescription} />
+          <ContactWidget />
+          <SiteFooter settings={settings} /></CartProvider>
         </div>
         {googleAnalyticsId && (
           <>
@@ -97,3 +102,4 @@ gtag('config', ${JSON.stringify(googleAnalyticsId)});
     </html>
   )
 }
+

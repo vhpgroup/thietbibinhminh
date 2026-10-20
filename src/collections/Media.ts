@@ -11,6 +11,7 @@ export const Media: CollectionConfig = {
     read: () => true,
   },
   fields: [
+    { name: 'externalURL', label: 'URL ảnh bên ngoài', type: 'text' },
     {
       name: 'alt',
       type: 'text',

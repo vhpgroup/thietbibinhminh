@@ -103,9 +103,11 @@ export interface Config {
   fallbackLocale: ('false' | 'none' | 'null') | false | null | 'en' | 'en'[];
   globals: {
     'site-settings': SiteSetting;
+    policies: Policy;
   };
   globalsSelect: {
     'site-settings': SiteSettingsSelect<false> | SiteSettingsSelect<true>;
+    policies: PoliciesSelect<false> | PoliciesSelect<true>;
   };
   locale: 'en';
   widgets: {
@@ -167,6 +169,7 @@ export interface Admin {
  */
 export interface Media {
   id: number;
+  externalURL?: string | null;
   alt: string;
   updatedAt: string;
   createdAt: string;
@@ -186,9 +189,15 @@ export interface Media {
  */
 export interface ProductCategory {
   id: number;
+  sourceURL?: string | null;
   name: string;
   slug: string;
   description?: string | null;
+  parent?: (number | null) | ProductCategory;
+  showInMenu?: boolean | null;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
+  indexable?: boolean | null;
   icon?: string | null;
   order?: number | null;
   updatedAt: string;
@@ -217,14 +226,26 @@ export interface Product {
   slug: string;
   sku: string;
   category: number | ProductCategory;
+  secondaryCategories?: (number | ProductCategory)[] | null;
+  seoTitle?: string | null;
+  seoDescription?: string | null;
   brand: number | Brand;
   image: number | Media;
+  gallery?: (number | Media)[] | null;
+  sourceURL?: string | null;
   shortSpec?: string | null;
   description?: string | null;
   price: number;
+  /**
+   * Chỉ bật sau khi kiểm tra giá thực tế. Giá chưa xác minh sẽ hiển thị Liên hệ báo giá.
+   */
+  priceVerified?: boolean | null;
+  priceVerifiedAt?: string | null;
   oldPrice?: number | null;
   badge?: string | null;
   stock?: number | null;
+  stockVerified?: boolean | null;
+  stockVerifiedAt?: string | null;
   featured?: boolean | null;
   highlights?:
     | {
@@ -320,6 +341,12 @@ export interface ContactSubmission {
   email: string;
   topic: 'Mua sản phẩm' | 'Tư vấn giải pháp' | 'Báo giá dự án' | 'Hỗ trợ kỹ thuật';
   message: string;
+  notificationStatus?: ('pending' | 'sending' | 'sent' | 'failed') | null;
+  notificationError?: string | null;
+  notificationSentAt?: string | null;
+  customerEmailSentAt?: string | null;
+  notificationAttemptedAt?: string | null;
+  notificationLease?: string | null;
   status?: ('new' | 'processing' | 'done') | null;
   internalNote?: string | null;
   updatedAt: string;
@@ -455,6 +482,7 @@ export interface AdminsSelect<T extends boolean = true> {
  * via the `definition` "media_select".
  */
 export interface MediaSelect<T extends boolean = true> {
+  externalURL?: T;
   alt?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -473,9 +501,15 @@ export interface MediaSelect<T extends boolean = true> {
  * via the `definition` "product-categories_select".
  */
 export interface ProductCategoriesSelect<T extends boolean = true> {
+  sourceURL?: T;
   name?: T;
   slug?: T;
   description?: T;
+  parent?: T;
+  showInMenu?: T;
+  seoTitle?: T;
+  seoDescription?: T;
+  indexable?: T;
   icon?: T;
   order?: T;
   updatedAt?: T;
@@ -502,14 +536,23 @@ export interface ProductsSelect<T extends boolean = true> {
   slug?: T;
   sku?: T;
   category?: T;
+  secondaryCategories?: T;
+  seoTitle?: T;
+  seoDescription?: T;
   brand?: T;
   image?: T;
+  gallery?: T;
+  sourceURL?: T;
   shortSpec?: T;
   description?: T;
   price?: T;
+  priceVerified?: T;
+  priceVerifiedAt?: T;
   oldPrice?: T;
   badge?: T;
   stock?: T;
+  stockVerified?: T;
+  stockVerifiedAt?: T;
   featured?: T;
   highlights?:
     | T
@@ -587,6 +630,12 @@ export interface ContactSubmissionsSelect<T extends boolean = true> {
   email?: T;
   topic?: T;
   message?: T;
+  notificationStatus?: T;
+  notificationError?: T;
+  notificationSentAt?: T;
+  customerEmailSentAt?: T;
+  notificationAttemptedAt?: T;
+  notificationLease?: T;
   status?: T;
   internalNote?: T;
   updatedAt?: T;
@@ -640,10 +689,32 @@ export interface SiteSetting {
   id: number;
   announcement?: string | null;
   shippingMessage?: string | null;
+  companyName?: string | null;
+  businessCode?: string | null;
+  legalRepresentative?: string | null;
+  representativeTitle?: string | null;
   hotline?: string | null;
   email?: string | null;
   address?: string | null;
   footerDescription?: string | null;
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "policies".
+ */
+export interface Policy {
+  id: number;
+  pages?:
+    | {
+        slug: string;
+        title: string;
+        summary?: string | null;
+        content: string;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -654,10 +725,32 @@ export interface SiteSetting {
 export interface SiteSettingsSelect<T extends boolean = true> {
   announcement?: T;
   shippingMessage?: T;
+  companyName?: T;
+  businessCode?: T;
+  legalRepresentative?: T;
+  representativeTitle?: T;
   hotline?: T;
   email?: T;
   address?: T;
   footerDescription?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "policies_select".
+ */
+export interface PoliciesSelect<T extends boolean = true> {
+  pages?:
+    | T
+    | {
+        slug?: T;
+        title?: T;
+        summary?: T;
+        content?: T;
+        id?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

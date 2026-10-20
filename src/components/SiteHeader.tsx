@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { CartLink } from './Cart'
 import { useState, type ReactNode } from 'react'
 
 type IconName = 'menu' | 'search' | 'map' | 'user' | 'cart' | 'close'
@@ -32,7 +33,7 @@ export function SiteHeader({ announcement, shippingMessage }: { announcement?: s
         <div className="ml-auto flex items-center gap-3 lg:gap-5">
           <div className="hidden items-center gap-2 text-xs text-slate-500 xl:flex"><Icon name="map" /><span><small className="block">Giao đến</small><b className="text-sm text-[#183126]">Hà Nội</b></span></div>
           <div className="hidden items-center gap-2 text-xs text-slate-500 sm:flex"><Icon name="user" /><span><small className="block">Tài khoản</small><b className="text-sm text-[#183126]">Đăng nhập</b></span></div>
-          <button className="grid h-11 w-11 place-items-center rounded-full bg-[#eef7f0]" aria-label="Giỏ hàng"><Icon name="cart" /></button>
+          <CartLink />
         </div>
       </div>
       <div className="mx-auto max-w-[1320px] px-4 pb-3 md:hidden"><form className="relative" action="/san-pham"><input name="search" className="h-10 w-full rounded-full bg-slate-100 px-5 pr-12 text-sm outline-none" placeholder="Tìm kiếm sản phẩm..." /><button className="absolute right-3 top-2 text-[#e31820]" aria-label="Tìm kiếm"><Icon name="search" /></button></form></div>

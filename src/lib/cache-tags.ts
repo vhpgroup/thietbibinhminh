@@ -15,7 +15,7 @@ export const cacheTags = {
 export const revalidateCollection =
   (tag: string): CollectionAfterChangeHook =>
   ({ doc, previousDoc }) => {
-    revalidateTag(tag, 'max')
+    revalidateTag(tag, tag === cacheTags.products ? { expire: 0 } : 'max')
     if (typeof doc?.slug === 'string') revalidateTag(`${tag}:${doc.slug}`, 'max')
     if (typeof previousDoc?.slug === 'string' && previousDoc.slug !== doc?.slug) {
       revalidateTag(`${tag}:${previousDoc.slug}`, 'max')

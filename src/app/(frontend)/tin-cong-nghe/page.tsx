@@ -1,1 +1,1 @@
-export { default } from '../tin-tuc/page'
+export { default, metadata } from '../tin-tuc/page'
