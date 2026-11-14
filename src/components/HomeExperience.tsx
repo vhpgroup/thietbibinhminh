@@ -48,7 +48,6 @@ function HomeProductCard({ product, deal = false }: { product: StoreProduct; dea
     <p className="truncate text-[10px] font-semibold text-slate-400">{product.shortSpec || product.brand}</p>
     <Link href={`/san-pham/${product.slug}`} className="mt-1 line-clamp-2 min-h-10 text-xs font-bold leading-5 hover:text-[#e31820] sm:text-[13px]">{product.name}</Link>
     <strong className="mt-2 text-base font-black text-[#d71920]">{product.price > 0 ? formatPrice(product.price) : product.referencePrice > 0 ? formatPrice(product.referencePrice) : 'Liên hệ báo giá'}</strong>
-    {product.price === 0 && product.referencePrice > 0 && <span className="text-[10px] text-slate-500">Giá tham khảo · xác nhận khi đặt hàng</span>}
     {!!product.oldPrice && product.oldPrice > product.price && <span className="text-[10px] text-slate-400 line-through">{formatPrice(product.oldPrice)}</span>}
     <ProductCardActions product={product} />
   </article>
