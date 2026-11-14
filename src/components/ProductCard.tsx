@@ -16,10 +16,11 @@ export function ProductCard({ product }: { product: StoreProduct }) {
       <Link href={`/san-pham/${product.slug}`} className="mt-1 line-clamp-2 min-h-10 text-xs font-semibold leading-5 hover:text-[#e31820] sm:text-[13px]">{product.name}</Link>
       <p className="mt-1 truncate text-[10px] text-slate-400">{product.shortSpec}</p>
       {product.reviews > 0 && <div className="mt-2 text-[11px] font-bold text-[#f0a500]">★ {product.rating} <span className="text-slate-400">({product.reviews})</span></div>}
-      <div className="mt-3">{!!product.oldPrice && product.oldPrice > product.price && <p className="text-[10px] text-slate-400 line-through">{formatPrice(product.oldPrice)}</p>}<strong className="text-lg font-black text-[#e31820]">{product.price > 0 ? formatPrice(product.price) : 'Liên hệ báo giá'}</strong></div>
+      <div className="mt-3">{!!product.oldPrice && product.oldPrice > product.price && <p className="text-[10px] text-slate-400 line-through">{formatPrice(product.oldPrice)}</p>}<strong className="text-lg font-black text-[#e31820]">{product.price > 0 ? formatPrice(product.price) : product.referencePrice > 0 ? formatPrice(product.referencePrice) : 'Liên hệ báo giá'}</strong>{product.price === 0 && product.referencePrice > 0 && <p className="text-[10px] text-slate-500">Giá tham khảo · xác nhận khi đặt hàng</p>}</div>
       <ProductCardActions product={product} />
     </div>
   </article>
 }
+
 
 

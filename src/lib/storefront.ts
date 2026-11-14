@@ -22,6 +22,7 @@ export type StoreProduct = {
   image: StoreMedia | null
   gallery: StoreMedia[]
   price: number
+  referencePrice: number
   oldPrice?: number | null
   badge?: string | null
   shortSpec?: string | null
@@ -85,6 +86,7 @@ const productView = (product: Product): StoreProduct => ({
   image: mediaView(product.image),
   gallery: (product.gallery || []).map(mediaView).filter((item): item is StoreMedia => !!item),
   price: verifiedCommerce(product).price,
+  referencePrice: product.priceVerified ? 0 : product.price,
   oldPrice: verifiedCommerce(product).oldPrice,
   priceVerified: product.priceVerified === true,
   stockVerified: product.stockVerified === true,
@@ -304,3 +306,4 @@ const getSiteSettingsCached = unstable_cache(async (): Promise<SiteSetting> => {
 }, ['site-settings'], { tags: [cacheTags.settings] })
 
 export const getSiteSettings = () => getSiteSettingsCached()
+

@@ -47,7 +47,8 @@ function HomeProductCard({ product, deal = false }: { product: StoreProduct; dea
     </Link>
     <p className="truncate text-[10px] font-semibold text-slate-400">{product.shortSpec || product.brand}</p>
     <Link href={`/san-pham/${product.slug}`} className="mt-1 line-clamp-2 min-h-10 text-xs font-bold leading-5 hover:text-[#e31820] sm:text-[13px]">{product.name}</Link>
-    <strong className="mt-2 text-base font-black text-[#d71920]">{product.price > 0 ? formatPrice(product.price) : 'Liên hệ báo giá'}</strong>
+    <strong className="mt-2 text-base font-black text-[#d71920]">{product.price > 0 ? formatPrice(product.price) : product.referencePrice > 0 ? formatPrice(product.referencePrice) : 'Liên hệ báo giá'}</strong>
+    {product.price === 0 && product.referencePrice > 0 && <span className="text-[10px] text-slate-500">Giá tham khảo · xác nhận khi đặt hàng</span>}
     {!!product.oldPrice && product.oldPrice > product.price && <span className="text-[10px] text-slate-400 line-through">{formatPrice(product.oldPrice)}</span>}
     <ProductCardActions product={product} />
   </article>
@@ -112,6 +113,7 @@ export function HomeExperience({ banners, deals, sections, categories: homeCateg
     ].map((feature) => <div key={feature.title} className="flex items-center gap-3 px-2 lg:border-r lg:border-slate-200 lg:px-5 lg:last:border-0"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[#fff7e0] text-[#e31820]"><Icon name={feature.icon} /></span><span><b className="block text-xs sm:text-sm">{feature.title}</b><small className="text-[10px] text-slate-500 sm:text-[11px]">{feature.text}</small></span></div>)}</div></section>
   </main>
 }
+
 
 
 
