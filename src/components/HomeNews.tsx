@@ -12,7 +12,7 @@ export function HomeNews({ posts }: { posts: StorePost[] }) {
   if (!lead) return null
   const articles = posts.filter((post) => post.id !== lead.id).slice(0, 4)
 
-  return <section id="tin-tuc" aria-labelledby="home-news-title" className="scroll-mt-44 border-t border-slate-100 bg-white py-10 sm:py-12">
+  return <section id="tin-tuc" aria-labelledby="home-news-title" className="mx-auto max-w-[1320px] scroll-mt-44 border-t border-slate-100 bg-white py-10 sm:py-12">
     <div className="mx-auto max-w-[1320px] px-4 lg:px-6">
       <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
         <div>
