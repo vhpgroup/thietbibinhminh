@@ -177,6 +177,7 @@ button {
   background-position: center top, center top;
   background-size: 100% 100%, 100vw auto;
   background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
 }
 .home-landing::before { content: ""; position: absolute; z-index: -1; inset: 0 auto 0 50%; width: min(1320px, 100%); transform: translateX(-50%); background: #fff; pointer-events: none; }
 .campaign-strip { background: radial-gradient(ellipse at 20% 0%, #fff8ce, transparent 55%), linear-gradient(110deg, #ddf5e9, #e5f8fb); }
